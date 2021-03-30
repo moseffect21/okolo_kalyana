@@ -8,11 +8,6 @@ const MainPage = () => {
       <MetaDescriptionMain />
       <MetaKeywordsMain />
       Главная
-      {/* {isMobile ? (
-        <MainPageMobile dispatch={dispatch} user={user} />
-      ) : (
-        <MainPageDesktop dispatch={dispatch} user={user} />
-      )} */}
     </>
   )
 }
