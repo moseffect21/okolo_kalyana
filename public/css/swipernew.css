@@ -1,0 +1,11 @@
+.swiper-pagination span {
+    background: #FFFFFF;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    border: 2px solid #6c5dd3;
+}
+
+.swiper-pagination-bullet-active {
+    border: 2px solid #A0D7E7 !important;
+}

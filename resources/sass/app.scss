@@ -6,3 +6,177 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import url('/fonts/Circe/stylesheet.css');
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ffffff;
+}
+
+* {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.page {
+  background: unset;
+}
+
+@media (max-width: 1400px) {
+  html,
+  body {
+    font-size: 53.5%;
+  }
+}
+@media (max-width: 1200px) {
+  html,
+  body {
+    font-size: 43.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 62.5%;
+  }
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 100;
+}
+.ReactModal__Overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+  .ReactModal__Content {
+    transform: scale(0.6);
+    transition: transform 300ms ease-in-out;
+  }
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  .ReactModal__Content {
+    transform: scale(1);
+  }
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  .ReactModal__Content {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ReactModal__Overlay {
+    .ReactModal__Content {
+      transform: scale(1);
+      transition: transform 300ms ease-in-out;
+    }
+  }
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    .ReactModal__Content {
+      transform: scale(1);
+    }
+  }
+
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    .ReactModal__Content {
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .swiper-container {
+    width: 100%;
+    .swiper-pagination {
+      bottom: 0;
+      left: auto;
+      width: 20%;
+      right: 20%;
+    }
+  }
+}
+
+.draggable-source--is-dragging {
+  visibility: hidden !important;
+  svg {
+    display: none !important;
+  }
+}
+.draggable--original {
+  visibility: hidden !important;
+  display: none !important;
+  svg {
+    visibility: hidden !important;
+  }
+}
+.draggable-mirror {
+  z-index: 999999;
+  border-bottom: none;
+  border-top: none !important;
+}
+.drag_container {
+  outline: none;
+}
+.drag_item {
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .draggable-mirror {
+    box-shadow: 0px 4px 40px rgba(179, 179, 179, 0.514) !important;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: url('/image/icon/nav_arrow_purple.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+}

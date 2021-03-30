@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noEmit": true,
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["resources/js/*"]
+    }
+  },
+  // "files": ["node_modules/gsap/types/index.d.ts"],
+  "include": ["resources/js/**/*"]
+}

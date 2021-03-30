@@ -1,19 +1,144 @@
-// Body
-$body-bg: #f8fafc;
+// // Body
+// $body-bg: #f8fafc;
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// // Typography
+// $font-family-sans-serif: 'Nunito', sans-serif;
+// $font-size-base: 0.9rem;
+// $line-height-base: 1.6;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+// // Colors
+// $blue: #3490dc;
+// $indigo: #6574cd;
+// $purple: #9561e2;
+// $pink: #f66d9b;
+// $red: #e3342f;
+// $orange: #f6993f;
+// $yellow: #ffed4a;
+// $green: #38c172;
+// $teal: #4dc0b5;
+// $cyan: #6cb2eb;
+
+// media queries
+// // Body
+// $body-bg: #f8fafc;
+
+// // Typography
+// $font-family-sans-serif: 'Nunito', sans-serif;
+// $font-size-base: 0.9rem;
+// $line-height-base: 1.6;
+
+// // Colors
+// $blue: #3490dc;
+// $indigo: #6574cd;
+// $purple: #9561e2;
+// $pink: #f66d9b;
+// $red: #e3342f;
+// $orange: #f6993f;
+// $yellow: #ffed4a;
+// $green: #38c172;
+// $teal: #4dc0b5;
+// $cyan: #6cb2eb;
+
+// media queries
+@mixin w {
+  @media only screen and (max-width: 1419px) {
+    @content;
+  }
+}
+
+@mixin x {
+  @media only screen and (max-width: 1339px) {
+    @content;
+  }
+}
+
+@mixin d {
+  @media only screen and (max-width: 1179px) {
+    @content;
+  }
+}
+
+@mixin t {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin a {
+  @media only screen and (max-width: 639px) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media only screen and (max-width: 474px) {
+    @content;
+  }
+}
+
+// fonts
+@mixin fi {
+  font-family: 'Inter', sans-serif;
+}
+
+@mixin fp {
+  font-family: 'Circe', sans-serif;
+}
+
+@mixin dark {
+  body.dark {
+    @content;
+  }
+}
+
+$bl: #1b1d21;
+$wh: #ffffff;
+$purple: #6c5dd3;
+$purple-light: #cfc8ff;
+$text: #11142d;
+$gray-dark: #808191;
+$gray-light: #b2b3bd;
+$red: #ff754c;
+$pink: #ffa2c0;
+$pink-light: #ffebf6;
+$yellow: #ffce73;
+$yellow-light: #ffe2ac;
+$blue: #3f8cff;
+$blue-light: #a0d7e7;
+$blue-dark: #0049c6;
+$border: #e4e4e4;
+$green: #7fba7a;
+$link: #5f75ee;
+
+// dark theme
+$dark: #242731;
+$dark1: #1f2128;
+$border-dark: rgba($border, 0.1);
+
+@mixin shadow {
+  background: #e3e6ec;
+  opacity: 0.91;
+  filter: blur(86.985px);
+  border-radius: 24px;
+
+  @include m {
+    filter: blur(46.985px);
+  }
+}
+
+@mixin shadow-dark {
+  background: #000;
+  opacity: 0.51;
+  filter: blur(86.985px);
+  border-radius: 24px;
+
+  @include m {
+    filter: blur(46.985px);
+  }
+}

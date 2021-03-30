@@ -1,4 +1,7 @@
-const mix = require('laravel-mix');
+const path = require('path')
+const mix = require('laravel-mix')
+require('laravel-mix-react-css-modules')
+require('laravel-mix-react-typescript-extension')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +14,13 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/entry-client.jsx', 'public/js').react()
-.js('resources/js/entry-server.jsx', 'public/js').react()
-    .sass('resources/sass/app.scss', 'public/css');
+mix
+  .reactTypeScript('resources/js/index.tsx', 'public/js/app.js')
+  .reactCSSModules('[name]__[local]___[hash:base64:5]')
+  .sass('resources/sass/app.scss', 'public/css/app.css')
+  .webpackConfig({
+    resolve: {
+      modules: ['node_modules', path.join(__dirname, 'resources/js')],
+    },
+  })
+  .version()
