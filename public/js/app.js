@@ -6652,7 +6652,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._3fKt_eO8uR6fuu_YfoODGL {\n  width: calc(100% - 12rem);\n  padding: 0 6rem;\n  margin: 0 auto;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._6mzh4rI9g-h8IQE8Gbrg8 {\n  font-weight: bold;\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #ffffff;\n  margin-top: 3rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._3RYjcwkwYP-L0tQLW5jgq_ {\n  display: flex;\n  margin-top: 6rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._2eXb_1g71oIqJZf2Af9B1i > div:first-child {\n  width: 19.5rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._2eXb_1g71oIqJZf2Af9B1i > div:last-child {\n  width: calc(100% - 19.5rem - 6rem);\n  margin-left: 6rem;\n}", ""]);
+exports.push([module.i, "._3fKt_eO8uR6fuu_YfoODGL {\n  width: calc(100% - 6rem);\n  padding: 0 3rem 6rem;\n  margin: 0 auto;\n  max-width: 142rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._6mzh4rI9g-h8IQE8Gbrg8 {\n  font-weight: bold;\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #ffffff;\n  margin-top: 3rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._3RYjcwkwYP-L0tQLW5jgq_ {\n  display: flex;\n  margin-top: 6rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._2eXb_1g71oIqJZf2Af9B1i > div:first-child {\n  width: 19.5rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._2eXb_1g71oIqJZf2Af9B1i > div:last-child {\n  width: calc(100% - 19.5rem - 6rem);\n  margin-left: 6rem;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -6726,7 +6726,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._36rOFHAR9t-vVFjHFANB_4 {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n\n._23OqER_69DfzCC2DavZ8rr {\n  margin-top: 6rem;\n}\n\n._3G5ZNJMjVN5X58TJKDDAjL {\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 4rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b {\n  width: 33.3%;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc {\n  width: 34rem;\n  height: 34rem;\n  position: relative;\n  color: #ffffff;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._3xr_doEwSaOrWsc39sRh2Q {\n  position: absolute;\n  bottom: 4.5rem;\n  left: 3rem;\n  font-size: 2.4rem;\n  line-height: 3.5rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._1kzJTMC70nm4Y3nsCsGoSx {\n  position: absolute;\n  bottom: 2.5rem;\n  left: 3rem;\n  font-size: 1.4rem;\n  line-height: 2.1rem;\n}", ""]);
+exports.push([module.i, "._36rOFHAR9t-vVFjHFANB_4 {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n\n._23OqER_69DfzCC2DavZ8rr {\n  margin-top: 6rem;\n  font-weight: bold;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n\n._3G5ZNJMjVN5X58TJKDDAjL {\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 4rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b {\n  width: calc(33.3% - 1.4rem);\n  margin-right: 2rem;\n  margin-bottom: 2rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b:nth-child(3n) {\n  margin-right: 0;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc {\n  cursor: pointer;\n  width: 100%;\n  padding-bottom: 100%;\n  height: 0;\n  position: relative;\n  color: #ffffff;\n  border: 0.1rem solid #424242;\n  transition: all 0.3s ease;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc:hover {\n  transform: scale(1.05);\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._1Qedri1dTn1LQOchK4ElTE {\n  background: radial-gradient(100% 100% at 100% 0%, rgba(25, 26, 31, 0) 42.19%, rgba(25, 26, 31, 0.8) 100%);\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._3xr_doEwSaOrWsc39sRh2Q {\n  position: absolute;\n  bottom: 4.5rem;\n  left: 3rem;\n  font-size: 2.4rem;\n  line-height: 3.5rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._1kzJTMC70nm4Y3nsCsGoSx {\n  position: absolute;\n  bottom: 2.5rem;\n  left: 3rem;\n  font-size: 1.4rem;\n  line-height: 2.1rem;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -6735,6 +6735,7 @@ exports.locals = {
 	"cards": "_3G5ZNJMjVN5X58TJKDDAjL",
 	"card_container": "PqzTQ37RAbCTR-gGKDU9b",
 	"card_item": "_6HQxTn6Pems5bfFFUGKoc",
+	"gradient": "_1Qedri1dTn1LQOchK4ElTE",
 	"name": "_3xr_doEwSaOrWsc39sRh2Q",
 	"desc": "_1kzJTMC70nm4Y3nsCsGoSx"
 };
@@ -79180,6 +79181,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var teamMap = [{
+  name: 'Влад',
+  desc: 'Ведущий канала и просто хороший человек',
+  photo: '/images/team/vlad.png'
+}, {
+  name: 'Женя',
+  desc: 'Контентмейкер, автор статей',
+  photo: '/images/team/jenya.png'
+}, {
+  name: 'Настя',
+  desc: 'Будущий монтажер видосов',
+  photo: '/images/team/nastya.png'
+}, {
+  name: 'Влад',
+  desc: 'Ведущий канала и просто хороший человек',
+  photo: '/images/team/vlad.png'
+}, {
+  name: 'Женя',
+  desc: 'Контентмейкер, автор статей',
+  photo: '/images/team/jenya.png'
+}, {
+  name: 'Настя',
+  desc: 'Будущий монтажер видосов',
+  photo: '/images/team/nastya.png'
+}];
 
 var AboutPage = function AboutPage() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(components_common_ContentLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -79193,18 +79219,22 @@ var AboutPage = function AboutPage() {
     className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.title
   }, "\u041D\u0430\u0448\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0430:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.cards
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.card_container
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.card_item
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: "/images/vlad.png",
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.name
-  }, "\u0412\u043B\u0430\u0434"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.desc
-  }, "\u0412\u0435\u0434\u0443\u0449\u0438\u0439 \u043A\u0430\u043D\u0430\u043B\u0430 \u0438 \u043F\u0440\u043E\u0441\u0442\u043E \u0445\u043E\u0440\u043E\u0448\u0438\u0439 \u0447\u0435\u043B\u043E\u0432\u0435\u043A"))))));
+  }, teamMap.map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.card_container
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.card_item
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: item.photo,
+      alt: ""
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.gradient
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.name
+    }, item.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.desc
+    }, item.desc)));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutPage);

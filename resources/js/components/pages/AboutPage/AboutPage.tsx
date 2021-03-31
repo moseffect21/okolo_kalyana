@@ -4,6 +4,39 @@ import React from 'react'
 
 import s from './AboutPage.scss'
 
+const teamMap = [
+  {
+    name: 'Влад',
+    desc: 'Ведущий канала и просто хороший человек',
+    photo: '/images/team/vlad.png',
+  },
+  {
+    name: 'Женя',
+    desc: 'Контентмейкер, автор статей',
+    photo: '/images/team/jenya.png',
+  },
+  {
+    name: 'Настя',
+    desc: 'Будущий монтажер видосов',
+    photo: '/images/team/nastya.png',
+  },
+  {
+    name: 'Влад',
+    desc: 'Ведущий канала и просто хороший человек',
+    photo: '/images/team/vlad.png',
+  },
+  {
+    name: 'Женя',
+    desc: 'Контентмейкер, автор статей',
+    photo: '/images/team/jenya.png',
+  },
+  {
+    name: 'Настя',
+    desc: 'Будущий монтажер видосов',
+    photo: '/images/team/nastya.png',
+  },
+]
+
 const AboutPage = () => {
   return (
     <ContentLayout cols={2} title="О нас">
@@ -16,13 +49,18 @@ const AboutPage = () => {
         </div>
         <div className={s.title}>Наша команда:</div>
         <div className={s.cards}>
-          <div className={s.card_container}>
-            <div className={s.card_item}>
-              <img src="/images/vlad.png" alt="" />
-              <div className={s.name}>Влад</div>
-              <div className={s.desc}>Ведущий канала и просто хороший человек</div>
-            </div>
-          </div>
+          {teamMap.map((item: any) => {
+            return (
+              <div className={s.card_container}>
+                <div className={s.card_item}>
+                  <img src={item.photo} alt="" />
+                  <div className={s.gradient} />
+                  <div className={s.name}>{item.name}</div>
+                  <div className={s.desc}>{item.desc}</div>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </ContentLayout>
