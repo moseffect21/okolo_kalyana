@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react'
 import { VelocityTransitionGroup } from 'velocity-react'
+import { NavLink, useRouteMatch } from 'react-router-dom'
 
 import s from './CategoriesNavBar.scss'
 
@@ -10,6 +11,7 @@ const categories = [
     id: 1,
     name: 'Видео',
     icon: '/images/icons/youtube.svg',
+    slug: 'video',
     sub_categories: [
       {
         id: 5,
@@ -22,6 +24,7 @@ const categories = [
     id: 2,
     name: 'Статьи',
     icon: '/images/icons/doc.svg',
+    slug: 'article',
     sub_categories: [
       {
         id: 7,
@@ -33,17 +36,21 @@ const categories = [
   {
     id: 3,
     name: 'Новости',
+    slug: 'news',
     icon: '/images/icons/speaker.svg',
   },
   {
     id: 4,
     name: 'Конкурсы',
+    slug: 'concurs',
     icon: '/images/icons/trophy.svg',
   },
 ]
 
 const CategoriesNavBar = () => {
   const [openedMap, setOpenedMap] = useState<any>([])
+
+  const { params } = useRouteMatch<{ slug?: string }>()
 
   const triggerCateg = (id: number) => {
     setOpenedMap((prev: any) => {
@@ -60,8 +67,8 @@ const CategoriesNavBar = () => {
     <div className={s.container}>
       {categories.map((item: any) => {
         return (
-          <div className={s.item} key={item.id}>
-            <div className={s.row}>
+          <div className={`${s.item} ${params.slug === item.slug ? s.active : ''}`} key={item.id}>
+            <NavLink to={`/blog/${item.slug}`} className={s.row}>
               <img src={item.icon} alt="" className={s.icon} />
               <span className={s.text}>{item.name}</span>
               {item.sub_categories && (
@@ -69,12 +76,14 @@ const CategoriesNavBar = () => {
                   src="/images/icons/arrow_down.svg"
                   alt=""
                   className={`${s.trigger} ${openedMap.includes(item.id) ? s.active : ''}`}
-                  onClick={() => {
+                  onClick={(e: any) => {
+                    e.preventDefault()
+                    e.stopPropagation()
                     triggerCateg(item.id)
                   }}
                 />
               )}
-            </div>
+            </NavLink>
             {item.sub_categories && (
               <VelocityTransitionGroup
                 enter={{ animation: 'slideDown' }}
@@ -85,7 +94,7 @@ const CategoriesNavBar = () => {
                   <div className={s.sub_categ}>
                     {item.sub_categories.map((item2: any) => {
                       return (
-                        <div className={s.row}>
+                        <div className={s.row} key={item2.id}>
                           <span className={s.text}>{item2.name}</span>
                         </div>
                       )

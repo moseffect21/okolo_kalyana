@@ -3,8 +3,12 @@
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 1rem;
+  &.active {
+    background: #2b2b2b;
+  }
   .row {
     padding: 1rem 0 1rem 1rem;
+    min-height: 2.9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
