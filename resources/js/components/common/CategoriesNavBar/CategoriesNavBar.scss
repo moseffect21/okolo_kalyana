@@ -1,0 +1,32 @@
+.item {
+  background: #191a1f;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  .row {
+    padding: 1rem 1.5rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+
+    .icon {
+      width: 2.5rem;
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+    }
+    .text {
+      padding-left: 4rem;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #ffffff;
+    }
+    .trigger {
+      margin-left: auto;
+      width: 1.5rem;
+    }
+  }
+}

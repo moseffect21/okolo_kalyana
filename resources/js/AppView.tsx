@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import MainPage from 'components/pages/MainPage'
 import Header from 'components/common/Header'
 import MainLayout from 'components/common/MainLayout'
+import AboutPage from 'components/pages/AboutPage'
 
 const AppView = () => {
   return (
@@ -18,6 +19,9 @@ const AppView = () => {
             <Route exact path="/:slug" component={OtherProfile} /> */}
             <Route path="/" exact>
               <MainPage />
+            </Route>
+            <Route path="/about" exact>
+              <AboutPage />
             </Route>
           </Switch>
         </div>
