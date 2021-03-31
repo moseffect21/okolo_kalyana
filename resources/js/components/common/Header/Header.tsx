@@ -28,9 +28,9 @@ const Header = () => {
             </label>
           )}
         </div>
-        <div className={s.center}>
+        <NavLink to="/" className={s.center}>
           <img src="/images/logo.png" alt="" />
-        </div>
+        </NavLink>
         <div className={s.right}>
           <div className={s.nav_item}>
             <NavLink to="/blog">Блог</NavLink>

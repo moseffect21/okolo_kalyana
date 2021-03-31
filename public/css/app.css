@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(/fonts/Circe/stylesheet.css);@charset "UTF-8";
+@import url(/fonts/Roboto/stylesheet.css);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -10911,7 +10911,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Circe Regular";
+  font-family: "Roboto";
   width: 100%;
   height: 100%;
 }
@@ -10922,6 +10922,7 @@ body {
 
 * {
   outline: none;
+  box-sizing: unset;
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
@@ -10933,6 +10934,23 @@ body {
 
 .page {
   background: unset;
+}
+
+@media screen and (min-width: 769px) {
+  *::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #eaeaea;
+  }
+
+  *::-webkit-scrollbar {
+    width: 5px;
+    background-color: #eaeaea;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bebebe;
+  }
 }
 
 @media (max-width: 1400px) {

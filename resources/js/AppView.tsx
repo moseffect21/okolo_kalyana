@@ -20,7 +20,7 @@ const AppView = () => {
             <Route path="/" exact>
               <MainPage />
             </Route>
-            <Route path="/about" exact>
+            <Route path="/about/:id?" exact>
               <AboutPage />
             </Route>
           </Switch>

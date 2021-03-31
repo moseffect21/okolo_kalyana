@@ -1,12 +1,11 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('/fonts/Roboto/stylesheet.css');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import url('/fonts/Circe/stylesheet.css');
 
 html {
   font-size: 62.5%;
@@ -15,7 +14,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Circe Regular';
+  font-family: 'Roboto';
   width: 100%;
   height: 100%;
 }
@@ -25,6 +24,7 @@ body {
 
 * {
   outline: none;
+  box-sizing: unset;
   &:focus {
     outline: none;
   }
@@ -35,6 +35,25 @@ body {
 
 .page {
   background: unset;
+}
+
+@media screen and (min-width: 769px) {
+  * {
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #eaeaea;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #eaeaea;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #bebebe;
+    }
+  }
 }
 
 @media (max-width: 1400px) {

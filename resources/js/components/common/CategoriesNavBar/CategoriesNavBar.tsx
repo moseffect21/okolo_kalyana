@@ -1,36 +1,102 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState } from 'react'
+import { VelocityTransitionGroup } from 'velocity-react'
 
 import s from './CategoriesNavBar.scss'
 
+const categories = [
+  {
+    id: 1,
+    name: 'Видео',
+    icon: '/images/icons/youtube.svg',
+    sub_categories: [
+      {
+        id: 5,
+        name: 'Новичкам',
+      },
+      { id: 6, name: 'Миксология' },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Статьи',
+    icon: '/images/icons/doc.svg',
+    sub_categories: [
+      {
+        id: 7,
+        name: 'Новичкам',
+      },
+      { id: 8, name: 'Миксология' },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Новости',
+    icon: '/images/icons/speaker.svg',
+  },
+  {
+    id: 4,
+    name: 'Конкурсы',
+    icon: '/images/icons/trophy.svg',
+  },
+]
+
 const CategoriesNavBar = () => {
+  const [openedMap, setOpenedMap] = useState<any>([])
+
+  const triggerCateg = (id: number) => {
+    setOpenedMap((prev: any) => {
+      const newArr = prev.slice(0)
+      if (newArr.includes(id)) {
+        return newArr.filter((item: number) => item !== id)
+      }
+      newArr.push(id)
+      return newArr
+    })
+  }
+
   return (
     <div className={s.container}>
-      <div className={s.item}>
-        <div className={s.row}>
-          <img src="/images/icons/youtube.svg" alt="" className={s.icon} />
-          <span className={s.text}>Видео</span>
-          <img src="/images/icons/arrow_down.svg" alt="" className={s.trigger} />
-        </div>
-      </div>
-      <div className={s.item}>
-        <div className={s.row}>
-          <img src="/images/icons/doc.svg" alt="" className={s.icon} />
-          <span className={s.text}>Статьи</span>
-          <img src="/images/icons/arrow_down.svg" alt="" className={s.trigger} />
-        </div>
-      </div>
-      <div className={s.item}>
-        <div className={s.row}>
-          <img src="/images/icons/speaker.svg" alt="" className={s.icon} />
-          <span className={s.text}>Новости</span>
-        </div>
-      </div>
-      <div className={s.item}>
-        <div className={s.row}>
-          <img src="/images/icons/trophy.svg" alt="" className={s.icon} />
-          <span className={s.text}>Конкурсы</span>
-        </div>
-      </div>
+      {categories.map((item: any) => {
+        return (
+          <div className={s.item} key={item.id}>
+            <div className={s.row}>
+              <img src={item.icon} alt="" className={s.icon} />
+              <span className={s.text}>{item.name}</span>
+              {item.sub_categories && (
+                <img
+                  src="/images/icons/arrow_down.svg"
+                  alt=""
+                  className={`${s.trigger} ${openedMap.includes(item.id) ? s.active : ''}`}
+                  onClick={() => {
+                    triggerCateg(item.id)
+                  }}
+                />
+              )}
+            </div>
+            {item.sub_categories && (
+              <VelocityTransitionGroup
+                enter={{ animation: 'slideDown' }}
+                leave={{ animation: 'slideUp' }}
+                duration={500}
+              >
+                {openedMap.includes(item.id) && (
+                  <div className={s.sub_categ}>
+                    {item.sub_categories.map((item2: any) => {
+                      return (
+                        <div className={s.row}>
+                          <span className={s.text}>{item2.name}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+              </VelocityTransitionGroup>
+            )}
+          </div>
+        )
+      })}
     </div>
   )
 }

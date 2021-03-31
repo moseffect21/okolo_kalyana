@@ -1,9 +1,9 @@
 .header_container {
   background: rgba(0, 0, 0, 0.3);
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 6rem;
 
   .content {
-    max-width: 136rem;
+    max-width: 132rem;
     display: flex;
     height: 5rem;
     align-items: center;
@@ -16,7 +16,9 @@
     .center {
       width: 20%;
       img {
+        margin: 0 auto;
         width: 20rem;
+        display: block;
       }
     }
     .left {
