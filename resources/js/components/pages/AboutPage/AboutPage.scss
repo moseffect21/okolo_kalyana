@@ -1,0 +1,43 @@
+.info {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #ffffff;
+}
+.title {
+  margin-top: 6rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+
+  .card_container {
+    width: 33.3%;
+    .card_item {
+      width: 34rem;
+      height: 34rem;
+      position: relative;
+      color: #ffffff;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .name {
+        position: absolute;
+        bottom: 4.5rem;
+        left: 3rem;
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+      }
+      .desc {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 3rem;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+      }
+    }
+  }
+}

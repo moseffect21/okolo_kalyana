@@ -10,7 +10,7 @@ const MainLayout = ({ children }: Props): React.ReactElement => {
   return (
     <section className={s.layout}>
       <div className={s.background_block}>
-        <img src="/images/main_background.png" alt="" />
+        <img src="/images/main_background.jpg" alt="" />
         <div className={s.shadow} />
         <div className={s.gradient} />
       </div>

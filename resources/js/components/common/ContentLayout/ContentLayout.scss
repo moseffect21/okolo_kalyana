@@ -1,5 +1,30 @@
 .content_layout {
-  display: flex;
+  width: calc(100% - 12rem);
+  padding: 0 6rem;
+  margin: 0 auto;
+
+  .headline {
+    font-weight: bold;
+    font-size: 14.4rem;
+    line-height: 16.9rem;
+    color: #ffffff;
+    margin-top: 3rem;
+  }
+
+  .cols_container {
+    display: flex;
+    margin-top: 6rem;
+  }
+
+  .two {
+    > div:first-child {
+      width: 19.5rem;
+    }
+    > div:last-child {
+      width: calc(100% - 19.5rem - 6rem);
+      margin-left: 6rem;
+    }
+  }
   .three {
   }
 }
