@@ -65,6 +65,35 @@
           color: #ffffff;
           font-size: 1.8rem;
           line-height: 2.1rem;
+          position: relative;
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            width: 0;
+            height: 0.2rem;
+            margin: 0.5rem 0 0;
+            transition: 0.3s;
+            // transition-duration: 0.75s;
+            opacity: 0;
+            background-color: #ffffff;
+          }
+          &:before {
+            left: 50%;
+          }
+          &:after {
+            right: 50%;
+          }
+
+          &:hover,
+          &.active {
+            &:before,
+            &:after {
+              width: 50%;
+              opacity: 1;
+            }
+          }
         }
       }
     }

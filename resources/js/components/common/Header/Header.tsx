@@ -3,6 +3,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { VelocityTransitionGroup } from 'velocity-react'
 
 import s from './Header.scss'
 
@@ -22,24 +23,36 @@ const Header = () => {
           >
             <img src="/images/icons/scope.svg" alt="" />
           </div>
-          {showSearch && (
-            <label className={s.search_block}>
-              <input type="text" placeholder="Поиск" />
-            </label>
-          )}
+          <VelocityTransitionGroup
+            enter={{ animation: 'fadeIn' }}
+            leave={{ animation: 'fadeOut' }}
+            duration={500}
+          >
+            {showSearch && (
+              <div>
+                <label className={s.search_block}>
+                  <input type="text" placeholder="Поиск" />
+                </label>
+              </div>
+            )}
+          </VelocityTransitionGroup>
         </div>
         <NavLink to="/" className={s.center}>
           <img src="/images/logo.png" alt="" />
         </NavLink>
         <div className={s.right}>
           <div className={s.nav_item}>
-            <NavLink to="/blog">Блог</NavLink>
+            <NavLink to="/blog" activeClassName={s.active}>
+              Блог
+            </NavLink>
           </div>
           <div className={s.nav_item}>
-            <NavLink to="/about">О нас</NavLink>
+            <NavLink to="/about" activeClassName={s.active}>
+              О нас
+            </NavLink>
           </div>
           <div className={s.nav_item}>
-            <NavLink to="/blog">Войти</NavLink>
+            <NavLink to="/sign">Войти</NavLink>
           </div>
         </div>
       </div>

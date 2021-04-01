@@ -5,6 +5,7 @@ import Header from 'components/common/Header'
 import MainLayout from 'components/common/MainLayout'
 import AboutPage from 'components/pages/AboutPage'
 import BlogCategoryPage from 'components/pages/BlogCategoryPage'
+import BlogArticlePage from 'components/pages/BlogArticlePage'
 
 const AppView = () => {
   return (
@@ -26,6 +27,9 @@ const AppView = () => {
             </Route>
             <Route path="/blog/:slug" exact>
               <BlogCategoryPage />
+            </Route>
+            <Route path="/blog/:slug/:id" exact>
+              <BlogArticlePage />
             </Route>
             <Route path="/about/:id?" exact>
               <AboutPage />

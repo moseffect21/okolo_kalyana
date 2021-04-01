@@ -20,6 +20,7 @@
   .two {
     > div:first-child {
       width: 19.5rem;
+      flex-shrink: 0;
     }
     > div:last-child {
       width: calc(100% - 19.5rem - 6rem);
@@ -27,5 +28,19 @@
     }
   }
   .three {
+    justify-content: space-between;
+    > div:first-child {
+      width: 19.5rem;
+      padding-right: 6rem;
+      flex-shrink: 0;
+    }
+    > div:nth-child(2) {
+      width: 100%;
+    }
+    > div:last-child {
+      width: 34.5rem;
+      padding-left: 6rem;
+      flex-shrink: 0;
+    }
   }
 }

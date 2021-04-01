@@ -1,0 +1,73 @@
+.container {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.2rem solid #2a444e;
+  .title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #ffffff;
+  }
+  .input_block {
+    margin-top: 2rem;
+    .comment_input {
+      display: flex;
+      width: calc(100% - 5rem);
+      background: #2a444e;
+      border-radius: 1rem;
+      padding: 2.5rem;
+      img {
+        width: 3.4rem;
+        height: 3.4rem;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin-right: 2rem;
+        border-radius: 50%;
+      }
+      input {
+        border: 0;
+        background: transparent;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        color: #ffffff;
+
+        &::placeholder {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .comments_items {
+    margin-top: 4rem;
+    .item {
+      background: #232b2e;
+      border-radius: 1rem;
+      padding: 2.5rem 2.5rem 3rem 2.5rem;
+      margin-top: 1.5rem;
+
+      .top_block {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 3.4rem;
+          height: 3.4rem;
+          object-fit: cover;
+          flex-shrink: 0;
+          margin-right: 2rem;
+          border-radius: 50%;
+        }
+        .nickname {
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+          color: #ffffff;
+        }
+      }
+      .text {
+        margin-top: 2.5rem;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #ffffff;
+      }
+    }
+  }
+}

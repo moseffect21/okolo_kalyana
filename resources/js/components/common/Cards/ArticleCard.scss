@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+  display: block;
 
   &.short {
     width: calc(50% - 1rem);
@@ -41,33 +42,36 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+  .anim {
+    transition: 0.5s;
+    transform: translateY(100%);
+    position: absolute;
+    left: 3rem;
+    bottom: 10rem;
+    width: calc(100% - 6rem);
+    height: auto;
+  }
   .title {
     font-size: 2.4rem;
     line-height: 2.8rem;
     color: #ffffff;
-    position: absolute;
-    left: 3rem;
-    width: calc(100% - 6rem);
+    transition: 0.5s;
+    transform: translateY(-100%);
     text-align: center;
-    bottom: 6rem;
-    transition: all 0.3s ease;
   }
   .description {
+    text-align: center;
     display: -webkit-box;
-    max-width: calc(100% - 6rem);
+    width: 100%;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    position: absolute;
-    left: 3rem;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: opacity 0.3s ease;
-    opacity: 0;
+    margin-top: 2rem;
     font-size: 1.6rem;
     line-height: 1.9rem;
-
     color: #ffffff;
+    transition: 0.5s;
+    transform: translateY(200%);
   }
   .info {
     position: absolute;
@@ -81,13 +85,14 @@
     .shadow {
       opacity: 1;
     }
+    .anim {
+      transform: translateY(0);
+    }
     .title {
-      transform: translateY(50%);
-      bottom: 37rem;
+      transform: translateY(0);
     }
     .description {
-      transition-delay: 0.3s;
-      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
