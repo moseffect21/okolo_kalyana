@@ -6,7 +6,6 @@ import React from 'react'
 import { useRouteMatch } from 'react-router-dom'
 
 import ArticleContent from './ArticleContent'
-import s from './BlogArticlePage.scss'
 
 const offerData = [
   {

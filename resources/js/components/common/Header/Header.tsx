@@ -14,7 +14,7 @@ const Header = () => {
   const location = useLocation()
   return (
     <>
-      <div className={s.header_container}>
+      <div className={`${s.header_container} ${location.pathname === '/' ? s.fixed : ''}`}>
         <div className={s.content}>
           <div className={s.left}>
             <div
