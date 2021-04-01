@@ -7071,7 +7071,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._3Ofg1E1Skb9imnF12XsZrk {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n}\n._3Ofg1E1Skb9imnF12XsZrk ._2dt_N78VmTUX0TOW4Yqj9U {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3Ofg1E1Skb9imnF12XsZrk ._3W2M7UZzAJY5TypXZTpqBY {\n  position: absolute;\n  top: 80%;\n  left: 50%;\n  width: 70%;\n  max-width: 110rem;\n  transform: translateX(-50%);\n}\n._3Ofg1E1Skb9imnF12XsZrk ._1unX5CYRZtri9N-6J156lr {\n  width: 100%;\n  height: 70%;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);\n}\n._3Ofg1E1Skb9imnF12XsZrk ._2kwGAlJV0eykwPErOL1wgn {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.3);\n}", ""]);
+exports.push([module.i, "._3Ofg1E1Skb9imnF12XsZrk {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n}\n._3Ofg1E1Skb9imnF12XsZrk ._2dt_N78VmTUX0TOW4Yqj9U {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3Ofg1E1Skb9imnF12XsZrk ._3W2M7UZzAJY5TypXZTpqBY {\n  position: absolute;\n  top: 70%;\n  left: 50%;\n  width: 70%;\n  max-width: 110rem;\n  transform: translateX(-50%);\n}\n._3Ofg1E1Skb9imnF12XsZrk ._1unX5CYRZtri9N-6J156lr {\n  width: 100%;\n  height: 70%;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);\n}\n._3Ofg1E1Skb9imnF12XsZrk ._2kwGAlJV0eykwPErOL1wgn {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.3);\n}", ""]);
 
 // exports
 exports.locals = {
