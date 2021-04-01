@@ -1,0 +1,133 @@
+.close_button {
+  position: absolute;
+  background: #343434;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0;
+  top: 3rem;
+  right: 3rem;
+  padding: 0;
+  img {
+    width: 1.4rem;
+  }
+}
+
+.auth_content {
+  padding: 3rem 0;
+
+  .title {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #2f2f2f;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 130%;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .buttons_container {
+    width: 29rem;
+    margin: 4rem auto 0 auto;
+
+    .button_item {
+      width: 100%;
+      margin-top: 1.5rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      a,
+      button {
+        border: none;
+        outline: none;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        height: 5.6rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        border-radius: 1.5rem;
+        color: #ffffff;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        .img_container {
+          width: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 2.3rem;
+          top: 50%;
+          transform: translateY(-50%);
+
+          img {
+            display: block;
+          }
+        }
+
+        &.vk {
+          background: #5376a4;
+        }
+
+        &.fb {
+          background: #405896;
+        }
+
+        &.gPlus {
+          background: #f2553c;
+        }
+
+        &.apple {
+          background: #000000;
+        }
+      }
+    }
+  }
+
+  .term {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+    color: #ffffff;
+
+    a {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner_content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close_button_mobile {
+    position: absolute;
+    top: 3.5rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+  }
+}
