@@ -94957,7 +94957,7 @@ var Header = function Header() {
     to: "/",
     className: _Header_scss__WEBPACK_IMPORTED_MODULE_4___default.a.center
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/images/logo.png",
+    src: "/images/logo.svg",
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _Header_scss__WEBPACK_IMPORTED_MODULE_4___default.a.right
@@ -96404,7 +96404,7 @@ var FirstBlock = function FirstBlock() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _FirstBlock_scss__WEBPACK_IMPORTED_MODULE_1___default.a.gradient
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/images/logo.png",
+    src: "/images/logo.svg",
     alt: "",
     className: _FirstBlock_scss__WEBPACK_IMPORTED_MODULE_1___default.a.logo
   }));

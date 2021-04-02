@@ -8,7 +8,7 @@ const FirstBlock = () => {
       <img src="/images/main_background.jpg" alt="" className={s.back_img} />
       <div className={s.shadow} />
       <div className={s.gradient} />
-      <img src="/images/logo.png" alt="" className={s.logo} />
+      <img src="/images/logo.svg" alt="" className={s.logo} />
     </div>
   )
 }

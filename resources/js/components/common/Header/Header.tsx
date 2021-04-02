@@ -42,7 +42,7 @@ const Header = () => {
             </VelocityTransitionGroup>
           </div>
           <NavLink to="/" className={s.center}>
-            <img src="/images/logo.png" alt="" />
+            <img src="/images/logo.svg" alt="" />
           </NavLink>
           <div className={s.right}>
             <div className={s.nav_item}>
