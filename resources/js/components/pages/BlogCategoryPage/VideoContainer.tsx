@@ -2,33 +2,15 @@
 /* eslint-disable no-plusplus */
 import React from 'react'
 import { VideoCard } from 'components/common/Cards'
+import { SortVideo } from 'components/common/Sorting'
 
 import s from './VideoContainer.scss'
-
-const sortVideo = (videoArr: any) => {
-  const newArr: any = []
-  let c = 0
-
-  videoArr.map((item: any, i: number) => {
-    if (i === 0 || i % 3 === 0) {
-      newArr[c] = []
-      newArr[c][0] = item
-    } else if (i === 1 || i % 4 === 0) {
-      newArr[c][1] = []
-      newArr[c][1][0] = item
-    } else if (newArr[c][1] && newArr[c][1].length === 1) {
-      newArr[c][1][1] = item
-      c++
-    }
-  })
-  return newArr
-}
 
 type Props = {
   data: any
 }
 const VideoContainer = ({ data }: Props) => {
-  const videoArr = sortVideo(data)
+  const videoArr = SortVideo(data)
   return (
     <div className={s.video_container}>
       {videoArr.map((item: any, i: number) => {

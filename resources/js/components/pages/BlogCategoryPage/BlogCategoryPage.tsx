@@ -3,7 +3,7 @@
 import React from 'react'
 import ContentLayout from 'components/common/ContentLayout'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
-import { useRouteMatch } from 'react-router'
+import { useRouteMatch } from 'react-router-dom'
 
 import { videoMap } from './VideoData'
 import VideoContainer from './VideoContainer'

@@ -1,6 +1,7 @@
 /* eslint-disable no-plusplus */
 import { ArticleCard } from 'components/common/Cards'
 import React from 'react'
+import { SortArticles } from 'components/common/Sorting'
 
 import s from './ArticleContainer.scss'
 
@@ -8,23 +9,8 @@ type Props = {
   data: any
 }
 
-const sortArticles = (arr: any) => {
-  const newArr: any = []
-  let c = 0
-  const j = 0
-
-  arr.map((item: any, i: number) => {
-    if (!newArr[c]) newArr[c] = []
-    newArr[c].push(item)
-    if (i !== 0 && (i + 1) % 4 === 0) {
-      c++
-    }
-  })
-  return newArr
-}
-
 const ArticleContainer = ({ data }: Props) => {
-  const articles = sortArticles(data)
+  const articles = SortArticles(data)
   return (
     <div className={s.article_container}>
       {articles.map((item: any, i: number) => {
