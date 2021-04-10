@@ -29,7 +29,6 @@ class Login extends Controller
             $NewUser->nickname="id".User::count();
             $NewUser->password=Hash::make($userInfo->getId());
             $NewUser->vk_id=$userInfo->getId();
-            $NewUser->about='';
             $NewUser->save();
             
          
@@ -40,7 +39,7 @@ class Login extends Controller
         // return $NewUser;
         Auth::login($NewUser);
         
-        return redirect('/links');
+        return redirect('/');
         // return var_dump(json_encode(  $user->getName()));
     }
     public function authGOOGLE(Request $request){
@@ -55,8 +54,7 @@ class Login extends Controller
             $NewUser->avatar= $userInfo->getAvatar();
             $NewUser->nickname="id".User::count();
             $NewUser->password=Hash::make($userInfo->getId());
-            $NewUser->vk_id=$userInfo->getId();
-            $NewUser->about='';
+            $NewUser->google_id=$userInfo->getId();
             $NewUser->save();
          
         }else{
@@ -66,7 +64,7 @@ class Login extends Controller
         // return $NewUser;
         Auth::login($NewUser);
         
-        return redirect('/links');
+        return redirect('/');
         // return var_dump(json_encode(  $user->getName()));
     }
 
@@ -82,8 +80,7 @@ class Login extends Controller
             $NewUser->avatar= $userInfo->getAvatar();
             $NewUser->nickname="id".User::count();
             $NewUser->password=Hash::make($userInfo->getId());
-            $NewUser->vk_id=$userInfo->getId();
-            $NewUser->about='';
+            $NewUser->fb_id=$userInfo->getId();
             $NewUser->save();
          
         }else{
@@ -93,7 +90,7 @@ class Login extends Controller
         // return $NewUser;
         Auth::login($NewUser);
         
-        return redirect('/links');
+        return redirect('/');
         // return var_dump(json_encode(  $user->getName()));
     }
     

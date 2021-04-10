@@ -26,25 +26,27 @@ Route::group(['prefix' => 'admin'], function () {
 // });
 
 Route::group(['prefix' => '/api/v1'], function () {
+    
+    Route::get('/login-vk', function () {
+        return Socialite::driver('vkontakte')->redirect();
+    });
+    Route::get('/login-fb', function () {
+        return Socialite::driver('facebook')->redirect();
+    });
+    Route::get('/login-google', function () {
+        return Socialite::driver('google')->redirect();
+    });
+    Route::get('/auth-vk',[Login::class, 'authVK']);
+    Route::get('/auth-fb',[Login::class, 'authFB']);
+    Route::get('/auth-google',[Login::class, 'authGOOGLE']);
 
-    Route::get('/{nickname}',[Links::class, 'getNickname']);
-    Route::get('/categories',[Links::class, 'getCategories']);
-    Route::get('/category/{id}',[Links::class, 'getCategory']);
-    Route::get('/article/{id}',[Links::class, 'gelArticle']);
-    Route::post('/article/{id}/comment ',[Links::class, 'pushComment']);
+    Route::get('/{nickname}',[GetRequest::class, 'getNickname']);
+    Route::get('/categories',[GetRequest::class, 'getCategories']);
+    Route::get('/category/{id}',[GetRequest::class, 'getCategory']);
+    Route::get('/article/{id}',[GetRequest::class, 'gelArticle']);
+    Route::post('/article/{id}/comment ',[GetRequest::class, 'pushComment']);
 
-    // Route::get('/login-vk', function () {
-    //     return Socialite::driver('vkontakte')->redirect();
-    // });
-    // Route::get('/login-fb', function () {
-    //     return Socialite::driver('facebook')->redirect();
-    // });
-    // Route::get('/login-google', function () {
-    //     return Socialite::driver('google')->redirect();
-    // });
-    // Route::get('/auth-vk',[Login::class, 'authVK']);
-    // Route::get('/auth-fb',[Login::class, 'authFB']);
-    // Route::get('/auth-google',[Login::class, 'authGOOGLE']);
+  
 
     // Route::group(['prefix' => '/user'], function () {
     //     Route::get('/{nickname}',[Profile::class, 'getUser']);

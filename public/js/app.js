@@ -96950,7 +96950,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp2\htdocs\okolo_kalyana\resources\js\index.tsx */"./resources/js/index.tsx");
+module.exports = __webpack_require__(/*! C:\Новая папка\okolo_kalyana\resources\js\index.tsx */"./resources/js/index.tsx");
 
 
 /***/ })
