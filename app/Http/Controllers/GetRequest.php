@@ -26,7 +26,7 @@ class GetRequest extends Controller
     //Получение всех категорий
     public function getCategories(Request $request)
     {   
-        return response()->json(categories::where('parent',0)->get(), 200); 
+        return response()->json(categories::where('parent',"0")->get(), 200); 
     }
 
     public function getCategory(Request $request,$id)
