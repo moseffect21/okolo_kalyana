@@ -94,7 +94,7 @@ const CategoriesNavBar = () => {
                   className={s.icon}
                 />
                 <span className={s.text}>{item.name}</span>
-                {item.sub_categories && (
+                {item.child_categories && item.child_categories.length ? (
                   <img
                     src="/images/icons/arrow_down.svg"
                     alt=""
@@ -105,9 +105,11 @@ const CategoriesNavBar = () => {
                       triggerCateg(item.id)
                     }}
                   />
+                ) : (
+                  <></>
                 )}
               </NavLink>
-              {item.sub_categories && (
+              {item.child_categories && item.child_categories.length ? (
                 <VelocityTransitionGroup
                   enter={{ animation: 'slideDown' }}
                   leave={{ animation: 'slideUp' }}
@@ -115,16 +117,18 @@ const CategoriesNavBar = () => {
                 >
                   {openedMap.includes(item.id) && (
                     <div className={s.sub_categ}>
-                      {item.sub_categories.map((item2: any) => {
+                      {item.child_categories.map((item2: any) => {
                         return (
-                          <div className={s.row} key={item2.id}>
+                          <NavLink to={`/blog/${item2.slug}`} className={s.row} key={item2.id}>
                             <span className={s.text}>{item2.name}</span>
-                          </div>
+                          </NavLink>
                         )
                       })}
                     </div>
                   )}
                 </VelocityTransitionGroup>
+              ) : (
+                <></>
               )}
             </div>
           )

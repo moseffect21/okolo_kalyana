@@ -6,21 +6,22 @@ import s from './ArticleCard.scss'
 type Props = {
   item: any
   type?: 'long' | 'short' | 'high'
+  categSlug: string
 }
-const ArticleCard = ({ item, type }: Props) => {
+const ArticleCard = ({ item, type, categSlug }: Props) => {
   return (
     <NavLink
-      to="/blog/article/1"
+      to={`/blog/${categSlug}/${item.id}`}
       className={`${s.card} ${type === 'long' ? s.long : ''} ${type === 'short' ? s.short : ''} ${
         type === 'high' ? s.high : ''
       }`}
     >
-      <img src={item.photo} alt="" className={s.back_img} />
+      <img src={item.preview_img} alt="" className={s.back_img} />
       <div className={s.gradient} />
       <div className={s.shadow} />
       <div className={s.anim}>
-        <div className={s.title}>{item.name}</div>
-        <div className={s.description}>Не повторять дома</div>
+        <div className={s.title}>{item.title}</div>
+        <div className={s.description}>{item.preview_text}</div>
       </div>
       <div className={s.info}>
         <div className={s.date}>10 августа 2018</div>

@@ -26,14 +26,19 @@ class GetRequest extends Controller
     //Получение всех категорий
     public function getCategories(Request $request)
     {   
-        return response()->json(categories::where('parent',"0")->get(), 200); 
+        $parentCateg = categories::where('parent',"0")->get();
+
+        foreach($parentCateg as $item) {
+            $item['child_categories'] = categories::where('parent',$item['id'])->get();
+        }
+        return response()->json($parentCateg, 200); 
     }
 
-    public function getCategory(Request $request,$id)
+    public function getCategory(Request $request,$slug)
     {
-        $categoria =categories::where('id',$id)->first();
-        $articl = articles::where('id_categories',$id)->get();
-        return response()->json(['категория'=>$categoria,'статьи'=>$articl], 200); 
+        $category = categories::where('slug',$slug)->first();
+        $category['articles'] = articles::where('id_categories',$category['id'])->get();
+        return response()->json($category, 200); 
     }
     //  запрос на получение статьи/видео
     public function gelArticle(Request $request,$id)

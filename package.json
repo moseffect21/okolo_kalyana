@@ -63,6 +63,7 @@
     "lodash": "^4.17.19",
     "net": "^1.0.2",
     "react": "^16.2.0",
+    "react-activity": "^2.0.1",
     "react-beautiful-dnd": "^13.0.0",
     "react-customizable-progressbar": "^1.0.2",
     "react-dom": "^16.2.0",
