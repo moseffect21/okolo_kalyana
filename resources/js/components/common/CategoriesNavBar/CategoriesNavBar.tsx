@@ -76,63 +76,68 @@ const CategoriesNavBar = () => {
 
   return (
     <div className={s.container}>
-      {!isLoading &&
-        categories &&
-        categories.map((item: any) => {
-          return (
-            <div className={`${s.item} ${params.slug === item.slug ? s.active : ''}`} key={item.id}>
-              <NavLink to={`/blog/${item.slug}`} className={s.row}>
-                <img
-                  src={
-                    item.slug === 'video'
-                      ? '/images/icons/youtube.svg'
-                      : item.slug === 'articles'
-                      ? '/images/icons/doc.svg'
-                      : '/images/icons/speaker.svg'
-                  }
-                  alt=""
-                  className={s.icon}
-                />
-                <span className={s.text}>{item.name}</span>
-                {item.child_categories && item.child_categories.length ? (
+      <div className={s.inner_container}>
+        {!isLoading &&
+          categories &&
+          categories.map((item: any) => {
+            return (
+              <div
+                className={`${s.item} ${params.slug === item.slug ? s.active : ''}`}
+                key={item.id}
+              >
+                <NavLink to={`/blog/${item.slug}`} className={s.row}>
                   <img
-                    src="/images/icons/arrow_down.svg"
+                    src={
+                      item.slug === 'video'
+                        ? '/images/icons/youtube.svg'
+                        : item.slug === 'articles'
+                        ? '/images/icons/doc.svg'
+                        : '/images/icons/speaker.svg'
+                    }
                     alt=""
-                    className={`${s.trigger} ${openedMap.includes(item.id) ? s.active : ''}`}
-                    onClick={(e: any) => {
-                      e.preventDefault()
-                      e.stopPropagation()
-                      triggerCateg(item.id)
-                    }}
+                    className={s.icon}
                   />
+                  <span className={s.text}>{item.name}</span>
+                  {item.child_categories && item.child_categories.length ? (
+                    <img
+                      src="/images/icons/arrow_down.svg"
+                      alt=""
+                      className={`${s.trigger} ${openedMap.includes(item.id) ? s.active : ''}`}
+                      onClick={(e: any) => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                        triggerCateg(item.id)
+                      }}
+                    />
+                  ) : (
+                    <></>
+                  )}
+                </NavLink>
+                {item.child_categories && item.child_categories.length ? (
+                  <VelocityTransitionGroup
+                    enter={{ animation: 'slideDown' }}
+                    leave={{ animation: 'slideUp' }}
+                    duration={500}
+                  >
+                    {openedMap.includes(item.id) && (
+                      <div className={s.sub_categ}>
+                        {item.child_categories.map((item2: any) => {
+                          return (
+                            <NavLink to={`/blog/${item2.slug}`} className={s.row} key={item2.id}>
+                              <span className={s.text}>{item2.name}</span>
+                            </NavLink>
+                          )
+                        })}
+                      </div>
+                    )}
+                  </VelocityTransitionGroup>
                 ) : (
                   <></>
                 )}
-              </NavLink>
-              {item.child_categories && item.child_categories.length ? (
-                <VelocityTransitionGroup
-                  enter={{ animation: 'slideDown' }}
-                  leave={{ animation: 'slideUp' }}
-                  duration={500}
-                >
-                  {openedMap.includes(item.id) && (
-                    <div className={s.sub_categ}>
-                      {item.child_categories.map((item2: any) => {
-                        return (
-                          <NavLink to={`/blog/${item2.slug}`} className={s.row} key={item2.id}>
-                            <span className={s.text}>{item2.name}</span>
-                          </NavLink>
-                        )
-                      })}
-                    </div>
-                  )}
-                </VelocityTransitionGroup>
-              ) : (
-                <></>
-              )}
-            </div>
-          )
-        })}
+              </div>
+            )
+          })}
+      </div>
     </div>
   )
 }

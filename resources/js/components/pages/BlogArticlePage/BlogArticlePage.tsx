@@ -6,6 +6,7 @@ import React from 'react'
 import { useRouteMatch } from 'react-router-dom'
 
 import ArticleContent from './ArticleContent'
+import useArticle from './useArticle'
 
 const offerData = [
   {
@@ -32,10 +33,11 @@ const BlogArticlePage = () => {
   const { params } = useRouteMatch<{ slug?: string; id?: string }>()
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'article'
+  const { data, isLoading } = useArticle(params.id ? params.id : '')
   return (
     <ContentLayout cols={3} title={isVideo ? 'Видео' : isArticle ? 'Статьи' : 'Блог'}>
       <CategoriesNavBar />
-      <ArticleContent />
+      <ArticleContent isLoading={isLoading} article={data ? data.data : []} />
       <OfferBar data={offerData} />
     </ContentLayout>
   )

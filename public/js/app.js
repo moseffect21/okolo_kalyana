@@ -204,6 +204,18 @@ function _setPrototypeOf(o, p) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/@react-hook/latest/dist/module/index.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@react-hook/latest/dist/module/index.js ***!
@@ -6627,19 +6639,19 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._3muCUAFVbsoRMqd3lnpG0v {\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  cursor: pointer;\n  display: block;\n}\n._3muCUAFVbsoRMqd3lnpG0v._3j9xYmX2U84xL5RIa7rHN {\n  width: calc(50% - 1rem);\n}\n._3muCUAFVbsoRMqd3lnpG0v ._3oYZsVj6z0cbt0yn1iXHDG {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._3muCUAFVbsoRMqd3lnpG0v ._1O9PA22xQ1xI9t0llM-KlF {\n  position: absolute;\n  height: 70%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  background: linear-gradient(180deg, rgba(25, 26, 31, 0) 0%, #191a1f 100%);\n}\n._3muCUAFVbsoRMqd3lnpG0v .xnkySiAxow5PyX_0hIWdM {\n  background: rgba(25, 26, 31, 0.7);\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n._3muCUAFVbsoRMqd3lnpG0v .CkF7NzGOcCQUYQ6aDWzWj {\n  transition: 0.5s;\n  transform: translateY(100%);\n  position: absolute;\n  left: 3rem;\n  bottom: 10rem;\n  width: calc(100% - 6rem);\n  height: auto;\n}\n._3muCUAFVbsoRMqd3lnpG0v ._3k2JRyXTGXnBH0WMXGEt3p {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n  transition: 0.5s;\n  transform: translateY(-100%);\n  text-align: center;\n}\n._3muCUAFVbsoRMqd3lnpG0v ._1tyhPfGjhmJE2fhBjGB9BB {\n  text-align: center;\n  display: -webkit-box;\n  width: 100%;\n  -webkit-line-clamp: 4;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  margin-top: 2rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n  transition: 0.5s;\n  transform: translateY(200%);\n}\n._3muCUAFVbsoRMqd3lnpG0v ._3j3oKTvhhlRERKuq6MPNRE {\n  position: absolute;\n  bottom: 3rem;\n  left: 3rem;\n  font-size: 1.4rem;\n  line-height: 1.6rem;\n  color: #ffffff;\n}\n._3muCUAFVbsoRMqd3lnpG0v:hover .xnkySiAxow5PyX_0hIWdM {\n  opacity: 1;\n}\n._3muCUAFVbsoRMqd3lnpG0v:hover .CkF7NzGOcCQUYQ6aDWzWj {\n  transform: translateY(0);\n}\n._3muCUAFVbsoRMqd3lnpG0v:hover ._3k2JRyXTGXnBH0WMXGEt3p {\n  transform: translateY(0);\n}\n._3muCUAFVbsoRMqd3lnpG0v:hover ._1tyhPfGjhmJE2fhBjGB9BB {\n  transform: translateY(0);\n}", ""]);
+exports.push([module.i, ".HR-OBqiJEmpEWjUxYrq9O {\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  cursor: pointer;\n  display: block;\n}\n.HR-OBqiJEmpEWjUxYrq9O._2UVCSG3SNmM0E8a8bGRK9r {\n  width: calc(50% - 1rem);\n}\n.HR-OBqiJEmpEWjUxYrq9O ._2BJqPC_1yrJICSAljQHr3v {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.HR-OBqiJEmpEWjUxYrq9O ._3-XRLBSMIZL-DxsgRXecs {\n  position: absolute;\n  height: 70%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  background: linear-gradient(180deg, rgba(25, 26, 31, 0) 0%, #191a1f 100%);\n}\n.HR-OBqiJEmpEWjUxYrq9O ._1A-xRUti7UU7-y3ph3kcwr {\n  background: rgba(25, 26, 31, 0.7);\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n.HR-OBqiJEmpEWjUxYrq9O ._2xGQvee0UyhSF5M6lfjaRR {\n  transition: 0.5s;\n  transform: translateY(100%);\n  position: absolute;\n  left: 3rem;\n  bottom: 10rem;\n  width: calc(100% - 6rem);\n  height: auto;\n}\n.HR-OBqiJEmpEWjUxYrq9O .tPxWOqoVekqEHHEb2U5NP {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n  transition: 0.5s;\n  transform: translateY(-100%);\n  text-align: center;\n}\n.HR-OBqiJEmpEWjUxYrq9O ._3f43T-tJi7D9sKnZhU8xvl {\n  text-align: center;\n  display: -webkit-box;\n  width: 100%;\n  -webkit-line-clamp: 4;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  margin-top: 2rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n  transition: 0.5s;\n  transform: translateY(200%);\n}\n.HR-OBqiJEmpEWjUxYrq9O ._277KDnVlZb7HNldU6mlpKA {\n  position: absolute;\n  bottom: 3rem;\n  left: 3rem;\n  font-size: 1.4rem;\n  line-height: 1.6rem;\n  color: #ffffff;\n}\n.HR-OBqiJEmpEWjUxYrq9O:hover ._1A-xRUti7UU7-y3ph3kcwr {\n  opacity: 1;\n}\n.HR-OBqiJEmpEWjUxYrq9O:hover ._2xGQvee0UyhSF5M6lfjaRR {\n  transform: translateY(0);\n}\n.HR-OBqiJEmpEWjUxYrq9O:hover .tPxWOqoVekqEHHEb2U5NP {\n  transform: translateY(0);\n}\n.HR-OBqiJEmpEWjUxYrq9O:hover ._3f43T-tJi7D9sKnZhU8xvl {\n  transform: translateY(0);\n}", ""]);
 
 // exports
 exports.locals = {
-	"card": "_3muCUAFVbsoRMqd3lnpG0v",
-	"short": "_3j9xYmX2U84xL5RIa7rHN",
-	"back_img": "_3oYZsVj6z0cbt0yn1iXHDG",
-	"gradient": "_1O9PA22xQ1xI9t0llM-KlF",
-	"shadow": "xnkySiAxow5PyX_0hIWdM",
-	"anim": "CkF7NzGOcCQUYQ6aDWzWj",
-	"title": "_3k2JRyXTGXnBH0WMXGEt3p",
-	"description": "_1tyhPfGjhmJE2fhBjGB9BB",
-	"info": "_3j3oKTvhhlRERKuq6MPNRE"
+	"card": "HR-OBqiJEmpEWjUxYrq9O",
+	"short": "_2UVCSG3SNmM0E8a8bGRK9r",
+	"back_img": "_2BJqPC_1yrJICSAljQHr3v",
+	"gradient": "_3-XRLBSMIZL-DxsgRXecs",
+	"shadow": "_1A-xRUti7UU7-y3ph3kcwr",
+	"anim": "_2xGQvee0UyhSF5M6lfjaRR",
+	"title": "tPxWOqoVekqEHHEb2U5NP",
+	"description": "_3f43T-tJi7D9sKnZhU8xvl",
+	"info": "_277KDnVlZb7HNldU6mlpKA"
 };
 
 /***/ }),
@@ -6656,20 +6668,20 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._19Hr86n6CfGGEj4aFdFGJg {\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  display: block;\n  cursor: pointer;\n}\n._19Hr86n6CfGGEj4aFdFGJg._8pdFxsyRINV1O0osqP3Q0 {\n  height: calc(50% - 1rem);\n  margin-bottom: 2rem;\n}\n._19Hr86n6CfGGEj4aFdFGJg ._3nwUK3XI6qIdsfSmAZDswA {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._19Hr86n6CfGGEj4aFdFGJg ._2NYkNrOdXjvbsy45CZSw6C {\n  position: absolute;\n  height: 70%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  background: linear-gradient(180deg, rgba(25, 26, 31, 0) 0%, #191a1f 100%);\n}\n._19Hr86n6CfGGEj4aFdFGJg ._1TBB_Ir78jtvniKnr4QBPw {\n  background: rgba(25, 26, 31, 0.7);\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n._19Hr86n6CfGGEj4aFdFGJg .cv2kx-SAKyjCf14X6Zx7Z {\n  transition: 0.5s;\n  transform: translateY(100%);\n  position: absolute;\n  top: 3rem;\n  left: 3rem;\n  width: calc(100% - 6rem);\n  height: calc(100% - 6rem);\n}\n._19Hr86n6CfGGEj4aFdFGJg .INYGjttMX5r2ATl612gJG {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n  transition: 0.5s;\n  transform: translateY(-100%);\n}\n._19Hr86n6CfGGEj4aFdFGJg .Th4xWqj4ye3G6d4-yCv_Z {\n  display: -webkit-box;\n  -webkit-line-clamp: 4;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  margin-top: 2rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n}\n._19Hr86n6CfGGEj4aFdFGJg._8pdFxsyRINV1O0osqP3Q0 .Th4xWqj4ye3G6d4-yCv_Z {\n  -webkit-line-clamp: 2;\n}\n._19Hr86n6CfGGEj4aFdFGJg ._10kFjjEXomj_wxJg-JCSV6 {\n  position: absolute;\n  right: 3rem;\n  bottom: 3rem;\n  top: auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  opacity: 1;\n  transition: opacity 0.3s ease;\n}\n._19Hr86n6CfGGEj4aFdFGJg ._10kFjjEXomj_wxJg-JCSV6 img {\n  width: 2.4rem;\n  height: 2.4rem;\n  margin-right: 1rem;\n}\n._19Hr86n6CfGGEj4aFdFGJg ._10kFjjEXomj_wxJg-JCSV6 ._2Vbs-3OOIzkHUu_AZR65gv {\n  font-size: 1.4rem;\n  line-height: 1.6rem;\n  color: #ffffff;\n}\n._19Hr86n6CfGGEj4aFdFGJg:hover ._1TBB_Ir78jtvniKnr4QBPw {\n  opacity: 1;\n}\n._19Hr86n6CfGGEj4aFdFGJg:hover .cv2kx-SAKyjCf14X6Zx7Z {\n  transform: translateY(0);\n}\n._19Hr86n6CfGGEj4aFdFGJg:hover .INYGjttMX5r2ATl612gJG {\n  transform: translateY(0);\n}", ""]);
+exports.push([module.i, ".lGVl99GUnm5W-pbJynIky {\n  position: relative;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  display: block;\n  cursor: pointer;\n}\n.lGVl99GUnm5W-pbJynIky._1-65X2WNTOSCuABgT34Qpz {\n  height: calc(50% - 1rem);\n  margin-bottom: 2rem;\n}\n.lGVl99GUnm5W-pbJynIky ._3-7b17z9f7tiOfJ3AgR2SZ {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.lGVl99GUnm5W-pbJynIky ._2rsB9gUbk2KpfH3hMb5xs_ {\n  position: absolute;\n  height: 70%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  background: linear-gradient(180deg, rgba(25, 26, 31, 0) 0%, #191a1f 100%);\n}\n.lGVl99GUnm5W-pbJynIky ._35KR3AkHZkYy_BTK36ycyM {\n  background: rgba(25, 26, 31, 0.7);\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  bottom: 0;\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n.lGVl99GUnm5W-pbJynIky ._1v7ogNaLVFOZgDgRBH6qnb {\n  transition: 0.5s;\n  transform: translateY(100%);\n  position: absolute;\n  top: 3rem;\n  left: 3rem;\n  width: calc(100% - 6rem);\n  height: calc(100% - 6rem);\n}\n.lGVl99GUnm5W-pbJynIky .M0ltp91u9rn2ylzwdQXyy {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n  transition: 0.5s;\n  transform: translateY(-100%);\n}\n.lGVl99GUnm5W-pbJynIky ._1ztY8MN4iz88yrGH_vhibT {\n  display: -webkit-box;\n  -webkit-line-clamp: 4;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  margin-top: 2rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n}\n.lGVl99GUnm5W-pbJynIky._1-65X2WNTOSCuABgT34Qpz ._1ztY8MN4iz88yrGH_vhibT {\n  -webkit-line-clamp: 2;\n}\n.lGVl99GUnm5W-pbJynIky ._3tri-KUyAc-5hSPMeJgDyd {\n  position: absolute;\n  right: 3rem;\n  bottom: 3rem;\n  top: auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  opacity: 1;\n  transition: opacity 0.3s ease;\n}\n.lGVl99GUnm5W-pbJynIky ._3tri-KUyAc-5hSPMeJgDyd img {\n  width: 2.4rem;\n  height: 2.4rem;\n  margin-right: 1rem;\n}\n.lGVl99GUnm5W-pbJynIky ._3tri-KUyAc-5hSPMeJgDyd ._3Ow2DHjcnWpb5gs3db9Hzt {\n  font-size: 1.4rem;\n  line-height: 1.6rem;\n  color: #ffffff;\n}\n.lGVl99GUnm5W-pbJynIky:hover ._35KR3AkHZkYy_BTK36ycyM {\n  opacity: 1;\n}\n.lGVl99GUnm5W-pbJynIky:hover ._1v7ogNaLVFOZgDgRBH6qnb {\n  transform: translateY(0);\n}\n.lGVl99GUnm5W-pbJynIky:hover .M0ltp91u9rn2ylzwdQXyy {\n  transform: translateY(0);\n}", ""]);
 
 // exports
 exports.locals = {
-	"card": "_19Hr86n6CfGGEj4aFdFGJg",
-	"short": "_8pdFxsyRINV1O0osqP3Q0",
-	"back_img": "_3nwUK3XI6qIdsfSmAZDswA",
-	"gradient": "_2NYkNrOdXjvbsy45CZSw6C",
-	"shadow": "_1TBB_Ir78jtvniKnr4QBPw",
-	"anim": "cv2kx-SAKyjCf14X6Zx7Z",
-	"title": "INYGjttMX5r2ATl612gJG",
-	"description": "Th4xWqj4ye3G6d4-yCv_Z",
-	"time_block": "_10kFjjEXomj_wxJg-JCSV6",
-	"time": "_2Vbs-3OOIzkHUu_AZR65gv"
+	"card": "lGVl99GUnm5W-pbJynIky",
+	"short": "_1-65X2WNTOSCuABgT34Qpz",
+	"back_img": "_3-7b17z9f7tiOfJ3AgR2SZ",
+	"gradient": "_2rsB9gUbk2KpfH3hMb5xs_",
+	"shadow": "_35KR3AkHZkYy_BTK36ycyM",
+	"anim": "_1v7ogNaLVFOZgDgRBH6qnb",
+	"title": "M0ltp91u9rn2ylzwdQXyy",
+	"description": "_1ztY8MN4iz88yrGH_vhibT",
+	"time_block": "_3tri-KUyAc-5hSPMeJgDyd",
+	"time": "_3Ow2DHjcnWpb5gs3db9Hzt"
 };
 
 /***/ }),
@@ -6686,16 +6698,17 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".-rX0c45xQiIKKSJM-9CCn {\n  background: #191a1f;\n  border-radius: 1rem;\n  overflow: hidden;\n  margin-bottom: 1rem;\n}\n.-rX0c45xQiIKKSJM-9CCn._2lDA0pE_dYbqzpHme2YFJC {\n  background: #2b2b2b;\n}\n.-rX0c45xQiIKKSJM-9CCn ._8tO8Vy7h3d5iSgpnIzijg {\n  padding: 1rem 0 1rem 1rem;\n  min-height: 2.9rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  position: relative;\n  cursor: pointer;\n}\n.-rX0c45xQiIKKSJM-9CCn ._8tO8Vy7h3d5iSgpnIzijg ._239UGSBx2EmFTF_UgHAIHZ {\n  width: 2.5rem;\n  position: absolute;\n  top: 50%;\n  left: 1rem;\n  transform: translateY(-50%);\n}\n.-rX0c45xQiIKKSJM-9CCn ._8tO8Vy7h3d5iSgpnIzijg ._8QzNugg1MLAB60coUnpOO {\n  padding-left: 4rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n}\n.-rX0c45xQiIKKSJM-9CCn ._8tO8Vy7h3d5iSgpnIzijg .yMG4gjtmmp8rSUHAWXxsy {\n  margin-left: auto;\n  width: 1.5rem;\n  padding: 1rem 1.5rem;\n  transition: transform 0.3s ease;\n}\n.-rX0c45xQiIKKSJM-9CCn ._8tO8Vy7h3d5iSgpnIzijg .yMG4gjtmmp8rSUHAWXxsy._2lDA0pE_dYbqzpHme2YFJC {\n  transform: rotate(180deg);\n}", ""]);
+exports.push([module.i, "._1svKyU3Vvsj23mlVBWX2NP {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 10rem;\n}\n\n._2UUgKHCUGDtq26ZqRYzump {\n  background: #191a1f;\n  border-radius: 1rem;\n  overflow: hidden;\n  margin-bottom: 1rem;\n}\n._2UUgKHCUGDtq26ZqRYzump._1JiZOYRBXLQu9tqFDIQM5z {\n  background: #2b2b2b;\n}\n._2UUgKHCUGDtq26ZqRYzump ._27ixHYuY5TBpUuu4MqGjVU {\n  padding: 1rem 0 1rem 1rem;\n  min-height: 2.9rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  position: relative;\n  cursor: pointer;\n}\n._2UUgKHCUGDtq26ZqRYzump ._27ixHYuY5TBpUuu4MqGjVU ._2D_CXujuHdoZhJ38YcoyvN {\n  width: 2.5rem;\n  position: absolute;\n  top: 50%;\n  left: 1rem;\n  transform: translateY(-50%);\n}\n._2UUgKHCUGDtq26ZqRYzump ._27ixHYuY5TBpUuu4MqGjVU ._3mFklKq_boyL2kIaPy9zm8 {\n  padding-left: 4rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n}\n._2UUgKHCUGDtq26ZqRYzump ._27ixHYuY5TBpUuu4MqGjVU ._2pBWX8_3frw-JBgq6BOyQt {\n  margin-left: auto;\n  width: 1.5rem;\n  padding: 1rem 1.5rem;\n  transition: transform 0.3s ease;\n}\n._2UUgKHCUGDtq26ZqRYzump ._27ixHYuY5TBpUuu4MqGjVU ._2pBWX8_3frw-JBgq6BOyQt._1JiZOYRBXLQu9tqFDIQM5z {\n  transform: rotate(180deg);\n}", ""]);
 
 // exports
 exports.locals = {
-	"item": "-rX0c45xQiIKKSJM-9CCn",
-	"active": "_2lDA0pE_dYbqzpHme2YFJC",
-	"row": "_8tO8Vy7h3d5iSgpnIzijg",
-	"icon": "_239UGSBx2EmFTF_UgHAIHZ",
-	"text": "_8QzNugg1MLAB60coUnpOO",
-	"trigger": "yMG4gjtmmp8rSUHAWXxsy"
+	"inner_container": "_1svKyU3Vvsj23mlVBWX2NP",
+	"item": "_2UUgKHCUGDtq26ZqRYzump",
+	"active": "_1JiZOYRBXLQu9tqFDIQM5z",
+	"row": "_27ixHYuY5TBpUuu4MqGjVU",
+	"icon": "_2D_CXujuHdoZhJ38YcoyvN",
+	"text": "_3mFklKq_boyL2kIaPy9zm8",
+	"trigger": "_2pBWX8_3frw-JBgq6BOyQt"
 };
 
 /***/ }),
@@ -6712,19 +6725,19 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._14_PxyCxmjWQaxfYgYIxxu {\n  margin-top: 2rem;\n  padding-top: 2rem;\n  border-top: 0.2rem solid #2a444e;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._21mSOcrrrd4xSz9vkjSU52 {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 {\n  margin-top: 2rem;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 ._26Rt6OYJ-ZeYdG6SQMVSSM {\n  display: flex;\n  width: calc(100% - 5rem);\n  background: #2a444e;\n  border-radius: 1rem;\n  padding: 2.5rem;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 ._26Rt6OYJ-ZeYdG6SQMVSSM img {\n  width: 3.4rem;\n  height: 3.4rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-shrink: 0;\n  margin-right: 2rem;\n  border-radius: 50%;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 ._26Rt6OYJ-ZeYdG6SQMVSSM input {\n  border: 0;\n  background: transparent;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 ._26Rt6OYJ-ZeYdG6SQMVSSM input::-moz-placeholder {\n  color: #ffffff;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 ._26Rt6OYJ-ZeYdG6SQMVSSM input:-ms-input-placeholder {\n  color: #ffffff;\n}\n._14_PxyCxmjWQaxfYgYIxxu .KgM9bHa1JrJbVuUro2OL7 ._26Rt6OYJ-ZeYdG6SQMVSSM input::placeholder {\n  color: #ffffff;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._16yFJVYqOwY-0ZcmIqWdBV {\n  margin-top: 4rem;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._16yFJVYqOwY-0ZcmIqWdBV ._2sQQqG5oXuFTSAPCNGyjCL {\n  background: #232b2e;\n  border-radius: 1rem;\n  padding: 2.5rem 2.5rem 3rem 2.5rem;\n  margin-top: 1.5rem;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._16yFJVYqOwY-0ZcmIqWdBV ._2sQQqG5oXuFTSAPCNGyjCL ._3zHExg8WI2x8a7stUEg8X4 {\n  display: flex;\n  align-items: center;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._16yFJVYqOwY-0ZcmIqWdBV ._2sQQqG5oXuFTSAPCNGyjCL ._3zHExg8WI2x8a7stUEg8X4 img {\n  width: 3.4rem;\n  height: 3.4rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-shrink: 0;\n  margin-right: 2rem;\n  border-radius: 50%;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._16yFJVYqOwY-0ZcmIqWdBV ._2sQQqG5oXuFTSAPCNGyjCL ._3zHExg8WI2x8a7stUEg8X4 ._3gMWW9e61gZ9beRWuUW6UF {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n._14_PxyCxmjWQaxfYgYIxxu ._16yFJVYqOwY-0ZcmIqWdBV ._2sQQqG5oXuFTSAPCNGyjCL ._3OR73c5RU08itk1Omr9K8_ {\n  margin-top: 2.5rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n}", ""]);
+exports.push([module.i, ".sB2VGhjX6Vu7nLCcFetRU {\n  margin-top: 2rem;\n  padding-top: 2rem;\n  border-top: 0.2rem solid #2a444e;\n}\n.sB2VGhjX6Vu7nLCcFetRU .xlhP4yGTc1zg2C5O-Q_1p {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG {\n  margin-top: 2rem;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG .B2O0fs45vw1I9S6B1Fl7p {\n  display: flex;\n  width: calc(100% - 5rem);\n  background: #2a444e;\n  border-radius: 1rem;\n  padding: 2.5rem;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG .B2O0fs45vw1I9S6B1Fl7p img {\n  width: 3.4rem;\n  height: 3.4rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-shrink: 0;\n  margin-right: 2rem;\n  border-radius: 50%;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG .B2O0fs45vw1I9S6B1Fl7p input {\n  border: 0;\n  background: transparent;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  width: 100%;\n  color: #ffffff;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG .B2O0fs45vw1I9S6B1Fl7p input::-moz-placeholder {\n  color: #ffffff;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG .B2O0fs45vw1I9S6B1Fl7p input:-ms-input-placeholder {\n  color: #ffffff;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._2ZLxJzZKc0WOA87prXe7vG .B2O0fs45vw1I9S6B1Fl7p input::placeholder {\n  color: #ffffff;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._1iwEg4bWGjOAyL4tYgge8L {\n  margin-top: 4rem;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._1iwEg4bWGjOAyL4tYgge8L ._3yguaDGBpntlhkMQxg70vE {\n  background: #232b2e;\n  border-radius: 1rem;\n  padding: 2.5rem 2.5rem 3rem 2.5rem;\n  margin-top: 1.5rem;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._1iwEg4bWGjOAyL4tYgge8L ._3yguaDGBpntlhkMQxg70vE ._2zYZtluO3ET9mJv7XST8rt {\n  display: flex;\n  align-items: center;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._1iwEg4bWGjOAyL4tYgge8L ._3yguaDGBpntlhkMQxg70vE ._2zYZtluO3ET9mJv7XST8rt img {\n  width: 3.4rem;\n  height: 3.4rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-shrink: 0;\n  margin-right: 2rem;\n  border-radius: 50%;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._1iwEg4bWGjOAyL4tYgge8L ._3yguaDGBpntlhkMQxg70vE ._2zYZtluO3ET9mJv7XST8rt ._2_LafZWFUu-hrrylY3sJMV {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n.sB2VGhjX6Vu7nLCcFetRU ._1iwEg4bWGjOAyL4tYgge8L ._3yguaDGBpntlhkMQxg70vE .NuedkdHOBfX8ivzUKwuUk {\n  margin-top: 2.5rem;\n  font-size: 1.6rem;\n  line-height: 1.9rem;\n  color: #ffffff;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_14_PxyCxmjWQaxfYgYIxxu",
-	"title": "_21mSOcrrrd4xSz9vkjSU52",
-	"input_block": "KgM9bHa1JrJbVuUro2OL7",
-	"comment_input": "_26Rt6OYJ-ZeYdG6SQMVSSM",
-	"comments_items": "_16yFJVYqOwY-0ZcmIqWdBV",
-	"item": "_2sQQqG5oXuFTSAPCNGyjCL",
-	"top_block": "_3zHExg8WI2x8a7stUEg8X4",
-	"nickname": "_3gMWW9e61gZ9beRWuUW6UF",
-	"text": "_3OR73c5RU08itk1Omr9K8_"
+	"container": "sB2VGhjX6Vu7nLCcFetRU",
+	"title": "xlhP4yGTc1zg2C5O-Q_1p",
+	"input_block": "_2ZLxJzZKc0WOA87prXe7vG",
+	"comment_input": "B2O0fs45vw1I9S6B1Fl7p",
+	"comments_items": "_1iwEg4bWGjOAyL4tYgge8L",
+	"item": "_3yguaDGBpntlhkMQxg70vE",
+	"top_block": "_2zYZtluO3ET9mJv7XST8rt",
+	"nickname": "_2_LafZWFUu-hrrylY3sJMV",
+	"text": "NuedkdHOBfX8ivzUKwuUk"
 };
 
 /***/ }),
@@ -6741,15 +6754,15 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._25zIVVDBAtuI_dVodYXrn9 {\n  width: calc(100% - 12rem);\n  padding: 0 6rem 6rem;\n  margin: 0 auto;\n  max-width: 132rem;\n}\n._25zIVVDBAtuI_dVodYXrn9 .OW1BT5_6Fg82-a3LaBIq_ {\n  font-weight: bold;\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #ffffff;\n  margin-top: 3rem;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._2wYG_R-TJr-JNqRm97cksB {\n  display: flex;\n  margin-top: 6rem;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._2Tlk5gKLwMQQd-MlxOFuFA > div:first-child {\n  width: 19.5rem;\n  flex-shrink: 0;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._2Tlk5gKLwMQQd-MlxOFuFA > div:last-child {\n  width: calc(100% - 19.5rem - 6rem);\n  margin-left: 6rem;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._15pzc-dDsQP4V0J8lgaodC {\n  justify-content: space-between;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._15pzc-dDsQP4V0J8lgaodC > div:first-child {\n  width: 19.5rem;\n  padding-right: 6rem;\n  flex-shrink: 0;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._15pzc-dDsQP4V0J8lgaodC > div:nth-child(2) {\n  width: 100%;\n}\n._25zIVVDBAtuI_dVodYXrn9 ._15pzc-dDsQP4V0J8lgaodC > div:last-child {\n  width: 34.5rem;\n  padding-left: 6rem;\n  flex-shrink: 0;\n}", ""]);
+exports.push([module.i, "._3fKt_eO8uR6fuu_YfoODGL {\n  width: calc(100% - 12rem);\n  padding: 0 6rem 6rem;\n  margin: 0 auto;\n  max-width: 132rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._6mzh4rI9g-h8IQE8Gbrg8 {\n  font-weight: bold;\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #ffffff;\n  margin-top: 3rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._3RYjcwkwYP-L0tQLW5jgq_ {\n  display: flex;\n  margin-top: 6rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._2eXb_1g71oIqJZf2Af9B1i > div:first-child {\n  width: 19.5rem;\n  flex-shrink: 0;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._2eXb_1g71oIqJZf2Af9B1i > div:last-child {\n  width: calc(100% - 19.5rem - 6rem);\n  margin-left: 6rem;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._1Sq8VV0c3t-9Uh1GuMl-1p {\n  justify-content: space-between;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._1Sq8VV0c3t-9Uh1GuMl-1p > div:first-child {\n  width: 19.5rem;\n  padding-right: 6rem;\n  flex-shrink: 0;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._1Sq8VV0c3t-9Uh1GuMl-1p > div:nth-child(2) {\n  width: 100%;\n}\n._3fKt_eO8uR6fuu_YfoODGL ._1Sq8VV0c3t-9Uh1GuMl-1p > div:last-child {\n  width: 34.5rem;\n  padding-left: 6rem;\n  flex-shrink: 0;\n}", ""]);
 
 // exports
 exports.locals = {
-	"content_layout": "_25zIVVDBAtuI_dVodYXrn9",
-	"headline": "OW1BT5_6Fg82-a3LaBIq_",
-	"cols_container": "_2wYG_R-TJr-JNqRm97cksB",
-	"two": "_2Tlk5gKLwMQQd-MlxOFuFA",
-	"three": "_15pzc-dDsQP4V0J8lgaodC"
+	"content_layout": "_3fKt_eO8uR6fuu_YfoODGL",
+	"headline": "_6mzh4rI9g-h8IQE8Gbrg8",
+	"cols_container": "_3RYjcwkwYP-L0tQLW5jgq_",
+	"two": "_2eXb_1g71oIqJZf2Af9B1i",
+	"three": "_1Sq8VV0c3t-9Uh1GuMl-1p"
 };
 
 /***/ }),
@@ -6766,19 +6779,19 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._3Qwxp_uh0xT77ms_1io5hm {\n  background: rgba(0, 0, 0, 0.3);\n  padding: 1.5rem 6rem;\n  position: relative;\n  z-index: 3;\n}\n._3Qwxp_uh0xT77ms_1io5hm._1gBPptmwP2ayICrp72tymw {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: calc(100% - 12rem);\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e {\n  max-width: 132rem;\n  display: flex;\n  height: 5rem;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0 auto;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf,\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl {\n  width: 40%;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2Q7CBBggzyXpIjeQ104EGf {\n  width: 20%;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2Q7CBBggzyXpIjeQ104EGf img {\n  margin: 0 auto;\n  width: 20rem;\n  display: block;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf {\n  display: flex;\n  align-items: center;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf img {\n  width: 3rem;\n  cursor: pointer;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf ._3lkp2IWV9NiQgTzHLEWA2Y {\n  border: 0.1rem solid #ffffff;\n  height: 5rem;\n  padding: 0 4rem;\n  display: flex;\n  align-items: center;\n  border-radius: 3rem;\n  margin: 0;\n  margin-left: 2rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf ._3lkp2IWV9NiQgTzHLEWA2Y input {\n  border: none;\n  background: transparent;\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf ._3lkp2IWV9NiQgTzHLEWA2Y input::-moz-placeholder {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf ._3lkp2IWV9NiQgTzHLEWA2Y input:-ms-input-placeholder {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2d5IJSqYdxeffMudHOM3yf ._3lkp2IWV9NiQgTzHLEWA2Y input::placeholder {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl {\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  padding: 0 2rem 0 2rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3:last-child {\n  padding: 0 0 0 2rem;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  position: relative;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a:before, ._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a:after {\n  content: \"\";\n  position: absolute;\n  bottom: -1rem;\n  width: 0;\n  height: 0.2rem;\n  margin: 0.5rem 0 0;\n  transition: 0.3s;\n  opacity: 0;\n  background-color: #ffffff;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a:before {\n  left: 50%;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a:after {\n  right: 50%;\n}\n._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a:hover:before, ._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a:hover:after, ._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a._29WPFunyVfhWojg_eh6bg-:before, ._3Qwxp_uh0xT77ms_1io5hm .x-Ze4B9zkDitf8A8dI6e ._2eWdOSFPeYB8xQxNLU9Ydl .DW0BbCFjRYX8OUJVwfW_3 a._29WPFunyVfhWojg_eh6bg-:after {\n  width: 50%;\n  opacity: 1;\n}", ""]);
+exports.push([module.i, "._3CrBt4CENmIk0Wp08GlWML {\n  background: rgba(0, 0, 0, 0.3);\n  padding: 1.5rem 6rem;\n  position: relative;\n  z-index: 3;\n}\n._3CrBt4CENmIk0Wp08GlWML._2omahTve7QOu2BECDrPGPq {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: calc(100% - 12rem);\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX {\n  max-width: 132rem;\n  display: flex;\n  height: 5rem;\n  align-items: center;\n  justify-content: space-between;\n  margin: 0 auto;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM,\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ {\n  width: 40%;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2Xf4oxNS7EYv_CbYnCIdNd {\n  width: 20%;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2Xf4oxNS7EYv_CbYnCIdNd img {\n  margin: 0 auto;\n  width: 20rem;\n  display: block;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM {\n  display: flex;\n  align-items: center;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM img {\n  width: 3rem;\n  cursor: pointer;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM ._3KBOLS8bAOD5yRzCqYIsp7 {\n  border: 0.1rem solid #ffffff;\n  height: 5rem;\n  padding: 0 4rem;\n  display: flex;\n  align-items: center;\n  border-radius: 3rem;\n  margin: 0;\n  margin-left: 2rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM ._3KBOLS8bAOD5yRzCqYIsp7 input {\n  border: none;\n  background: transparent;\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM ._3KBOLS8bAOD5yRzCqYIsp7 input::-moz-placeholder {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM ._3KBOLS8bAOD5yRzCqYIsp7 input:-ms-input-placeholder {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX ._2eJUWZn3R0GvO6OY-4EknM ._3KBOLS8bAOD5yRzCqYIsp7 input::placeholder {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ {\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  padding: 0 2rem 0 2rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D:last-child {\n  padding: 0 0 0 2rem;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a {\n  color: #ffffff;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  position: relative;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a:before, ._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a:after {\n  content: \"\";\n  position: absolute;\n  bottom: -1rem;\n  width: 0;\n  height: 0.2rem;\n  margin: 0.5rem 0 0;\n  transition: 0.3s;\n  opacity: 0;\n  background-color: #ffffff;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a:before {\n  left: 50%;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a:after {\n  right: 50%;\n}\n._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a:hover:before, ._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a:hover:after, ._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a.jZbUzrxC5zvVhnhap4N1C:before, ._3CrBt4CENmIk0Wp08GlWML ._2o8QxyjqH3BHb03GRuYDaX .cVJAs17N7xRforTpyxbaJ ._3qw8E1MlAXRpdIfZznqn3D a.jZbUzrxC5zvVhnhap4N1C:after {\n  width: 50%;\n  opacity: 1;\n}", ""]);
 
 // exports
 exports.locals = {
-	"header_container": "_3Qwxp_uh0xT77ms_1io5hm",
-	"fixed": "_1gBPptmwP2ayICrp72tymw",
-	"content": "x-Ze4B9zkDitf8A8dI6e",
-	"left": "_2d5IJSqYdxeffMudHOM3yf",
-	"right": "_2eWdOSFPeYB8xQxNLU9Ydl",
-	"center": "_2Q7CBBggzyXpIjeQ104EGf",
-	"search_block": "_3lkp2IWV9NiQgTzHLEWA2Y",
-	"nav_item": "DW0BbCFjRYX8OUJVwfW_3",
-	"active": "_29WPFunyVfhWojg_eh6bg-"
+	"header_container": "_3CrBt4CENmIk0Wp08GlWML",
+	"fixed": "_2omahTve7QOu2BECDrPGPq",
+	"content": "_2o8QxyjqH3BHb03GRuYDaX",
+	"left": "_2eJUWZn3R0GvO6OY-4EknM",
+	"right": "cVJAs17N7xRforTpyxbaJ",
+	"center": "_2Xf4oxNS7EYv_CbYnCIdNd",
+	"search_block": "_3KBOLS8bAOD5yRzCqYIsp7",
+	"nav_item": "_3qw8E1MlAXRpdIfZznqn3D",
+	"active": "jZbUzrxC5zvVhnhap4N1C"
 };
 
 /***/ }),
@@ -6795,11 +6808,11 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._3M5nRNVYBQ9rAK5z19kEmm {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 0 auto;\n  margin-top: 5rem;\n}", ""]);
+exports.push([module.i, "._1_TTY7ZOMIohn0YeUWlpmy {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 0 auto;\n  margin-top: 5rem;\n}", ""]);
 
 // exports
 exports.locals = {
-	"loader_container": "_3M5nRNVYBQ9rAK5z19kEmm"
+	"loader_container": "_1_TTY7ZOMIohn0YeUWlpmy"
 };
 
 /***/ }),
@@ -6816,13 +6829,13 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._3MC5IRn8YfLMjcfbIhUrnb {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  z-index: -1;\n}\n._3MC5IRn8YfLMjcfbIhUrnb img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3MC5IRn8YfLMjcfbIhUrnb .Rujnfj0LnHE8xwM-Zzhl2 {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.3);\n}\n._3MC5IRn8YfLMjcfbIhUrnb ._14gPk7nxds5pX8z-cXdqzy {\n  width: 100%;\n  height: 70%;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);\n}", ""]);
+exports.push([module.i, "._3f5nZE-YEYSMLKRgKY6wQp {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  z-index: -1;\n}\n._3f5nZE-YEYSMLKRgKY6wQp img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3f5nZE-YEYSMLKRgKY6wQp ._3cIuhGa16WLe2zZSQauOPU {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.3);\n}\n._3f5nZE-YEYSMLKRgKY6wQp ._3xJVgBYnW47vvdH3xqQgZX {\n  width: 100%;\n  height: 70%;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);\n}", ""]);
 
 // exports
 exports.locals = {
-	"background_block": "_3MC5IRn8YfLMjcfbIhUrnb",
-	"shadow": "Rujnfj0LnHE8xwM-Zzhl2",
-	"gradient": "_14gPk7nxds5pX8z-cXdqzy"
+	"background_block": "_3f5nZE-YEYSMLKRgKY6wQp",
+	"shadow": "_3cIuhGa16WLe2zZSQauOPU",
+	"gradient": "_3xJVgBYnW47vvdH3xqQgZX"
 };
 
 /***/ }),
@@ -6839,19 +6852,19 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._1n5e2dxNz0UYMRkaa-LJiu ._3pCygtCOcJBkPblJb1S3G {\n  font-size: 2rem;\n  line-height: 2.3rem;\n  color: #ffffff;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO {\n  margin-top: 2.5rem;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 {\n  width: 100%;\n  height: 8rem;\n  border: 0.1rem solid #424242;\n  position: relative;\n  margin-bottom: 2rem;\n  border-radius: 1rem;\n  overflow: hidden;\n  display: block;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 ._6qgrDhg69OdmAXsTiE7OM {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 ._2gavAMKwfknItDGdJkbVXG {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(110deg, #2a444e 43.23%, rgba(42, 68, 78, 0.2) 100%);\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 ._1yipg2opEDwmoD3PBfhO_Z {\n  position: relative;\n  z-index: 1;\n  padding: 2rem 3rem 2rem 2.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 ._1yipg2opEDwmoD3PBfhO_Z ._2f8R7Bzi1yXRaAvNE3ZJfi {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 ._1yipg2opEDwmoD3PBfhO_Z ._9ihJmUJOTaqxFqebe3xLq {\n  padding-left: 2rem;\n  flex-shrink: 0;\n}\n._1n5e2dxNz0UYMRkaa-LJiu ._2X70dHyZM-gpvzEQlqfazO ._1tBZY6tg1gJulMKVpPziC5 ._1yipg2opEDwmoD3PBfhO_Z ._9ihJmUJOTaqxFqebe3xLq img {\n  transform: rotate(-90deg);\n}", ""]);
+exports.push([module.i, ".TUcmfL6z5WLwI53VsSEMS ._3CJsmwC4c8HHlnWI7V0OIE {\n  font-size: 2rem;\n  line-height: 2.3rem;\n  color: #ffffff;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 {\n  margin-top: 2.5rem;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz {\n  width: 100%;\n  height: 8rem;\n  border: 0.1rem solid #424242;\n  position: relative;\n  margin-bottom: 2rem;\n  border-radius: 1rem;\n  overflow: hidden;\n  display: block;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz .oF0mOmD_K58LGDEa98oZ4 {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz ._1EVZwwtjyoche7HMF-h2xL {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(110deg, #2a444e 43.23%, rgba(42, 68, 78, 0.2) 100%);\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz .ufMd_9ZjpXHWZ-6nzWXEj {\n  position: relative;\n  z-index: 1;\n  padding: 2rem 3rem 2rem 2.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz .ufMd_9ZjpXHWZ-6nzWXEj ._2UM-kscCIH7K3jbM7cFPLq {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz .ufMd_9ZjpXHWZ-6nzWXEj ._1qCOMNU2upn2o7In18uc8y {\n  padding-left: 2rem;\n  flex-shrink: 0;\n}\n.TUcmfL6z5WLwI53VsSEMS ._2_BiRd9jym0vcU_9_KNUT4 ._93DyQcZORYEpVs-2rSAwz .ufMd_9ZjpXHWZ-6nzWXEj ._1qCOMNU2upn2o7In18uc8y img {\n  transform: rotate(-90deg);\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_1n5e2dxNz0UYMRkaa-LJiu",
-	"title": "_3pCygtCOcJBkPblJb1S3G",
-	"items_container": "_2X70dHyZM-gpvzEQlqfazO",
-	"item": "_1tBZY6tg1gJulMKVpPziC5",
-	"back_img": "_6qgrDhg69OdmAXsTiE7OM",
-	"gradient": "_2gavAMKwfknItDGdJkbVXG",
-	"text_block": "_1yipg2opEDwmoD3PBfhO_Z",
-	"name": "_2f8R7Bzi1yXRaAvNE3ZJfi",
-	"trigger": "_9ihJmUJOTaqxFqebe3xLq"
+	"container": "TUcmfL6z5WLwI53VsSEMS",
+	"title": "_3CJsmwC4c8HHlnWI7V0OIE",
+	"items_container": "_2_BiRd9jym0vcU_9_KNUT4",
+	"item": "_93DyQcZORYEpVs-2rSAwz",
+	"back_img": "oF0mOmD_K58LGDEa98oZ4",
+	"gradient": "_1EVZwwtjyoche7HMF-h2xL",
+	"text_block": "ufMd_9ZjpXHWZ-6nzWXEj",
+	"name": "_2UM-kscCIH7K3jbM7cFPLq",
+	"trigger": "_1qCOMNU2upn2o7In18uc8y"
 };
 
 /***/ }),
@@ -6868,24 +6881,24 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._3JCzt3vfzkyGCNjEzcN_5k {\n  position: absolute;\n  background: #343434;\n  border-radius: 50%;\n  width: 3.2rem;\n  height: 3.2rem;\n  border: 0;\n  top: 3rem;\n  right: 3rem;\n  padding: 0;\n}\n._3JCzt3vfzkyGCNjEzcN_5k img {\n  width: 1.4rem;\n}\n\n._22yNSgTTOlfMyaYhJw1hc5 {\n  padding: 3rem 0;\n}\n._22yNSgTTOlfMyaYhJw1hc5 .lqrBcWGJ1ZPNiyfbl7yqk {\n  font-size: 1.4rem;\n  line-height: 2.4rem;\n  color: #2f2f2f;\n  text-align: center;\n  color: #ffffff;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._3RljYdH7LM4ZAtvoUC33KV {\n  font-weight: 500;\n  font-size: 2.4rem;\n  line-height: 130%;\n  text-align: center;\n  color: #ffffff;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF {\n  width: 29rem;\n  margin: 4rem auto 0 auto;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 {\n  width: 100%;\n  margin-top: 1.5rem;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0:first-child {\n  margin-top: 0;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button {\n  border: none;\n  outline: none;\n  font-weight: bold;\n  font-size: 1.4rem;\n  line-height: 2rem;\n  height: 5.6rem;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 0;\n  width: 100%;\n  border-radius: 1.5rem;\n  color: #ffffff;\n  transition: opacity 0.3s ease;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a:hover,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button:hover {\n  opacity: 0.9;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a ._3ew1R0cCHh8V1SHUqClqVp,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button ._3ew1R0cCHh8V1SHUqClqVp {\n  width: 2.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  left: 2.3rem;\n  top: 50%;\n  transform: translateY(-50%);\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a ._3ew1R0cCHh8V1SHUqClqVp img,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button ._3ew1R0cCHh8V1SHUqClqVp img {\n  display: block;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a._3aP4iLwjPayHh_DQhKDgeQ,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button._3aP4iLwjPayHh_DQhKDgeQ {\n  background: #5376a4;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a._15vvEiRyRoWlAKVa9M1I86,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button._15vvEiRyRoWlAKVa9M1I86 {\n  background: #405896;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a._3HbVjFI15Cno7d_7cAO0IM,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button._3HbVjFI15Cno7d_7cAO0IM {\n  background: #f2553c;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 a.qJfsrXW79Se9mpi8P6h2s,\n._22yNSgTTOlfMyaYhJw1hc5 ._2T2sYWSoH043IEj3jNJTF ._3Sy5nNhCgybsOGCm5u21B0 button.qJfsrXW79Se9mpi8P6h2s {\n  background: #000000;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._1f58_uDemekWjCC6EF1YO {\n  font-size: 1.4rem;\n  line-height: 2.4rem;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 3rem auto 0 auto;\n  color: #ffffff;\n}\n._22yNSgTTOlfMyaYhJw1hc5 ._1f58_uDemekWjCC6EF1YO a {\n  text-decoration: underline;\n  color: #ffffff;\n}\n\n@media screen and (max-width: 768px) {\n  ._1oZ-VjmKeU2snvJWSwHKP {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  ._1sreq1KuGqlRw-_57IC2lq {\n    position: absolute;\n    top: 3.5rem;\n    right: 3rem;\n    width: 3rem;\n    height: 3rem;\n    border: none;\n  }\n}", ""]);
+exports.push([module.i, "._1-gIH1BXIMFAdWr2OIRUdn {\n  position: absolute;\n  background: #343434;\n  border-radius: 50%;\n  width: 3.2rem;\n  height: 3.2rem;\n  border: 0;\n  top: 3rem;\n  right: 3rem;\n  padding: 0;\n}\n._1-gIH1BXIMFAdWr2OIRUdn img {\n  width: 1.4rem;\n}\n\n._2v-ebpp9IApgZD14g9y4Yg {\n  padding: 3rem 0;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._24srzSs0031eoP44pGvprt {\n  font-size: 1.4rem;\n  line-height: 2.4rem;\n  color: #2f2f2f;\n  text-align: center;\n  color: #ffffff;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1FelcDi56hgyhRk6oKnUbd {\n  font-weight: 500;\n  font-size: 2.4rem;\n  line-height: 130%;\n  text-align: center;\n  color: #ffffff;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p {\n  width: 29rem;\n  margin: 4rem auto 0 auto;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 {\n  width: 100%;\n  margin-top: 1.5rem;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5:first-child {\n  margin-top: 0;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button {\n  border: none;\n  outline: none;\n  font-weight: bold;\n  font-size: 1.4rem;\n  line-height: 2rem;\n  height: 5.6rem;\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 0;\n  width: 100%;\n  border-radius: 1.5rem;\n  color: #ffffff;\n  transition: opacity 0.3s ease;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a:hover,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button:hover {\n  opacity: 0.9;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a ._24QcBmN0qdO9Yyq0G84Tmd,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button ._24QcBmN0qdO9Yyq0G84Tmd {\n  width: 2.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  left: 2.3rem;\n  top: 50%;\n  transform: translateY(-50%);\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a ._24QcBmN0qdO9Yyq0G84Tmd img,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button ._24QcBmN0qdO9Yyq0G84Tmd img {\n  display: block;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a._3cwqG6hNIowsCIl-KN0AGP,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button._3cwqG6hNIowsCIl-KN0AGP {\n  background: #5376a4;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a._1ljNttF-WeR8zKsg02fStP,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button._1ljNttF-WeR8zKsg02fStP {\n  background: #405896;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a._1mWZ6XiGF_hyOkJBG5biW0,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button._1mWZ6XiGF_hyOkJBG5biW0 {\n  background: #f2553c;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 a.qSe0i3mJcmfvCP573tb8v,\n._2v-ebpp9IApgZD14g9y4Yg ._1ln-kYH8AbWIx6WH4dYk3p .axTJ9U51tK9LqR7o_sQV5 button.qSe0i3mJcmfvCP573tb8v {\n  background: #000000;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._2HpZrvfI2eR3FNOIpiXZrG {\n  font-size: 1.4rem;\n  line-height: 2.4rem;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 3rem auto 0 auto;\n  color: #ffffff;\n}\n._2v-ebpp9IApgZD14g9y4Yg ._2HpZrvfI2eR3FNOIpiXZrG a {\n  text-decoration: underline;\n  color: #ffffff;\n}\n\n@media screen and (max-width: 768px) {\n  ._3pbZAOzhXFaAPjIC0zS5p3 {\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  ._30XhRCxRKs8OHUq-eaSZnY {\n    position: absolute;\n    top: 3.5rem;\n    right: 3rem;\n    width: 3rem;\n    height: 3rem;\n    border: none;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
-	"close_button": "_3JCzt3vfzkyGCNjEzcN_5k",
-	"auth_content": "_22yNSgTTOlfMyaYhJw1hc5",
-	"title": "lqrBcWGJ1ZPNiyfbl7yqk",
-	"subtitle": "_3RljYdH7LM4ZAtvoUC33KV",
-	"buttons_container": "_2T2sYWSoH043IEj3jNJTF",
-	"button_item": "_3Sy5nNhCgybsOGCm5u21B0",
-	"img_container": "_3ew1R0cCHh8V1SHUqClqVp",
-	"vk": "_3aP4iLwjPayHh_DQhKDgeQ",
-	"fb": "_15vvEiRyRoWlAKVa9M1I86",
-	"gPlus": "_3HbVjFI15Cno7d_7cAO0IM",
-	"apple": "qJfsrXW79Se9mpi8P6h2s",
-	"term": "_1f58_uDemekWjCC6EF1YO",
-	"inner_content": "_1oZ-VjmKeU2snvJWSwHKP",
-	"close_button_mobile": "_1sreq1KuGqlRw-_57IC2lq"
+	"close_button": "_1-gIH1BXIMFAdWr2OIRUdn",
+	"auth_content": "_2v-ebpp9IApgZD14g9y4Yg",
+	"title": "_24srzSs0031eoP44pGvprt",
+	"subtitle": "_1FelcDi56hgyhRk6oKnUbd",
+	"buttons_container": "_1ln-kYH8AbWIx6WH4dYk3p",
+	"button_item": "axTJ9U51tK9LqR7o_sQV5",
+	"img_container": "_24QcBmN0qdO9Yyq0G84Tmd",
+	"vk": "_3cwqG6hNIowsCIl-KN0AGP",
+	"fb": "_1ljNttF-WeR8zKsg02fStP",
+	"gPlus": "_1mWZ6XiGF_hyOkJBG5biW0",
+	"apple": "qSe0i3mJcmfvCP573tb8v",
+	"term": "_2HpZrvfI2eR3FNOIpiXZrG",
+	"inner_content": "_3pbZAOzhXFaAPjIC0zS5p3",
+	"close_button_mobile": "_30XhRCxRKs8OHUq-eaSZnY"
 };
 
 /***/ }),
@@ -6902,12 +6915,12 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".BBHin-NLny1AuYMlKsWOg {\n  outline: none;\n  padding: 3.2rem;\n  border-radius: 2.4rem;\n  position: relative;\n  background: #1a3d4a;\n  width: 100%;\n  max-width: 63rem;\n}\n.BBHin-NLny1AuYMlKsWOg._2wSg01IxXNLdV9n4Yshd69 {\n  width: 100%;\n  max-width: 100%;\n  height: 100%;\n  max-height: 93rem;\n}\n\n@media screen and (max-width: 768px) {\n  .BBHin-NLny1AuYMlKsWOg {\n    height: 100%;\n    border-radius: 0;\n  }\n}", ""]);
+exports.push([module.i, "._1EzBw4jN2S7hvaUxv4u-8L {\n  outline: none;\n  padding: 3.2rem;\n  border-radius: 2.4rem;\n  position: relative;\n  background: #1a3d4a;\n  width: 100%;\n  max-width: 63rem;\n}\n._1EzBw4jN2S7hvaUxv4u-8L.WcschckX_MZlDi6Et8FUW {\n  width: 100%;\n  max-width: 100%;\n  height: 100%;\n  max-height: 93rem;\n}\n\n@media screen and (max-width: 768px) {\n  ._1EzBw4jN2S7hvaUxv4u-8L {\n    height: 100%;\n    border-radius: 0;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
-	"modal_window": "BBHin-NLny1AuYMlKsWOg",
-	"full_open": "_2wSg01IxXNLdV9n4Yshd69"
+	"modal_window": "_1EzBw4jN2S7hvaUxv4u-8L",
+	"full_open": "WcschckX_MZlDi6Et8FUW"
 };
 
 /***/ }),
@@ -6924,26 +6937,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._2FL3Lm5fq8QoIp9r9faOgA {\n  outline: none;\n  padding: 6rem 6.5rem 4rem;\n  position: relative;\n  background: #1a3d4a;\n  border-radius: 1rem;\n  width: 90%;\n  max-width: 90rem;\n  height: auto;\n  max-height: calc(100% - 14rem);\n  overflow: auto;\n}\n\n._3tSv49qlIz2OBsMOuuZAOO {\n  position: absolute;\n  background: #343434;\n  border-radius: 50%;\n  width: 3.2rem;\n  height: 3.2rem;\n  border: 0;\n  top: 3rem;\n  right: 3rem;\n  padding: 0;\n}\n._3tSv49qlIz2OBsMOuuZAOO img {\n  width: 1.4rem;\n}\n\n._1MlTjVU9aaBdLDCKGMuMmH ._28vbpLyOulr2L72kBMMgBt {\n  width: 52.5rem;\n  height: 34rem;\n  position: relative;\n  margin: 0 auto;\n  overflow: hidden;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._28vbpLyOulr2L72kBMMgBt img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._1MlTjVU9aaBdLDCKGMuMmH .-JmI7WVakU1lx9b1OeQse {\n  text-align: center;\n  font-weight: bold;\n  font-size: 2rem;\n  line-height: 2.9rem;\n  color: #ffffff;\n  text-align: center;\n  margin-top: 2rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH .eh7eTPqSXmOevHvnF2zbb {\n  font-size: 1.4rem;\n  line-height: 2.1rem;\n  color: #8e8e8e;\n  margin-top: 0.5rem;\n  text-align: center;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._24C8Hzisqfv_g0msFBph4X {\n  text-align: center;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._24C8Hzisqfv_g0msFBph4X img {\n  width: 2.4rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._24C8Hzisqfv_g0msFBph4X._2308OTazDPc2jXSbRPwbDw {\n  margin-top: 2rem;\n  margin-bottom: 1rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._24C8Hzisqfv_g0msFBph4X._12m3zwsBU8Ek-Wl1kqeJ_a {\n  margin-top: 1rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._3IF2vvLTSsQGFvD5JUHoU2 {\n  font-size: 1.6rem;\n  line-height: 2.4rem;\n  color: #ffffff;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 0 auto;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._1NqwRvV48H88O9tbzY5VXg {\n  margin-top: 3rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._1NqwRvV48H88O9tbzY5VXg ._2q3fnrRoMXXxoX4Z-CDB72 {\n  display: block;\n  padding: 0 3rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._1NqwRvV48H88O9tbzY5VXg ._2q3fnrRoMXXxoX4Z-CDB72._3tamxbEYbPvr17DgC31ZL- img {\n  width: 3rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._1NqwRvV48H88O9tbzY5VXg ._2q3fnrRoMXXxoX4Z-CDB72._1xBn-k85HEV0hM5YxlUCY3 img {\n  width: 2rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._1NqwRvV48H88O9tbzY5VXg ._2q3fnrRoMXXxoX4Z-CDB72.r8MWpjCy3sKhE9z85Orz img {\n  width: 2rem;\n}\n._1MlTjVU9aaBdLDCKGMuMmH ._1NqwRvV48H88O9tbzY5VXg ._2q3fnrRoMXXxoX4Z-CDB72._3R3Y17xopMkhBHNoBkyxQd img {\n  width: 3rem;\n}", ""]);
+exports.push([module.i, "._3RdFz3u3DZDy_gejZ5mZU_ {\n  outline: none;\n  padding: 6rem 6.5rem 4rem;\n  position: relative;\n  background: #1a3d4a;\n  border-radius: 1rem;\n  width: 90%;\n  max-width: 90rem;\n  height: auto;\n  max-height: calc(100% - 14rem);\n  overflow: auto;\n}\n\n._2C0YQRgEiRTLD71mObv-tb {\n  position: absolute;\n  background: #343434;\n  border-radius: 50%;\n  width: 3.2rem;\n  height: 3.2rem;\n  border: 0;\n  top: 3rem;\n  right: 3rem;\n  padding: 0;\n}\n._2C0YQRgEiRTLD71mObv-tb img {\n  width: 1.4rem;\n}\n\n._3l6kP0g2obasp7euEAKYPq ._74ZXlK-iagiWjMM-0QSos {\n  width: 52.5rem;\n  height: 34rem;\n  position: relative;\n  margin: 0 auto;\n  overflow: hidden;\n}\n._3l6kP0g2obasp7euEAKYPq ._74ZXlK-iagiWjMM-0QSos img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3l6kP0g2obasp7euEAKYPq ._2z1KXl53oB6fur7914H3qZ {\n  text-align: center;\n  font-weight: bold;\n  font-size: 2rem;\n  line-height: 2.9rem;\n  color: #ffffff;\n  text-align: center;\n  margin-top: 2rem;\n}\n._3l6kP0g2obasp7euEAKYPq .Ww6SDY6zPgsO4eeWZbAO3 {\n  font-size: 1.4rem;\n  line-height: 2.1rem;\n  color: #8e8e8e;\n  margin-top: 0.5rem;\n  text-align: center;\n}\n._3l6kP0g2obasp7euEAKYPq ._3ebYedDcRxR_x2je7EbAeh {\n  text-align: center;\n}\n._3l6kP0g2obasp7euEAKYPq ._3ebYedDcRxR_x2je7EbAeh img {\n  width: 2.4rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3ebYedDcRxR_x2je7EbAeh._2EK-Mc-bSKFX9-PK8tBp8n {\n  margin-top: 2rem;\n  margin-bottom: 1rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3ebYedDcRxR_x2je7EbAeh.iRU8bIDhuX0KyfJubG5Bt {\n  margin-top: 1rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3_B4g8-6Gx_dDQ1q46MF97 {\n  font-size: 1.6rem;\n  line-height: 2.4rem;\n  color: #ffffff;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 0 auto;\n}\n._3l6kP0g2obasp7euEAKYPq ._3uEKIEek0OMlHhANjq2ugS {\n  margin-top: 3rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n._3l6kP0g2obasp7euEAKYPq ._3uEKIEek0OMlHhANjq2ugS ._31ij78xUVnOi1x1OHoipUb {\n  display: block;\n  padding: 0 3rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3uEKIEek0OMlHhANjq2ugS ._31ij78xUVnOi1x1OHoipUb._3W1ZppfvnDjIFSKY5bMwO6 img {\n  width: 3rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3uEKIEek0OMlHhANjq2ugS ._31ij78xUVnOi1x1OHoipUb._1iAxQLBeDeBaSljzH0THLJ img {\n  width: 2rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3uEKIEek0OMlHhANjq2ugS ._31ij78xUVnOi1x1OHoipUb._3jIXTGxxxl7AvsKVmJkTle img {\n  width: 2rem;\n}\n._3l6kP0g2obasp7euEAKYPq ._3uEKIEek0OMlHhANjq2ugS ._31ij78xUVnOi1x1OHoipUb._3HnwVU65sUPEtAYxK_jjs7 img {\n  width: 3rem;\n}", ""]);
 
 // exports
 exports.locals = {
-	"modal_window": "_2FL3Lm5fq8QoIp9r9faOgA",
-	"close_button": "_3tSv49qlIz2OBsMOuuZAOO",
-	"content": "_1MlTjVU9aaBdLDCKGMuMmH",
-	"img_block": "_28vbpLyOulr2L72kBMMgBt",
-	"name": "-JmI7WVakU1lx9b1OeQse",
-	"desc": "eh7eTPqSXmOevHvnF2zbb",
-	"quote": "_24C8Hzisqfv_g0msFBph4X",
-	"first": "_2308OTazDPc2jXSbRPwbDw",
-	"last": "_12m3zwsBU8Ek-Wl1kqeJ_a",
-	"text": "_3IF2vvLTSsQGFvD5JUHoU2",
-	"social_icons": "_1NqwRvV48H88O9tbzY5VXg",
-	"social_item": "_2q3fnrRoMXXxoX4Z-CDB72",
-	"vk": "_3tamxbEYbPvr17DgC31ZL-",
-	"inst": "_1xBn-k85HEV0hM5YxlUCY3",
-	"tg": "r8MWpjCy3sKhE9z85Orz",
-	"youtube": "_3R3Y17xopMkhBHNoBkyxQd"
+	"modal_window": "_3RdFz3u3DZDy_gejZ5mZU_",
+	"close_button": "_2C0YQRgEiRTLD71mObv-tb",
+	"content": "_3l6kP0g2obasp7euEAKYPq",
+	"img_block": "_74ZXlK-iagiWjMM-0QSos",
+	"name": "_2z1KXl53oB6fur7914H3qZ",
+	"desc": "Ww6SDY6zPgsO4eeWZbAO3",
+	"quote": "_3ebYedDcRxR_x2je7EbAeh",
+	"first": "_2EK-Mc-bSKFX9-PK8tBp8n",
+	"last": "iRU8bIDhuX0KyfJubG5Bt",
+	"text": "_3_B4g8-6Gx_dDQ1q46MF97",
+	"social_icons": "_3uEKIEek0OMlHhANjq2ugS",
+	"social_item": "_31ij78xUVnOi1x1OHoipUb",
+	"vk": "_3W1ZppfvnDjIFSKY5bMwO6",
+	"inst": "_1iAxQLBeDeBaSljzH0THLJ",
+	"tg": "_3jIXTGxxxl7AvsKVmJkTle",
+	"youtube": "_3HnwVU65sUPEtAYxK_jjs7"
 };
 
 /***/ }),
@@ -6960,20 +6973,20 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".eideuz8qvbW4sKXS7ttqd {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n\n._1XHpNyOAM0gmggY32QtxFD {\n  margin-top: 6rem;\n  font-weight: bold;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n\n._29VUr53kf3ajRXIi_vMf_I {\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 4rem;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE {\n  width: calc(33.3% - 1.4rem);\n  margin-right: 2rem;\n  margin-bottom: 2rem;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE:nth-child(3n) {\n  margin-right: 0;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa {\n  cursor: pointer;\n  width: 100%;\n  display: block;\n  padding-bottom: 100%;\n  height: 0;\n  position: relative;\n  color: #ffffff;\n  border: 0.1rem solid #424242;\n  transition: all 0.3s ease;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa ._3B9LWjWS_pagSQoHMufnuU {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 2;\n  background: rgba(25, 26, 31, 0.7);\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa ._3Vv62SvW-oFF4qpy-AnTtt {\n  background: radial-gradient(100% 100% at 100% 0%, rgba(25, 26, 31, 0) 42.19%, rgba(25, 26, 31, 0.8) 100%);\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa ._2yL4pWuNJ0PCJd5sU7AqDM {\n  position: absolute;\n  bottom: 4.5rem;\n  left: 3rem;\n  font-size: 2.4rem;\n  line-height: 3.5rem;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa ._2tlr-ylGfA94Y0kljMrzdO {\n  position: absolute;\n  bottom: 2.5rem;\n  left: 3rem;\n  font-size: 1.4rem;\n  line-height: 2.1rem;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa._3ER_yDIZOkfp3_jMK_oQGU ._3B9LWjWS_pagSQoHMufnuU {\n  opacity: 1;\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa:hover {\n  transform: scale(1.05);\n}\n._29VUr53kf3ajRXIi_vMf_I ._3KB5HSxGhxeJj89qdxcqaE ._2vaL9dDrp9-s_YgArTqNCa:hover ._3B9LWjWS_pagSQoHMufnuU {\n  opacity: 0 !important;\n}", ""]);
+exports.push([module.i, "._36rOFHAR9t-vVFjHFANB_4 {\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}\n\n._23OqER_69DfzCC2DavZ8rr {\n  margin-top: 6rem;\n  font-weight: bold;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n\n._3G5ZNJMjVN5X58TJKDDAjL {\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 4rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b {\n  width: calc(33.3% - 1.4rem);\n  margin-right: 2rem;\n  margin-bottom: 2rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b:nth-child(3n) {\n  margin-right: 0;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc {\n  cursor: pointer;\n  width: 100%;\n  display: block;\n  padding-bottom: 100%;\n  height: 0;\n  position: relative;\n  color: #ffffff;\n  border: 0.1rem solid #424242;\n  transition: all 0.3s ease;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._1bZktQIKlp4oiU5whZnQJu {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 2;\n  background: rgba(25, 26, 31, 0.7);\n  opacity: 0;\n  transition: opacity 0.3s ease;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._1Qedri1dTn1LQOchK4ElTE {\n  background: radial-gradient(100% 100% at 100% 0%, rgba(25, 26, 31, 0) 42.19%, rgba(25, 26, 31, 0.8) 100%);\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._3xr_doEwSaOrWsc39sRh2Q {\n  position: absolute;\n  bottom: 4.5rem;\n  left: 3rem;\n  font-size: 2.4rem;\n  line-height: 3.5rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc ._1kzJTMC70nm4Y3nsCsGoSx {\n  position: absolute;\n  bottom: 2.5rem;\n  left: 3rem;\n  font-size: 1.4rem;\n  line-height: 2.1rem;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc._3bXXwP6Tw_69NJ7-7w32im ._1bZktQIKlp4oiU5whZnQJu {\n  opacity: 1;\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc:hover {\n  transform: scale(1.05);\n}\n._3G5ZNJMjVN5X58TJKDDAjL .PqzTQ37RAbCTR-gGKDU9b ._6HQxTn6Pems5bfFFUGKoc:hover ._1bZktQIKlp4oiU5whZnQJu {\n  opacity: 0 !important;\n}", ""]);
 
 // exports
 exports.locals = {
-	"info": "eideuz8qvbW4sKXS7ttqd",
-	"title": "_1XHpNyOAM0gmggY32QtxFD",
-	"cards": "_29VUr53kf3ajRXIi_vMf_I",
-	"card_container": "_3KB5HSxGhxeJj89qdxcqaE",
-	"card_item": "_2vaL9dDrp9-s_YgArTqNCa",
-	"shadow": "_3B9LWjWS_pagSQoHMufnuU",
-	"gradient": "_3Vv62SvW-oFF4qpy-AnTtt",
-	"name": "_2yL4pWuNJ0PCJd5sU7AqDM",
-	"desc": "_2tlr-ylGfA94Y0kljMrzdO",
-	"hovered": "_3ER_yDIZOkfp3_jMK_oQGU"
+	"info": "_36rOFHAR9t-vVFjHFANB_4",
+	"title": "_23OqER_69DfzCC2DavZ8rr",
+	"cards": "_3G5ZNJMjVN5X58TJKDDAjL",
+	"card_container": "PqzTQ37RAbCTR-gGKDU9b",
+	"card_item": "_6HQxTn6Pems5bfFFUGKoc",
+	"shadow": "_1bZktQIKlp4oiU5whZnQJu",
+	"gradient": "_1Qedri1dTn1LQOchK4ElTE",
+	"name": "_3xr_doEwSaOrWsc39sRh2Q",
+	"desc": "_1kzJTMC70nm4Y3nsCsGoSx",
+	"hovered": "_3bXXwP6Tw_69NJ7-7w32im"
 };
 
 /***/ }),
@@ -6990,14 +7003,14 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._2CYPjqGOHe0xjtL3E78L6b ._3ylPZ4KP-Cg10757T572Sc {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n._2CYPjqGOHe0xjtL3E78L6b ._24CVEHTxwL42QtkG5eoiKU {\n  margin-top: 3rem;\n  width: 100%;\n  height: 0;\n  padding-top: 50%;\n  position: relative;\n}\n._2CYPjqGOHe0xjtL3E78L6b ._24CVEHTxwL42QtkG5eoiKU iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n._2CYPjqGOHe0xjtL3E78L6b ._4gXehk89Avgwlxjd95BfV {\n  margin-top: 3rem;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}", ""]);
+exports.push([module.i, "._2gTvvI4Gb3NkK_q2mqxvO2 ._1nXoG32QrBRUDI_huP_oXg {\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #ffffff;\n}\n._2gTvvI4Gb3NkK_q2mqxvO2 ._3q0-5IJg2f8SgnEwhS1Kxr {\n  margin-top: 3rem;\n  width: 100%;\n  height: 0;\n  padding-top: 50%;\n  position: relative;\n}\n._2gTvvI4Gb3NkK_q2mqxvO2 ._3q0-5IJg2f8SgnEwhS1Kxr iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n._2gTvvI4Gb3NkK_q2mqxvO2 ._1IxP_wR-jlyszBW7ljMprc {\n  margin-top: 3rem;\n  font-size: 1.8rem;\n  line-height: 2.1rem;\n  color: #ffffff;\n}", ""]);
 
 // exports
 exports.locals = {
-	"content": "_2CYPjqGOHe0xjtL3E78L6b",
-	"title": "_3ylPZ4KP-Cg10757T572Sc",
-	"video_block": "_24CVEHTxwL42QtkG5eoiKU",
-	"text": "_4gXehk89Avgwlxjd95BfV"
+	"content": "_2gTvvI4Gb3NkK_q2mqxvO2",
+	"title": "_1nXoG32QrBRUDI_huP_oXg",
+	"video_block": "_3q0-5IJg2f8SgnEwhS1Kxr",
+	"text": "_1IxP_wR-jlyszBW7ljMprc"
 };
 
 /***/ }),
@@ -7014,18 +7027,18 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._1R9zrkz6JhP8vD3dmeISe7 {\n  display: flex;\n  flex-direction: column;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K {\n  position: relative;\n  width: 100%;\n  padding-top: 70%;\n  margin-bottom: 2rem;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K ._3akdJuutZmEkTH9XXlAyUD {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: space-between;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR {\n  display: flex;\n  flex-direction: column;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR._1SxEFLQQoDX9sFNHpSg_5U {\n  width: calc(66.6% - 0.6rem);\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR._17WemZ44KcdYA-u_PyUacR {\n  width: calc(33.3% - 1.2rem);\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR ._3v3a4gCuEMbf6S_zeKMJVU {\n  width: 100%;\n  height: calc(50% - 1rem);\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 2rem;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR ._3v3a4gCuEMbf6S_zeKMJVU:last-child {\n  margin-bottom: 0;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K._34lodR2EsGOwZGZ4zVFrd5 ._3akdJuutZmEkTH9XXlAyUD {\n  flex-direction: row-reverse;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K._34lodR2EsGOwZGZ4zVFrd5 ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR ._3v3a4gCuEMbf6S_zeKMJVU:first-child {\n  margin-bottom: 0;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K._34lodR2EsGOwZGZ4zVFrd5 ._3akdJuutZmEkTH9XXlAyUD .jKTx4cbLBxA177W-9-gmR ._3v3a4gCuEMbf6S_zeKMJVU:last-child {\n  margin-bottom: 2rem;\n}\n._1R9zrkz6JhP8vD3dmeISe7 ._3VVxGD8JsjReTYz6HyiR8K._34lodR2EsGOwZGZ4zVFrd5 .jKTx4cbLBxA177W-9-gmR {\n  flex-direction: column-reverse;\n}", ""]);
+exports.push([module.i, "._34CsLl2rSH58glC92LKUa2 {\n  display: flex;\n  flex-direction: column;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- {\n  position: relative;\n  width: 100%;\n  padding-top: 70%;\n  margin-bottom: 2rem;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- ._1f57cYE--30puPEhJfAUBM {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: space-between;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT {\n  display: flex;\n  flex-direction: column;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT._3GM8ynxqKZW3ydOmBR4GZP {\n  width: calc(66.6% - 0.6rem);\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT.fpf4c3ip9cxuBiJSz-mvu {\n  width: calc(33.3% - 1.2rem);\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT .FJmSFYj4uxM7xfiKIcmYA {\n  width: 100%;\n  height: calc(50% - 1rem);\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 2rem;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY- ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT .FJmSFYj4uxM7xfiKIcmYA:last-child {\n  margin-bottom: 0;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY-._2efhLquR1e-s0DCKIpsxYI ._1f57cYE--30puPEhJfAUBM {\n  flex-direction: row-reverse;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY-._2efhLquR1e-s0DCKIpsxYI ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT .FJmSFYj4uxM7xfiKIcmYA:first-child {\n  margin-bottom: 0;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY-._2efhLquR1e-s0DCKIpsxYI ._1f57cYE--30puPEhJfAUBM .jrhJXKyqadmaWLkKMMzDT .FJmSFYj4uxM7xfiKIcmYA:last-child {\n  margin-bottom: 2rem;\n}\n._34CsLl2rSH58glC92LKUa2 .pefNiUtAIO_XC8EHhZRY-._2efhLquR1e-s0DCKIpsxYI .jrhJXKyqadmaWLkKMMzDT {\n  flex-direction: column-reverse;\n}", ""]);
 
 // exports
 exports.locals = {
-	"article_container": "_1R9zrkz6JhP8vD3dmeISe7",
-	"row_container": "_3VVxGD8JsjReTYz6HyiR8K",
-	"row": "_3akdJuutZmEkTH9XXlAyUD",
-	"column": "jKTx4cbLBxA177W-9-gmR",
-	"long": "_1SxEFLQQoDX9sFNHpSg_5U",
-	"short": "_17WemZ44KcdYA-u_PyUacR",
-	"sub_row": "_3v3a4gCuEMbf6S_zeKMJVU",
-	"reverse": "_34lodR2EsGOwZGZ4zVFrd5"
+	"article_container": "_34CsLl2rSH58glC92LKUa2",
+	"row_container": "pefNiUtAIO_XC8EHhZRY-",
+	"row": "_1f57cYE--30puPEhJfAUBM",
+	"column": "jrhJXKyqadmaWLkKMMzDT",
+	"long": "_3GM8ynxqKZW3ydOmBR4GZP",
+	"short": "fpf4c3ip9cxuBiJSz-mvu",
+	"sub_row": "FJmSFYj4uxM7xfiKIcmYA",
+	"reverse": "_2efhLquR1e-s0DCKIpsxYI"
 };
 
 /***/ }),
@@ -7042,16 +7055,16 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".CmchiYfDPti9cPNMPuSP2 {\n  display: flex;\n  flex-direction: column;\n}\n.CmchiYfDPti9cPNMPuSP2 ._3Qr0GAdHQbcdkjidUlohK- {\n  display: flex;\n  justify-content: space-between;\n  height: 43rem;\n  margin-bottom: 2rem;\n}\n.CmchiYfDPti9cPNMPuSP2 ._3Qr0GAdHQbcdkjidUlohK- ._3krb50SLr_E_VGP7tqRXo1._28c0PsxKiGed3jNicx3M8J {\n  width: calc(66.6% - 1rem);\n}\n.CmchiYfDPti9cPNMPuSP2 ._3Qr0GAdHQbcdkjidUlohK- ._3krb50SLr_E_VGP7tqRXo1.HYrpJWW_UmeVBFJgJBMyG {\n  width: calc(33.3% - 1rem);\n}\n.CmchiYfDPti9cPNMPuSP2 ._3Qr0GAdHQbcdkjidUlohK-._1VTr1_CGAfwkP7eboH4ZfO {\n  flex-direction: row-reverse;\n}", ""]);
+exports.push([module.i, ".qOyLco53cyPir1zTlo9-O {\n  display: flex;\n  flex-direction: column;\n}\n.qOyLco53cyPir1zTlo9-O .Ve2UGeDf9JhAtu99VvIeB {\n  display: flex;\n  justify-content: space-between;\n  height: 43rem;\n  margin-bottom: 2rem;\n}\n.qOyLco53cyPir1zTlo9-O .Ve2UGeDf9JhAtu99VvIeB ._3zy4244QVWOuGLD_9Bmuqh._1K4IM8K2BHfeBzrnlxnw1V {\n  width: calc(66.6% - 1rem);\n}\n.qOyLco53cyPir1zTlo9-O .Ve2UGeDf9JhAtu99VvIeB ._3zy4244QVWOuGLD_9Bmuqh._1orjszd2_mgWjE0mfn66Cs {\n  width: calc(33.3% - 1rem);\n}\n.qOyLco53cyPir1zTlo9-O .Ve2UGeDf9JhAtu99VvIeB._2MNyNz208tdqdVnpPk10xt {\n  flex-direction: row-reverse;\n}", ""]);
 
 // exports
 exports.locals = {
-	"video_container": "CmchiYfDPti9cPNMPuSP2",
-	"row": "_3Qr0GAdHQbcdkjidUlohK-",
-	"column": "_3krb50SLr_E_VGP7tqRXo1",
-	"long": "_28c0PsxKiGed3jNicx3M8J",
-	"short": "HYrpJWW_UmeVBFJgJBMyG",
-	"reverse": "_1VTr1_CGAfwkP7eboH4ZfO"
+	"video_container": "qOyLco53cyPir1zTlo9-O",
+	"row": "Ve2UGeDf9JhAtu99VvIeB",
+	"column": "_3zy4244QVWOuGLD_9Bmuqh",
+	"long": "_1K4IM8K2BHfeBzrnlxnw1V",
+	"short": "_1orjszd2_mgWjE0mfn66Cs",
+	"reverse": "_2MNyNz208tdqdVnpPk10xt"
 };
 
 /***/ }),
@@ -7068,14 +7081,14 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "._3zTUUZuqm_k99zXF4U6w8s {\n  position: relative;\n}\n\n._2DMSbeGB2FpxhVFW0prSCP ._3xy1pmONW3EN6dqYLs0-Lo {\n  width: 100%;\n  height: 100vh;\n  background-image: url(/images/background2.jpg);\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  position: fixed;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  display: block;\n  z-index: -1;\n}\n._2DMSbeGB2FpxhVFW0prSCP ._3xy1pmONW3EN6dqYLs0-Lo ._2xZt_SYDVa4rM44OLl7B2- {\n  width: 100%;\n  height: 100%;\n  background: rgba(42, 68, 78, 0.5);\n}", ""]);
+exports.push([module.i, "._3hxeEKA-afninPX9A0f3VM {\n  position: relative;\n}\n\n._3i9ucZOt_RFu2b2R1ibtVW ._2O1Z6e8J0HxORXR_bimtzc {\n  width: 100%;\n  height: 100vh;\n  background-image: url(/images/background2.jpg);\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  position: fixed;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  display: block;\n  z-index: -1;\n}\n._3i9ucZOt_RFu2b2R1ibtVW ._2O1Z6e8J0HxORXR_bimtzc .MyR9q3J7uVAYw2lCICqe_ {\n  width: 100%;\n  height: 100%;\n  background: rgba(42, 68, 78, 0.5);\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_3zTUUZuqm_k99zXF4U6w8s",
-	"block_with_background": "_2DMSbeGB2FpxhVFW0prSCP",
-	"background_img": "_3xy1pmONW3EN6dqYLs0-Lo",
-	"shadow": "_2xZt_SYDVa4rM44OLl7B2-"
+	"container": "_3hxeEKA-afninPX9A0f3VM",
+	"block_with_background": "_3i9ucZOt_RFu2b2R1ibtVW",
+	"background_img": "_2O1Z6e8J0HxORXR_bimtzc",
+	"shadow": "MyR9q3J7uVAYw2lCICqe_"
 };
 
 /***/ }),
@@ -7092,15 +7105,15 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".EqaJ4FmoTPDt1EBx5bwmN {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n}\n.EqaJ4FmoTPDt1EBx5bwmN ._10j4XAhpqlULIAgqCFcBAK {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.EqaJ4FmoTPDt1EBx5bwmN .zlb30pxN2g6n620C5U56C {\n  position: absolute;\n  top: 70%;\n  left: 50%;\n  width: 70%;\n  max-width: 110rem;\n  transform: translateX(-50%);\n}\n.EqaJ4FmoTPDt1EBx5bwmN ._1yslBaNoaiWTxu9bbMMdoN {\n  width: 100%;\n  height: 70%;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);\n}\n.EqaJ4FmoTPDt1EBx5bwmN .PGFeefE8s9NFjrMM5boYo {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.3);\n}", ""]);
+exports.push([module.i, "._3Ofg1E1Skb9imnF12XsZrk {\n  width: 100%;\n  height: 100vh;\n  position: relative;\n}\n._3Ofg1E1Skb9imnF12XsZrk ._2dt_N78VmTUX0TOW4Yqj9U {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3Ofg1E1Skb9imnF12XsZrk ._3W2M7UZzAJY5TypXZTpqBY {\n  position: absolute;\n  top: 70%;\n  left: 50%;\n  width: 70%;\n  max-width: 110rem;\n  transform: translateX(-50%);\n}\n._3Ofg1E1Skb9imnF12XsZrk ._1unX5CYRZtri9N-6J156lr {\n  width: 100%;\n  height: 70%;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);\n}\n._3Ofg1E1Skb9imnF12XsZrk ._2kwGAlJV0eykwPErOL1wgn {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: rgba(0, 0, 0, 0.3);\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "EqaJ4FmoTPDt1EBx5bwmN",
-	"back_img": "_10j4XAhpqlULIAgqCFcBAK",
-	"logo": "zlb30pxN2g6n620C5U56C",
-	"gradient": "_1yslBaNoaiWTxu9bbMMdoN",
-	"shadow": "PGFeefE8s9NFjrMM5boYo"
+	"container": "_3Ofg1E1Skb9imnF12XsZrk",
+	"back_img": "_2dt_N78VmTUX0TOW4Yqj9U",
+	"logo": "_3W2M7UZzAJY5TypXZTpqBY",
+	"gradient": "_1unX5CYRZtri9N-6J156lr",
+	"shadow": "_2kwGAlJV0eykwPErOL1wgn"
 };
 
 /***/ }),
@@ -7117,12 +7130,12 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._3Rao_Dgp41OcBXX8Pel49Z {\n  width: 100%;\n  padding: 6rem 0;\n}\n._3Rao_Dgp41OcBXX8Pel49Z ._15xpx4fnp-fEsINuiyRHbu {\n  background: #ffffff;\n  margin: 0 auto;\n  width: 48rem;\n  padding: 6rem;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #000000;\n}", ""]);
+exports.push([module.i, "._2oMhJNt_HzXFnf-JYdJkfu {\n  width: 100%;\n  padding: 6rem 0;\n}\n._2oMhJNt_HzXFnf-JYdJkfu ._1VVXIb1GezSe4BZ14E3cKU {\n  background: #ffffff;\n  margin: 0 auto;\n  width: 48rem;\n  padding: 6rem;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #000000;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_3Rao_Dgp41OcBXX8Pel49Z",
-	"card": "_15xpx4fnp-fEsINuiyRHbu"
+	"container": "_2oMhJNt_HzXFnf-JYdJkfu",
+	"card": "_1VVXIb1GezSe4BZ14E3cKU"
 };
 
 /***/ }),
@@ -7139,13 +7152,13 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".JTSZj82DyBmGUtGp1sQub {\n  width: 100%;\n  padding: 6rem 0;\n  height: 76rem;\n  background: #ffffff;\n}\n.JTSZj82DyBmGUtGp1sQub ._1Ms65AzFKEycX-ZbdlDWrc {\n  width: calc(100% - 12rem);\n  height: 6rem;\n  max-width: 110rem;\n  position: relative;\n  margin: 0 auto;\n}\n.JTSZj82DyBmGUtGp1sQub .PloKxYkPGqLB8qJyRq58l {\n  position: absolute;\n  transform: rotate(-90deg);\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #000000;\n  font-weight: bold;\n  top: 25rem;\n  left: -25rem;\n}", ""]);
+exports.push([module.i, ".HpeQrl6ppQCL3NfPf3h0n {\n  width: 100%;\n  padding: 6rem 0;\n  height: 76rem;\n  background: #ffffff;\n}\n.HpeQrl6ppQCL3NfPf3h0n ._2PCN41KtwzYGgN9hRGtDQX {\n  width: calc(100% - 12rem);\n  height: 6rem;\n  max-width: 110rem;\n  position: relative;\n  margin: 0 auto;\n}\n.HpeQrl6ppQCL3NfPf3h0n .X_3RD14no4eX2q9Rz50ow {\n  position: absolute;\n  transform: rotate(-90deg);\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #000000;\n  font-weight: bold;\n  top: 25rem;\n  left: -25rem;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "JTSZj82DyBmGUtGp1sQub",
-	"content": "_1Ms65AzFKEycX-ZbdlDWrc",
-	"back_text": "PloKxYkPGqLB8qJyRq58l"
+	"container": "HpeQrl6ppQCL3NfPf3h0n",
+	"content": "_2PCN41KtwzYGgN9hRGtDQX",
+	"back_text": "X_3RD14no4eX2q9Rz50ow"
 };
 
 /***/ }),
@@ -7162,11 +7175,11 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._1_SFlW20ytTMNGtW8usqud {\n  background: rgba(0, 0, 0, 0.7);\n  width: 100%;\n  padding: 6rem 0;\n  height: 50rem;\n}", ""]);
+exports.push([module.i, "._18Ucg8DlJ6ZK77Vf2AiQ5h {\n  background: rgba(0, 0, 0, 0.7);\n  width: 100%;\n  padding: 6rem 0;\n  height: 50rem;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_1_SFlW20ytTMNGtW8usqud"
+	"container": "_18Ucg8DlJ6ZK77Vf2AiQ5h"
 };
 
 /***/ }),
@@ -7183,23 +7196,23 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._2Dk565AqxJwxet-HPmyyEk {\n  width: 100%;\n  padding: 6rem 0;\n  background: #ffffff;\n}\n._2Dk565AqxJwxet-HPmyyEk .KcY6PW1tHUCPf6-VkJtlh {\n  width: calc(100% - 32rem);\n  height: auto;\n  max-width: 110rem;\n  position: relative;\n  margin: 0 auto;\n  padding-left: 8rem;\n}\n._2Dk565AqxJwxet-HPmyyEk ._1XAWVUl1clrJxZALdg8ppW {\n  position: absolute;\n  transform: rotate(-90deg);\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #000000;\n  font-weight: bold;\n  top: 16rem;\n  left: -25rem;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN {\n  display: flex;\n  flex-direction: column;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 {\n  position: relative;\n  width: 100%;\n  padding-top: 70%;\n  margin-bottom: 2rem;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1_KgPKtpgp-dUtANXnKYL4 {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: space-between;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1_KgPKtpgp-dUtANXnKYL4 ._1teNATLbWQMtrqL27szIOq {\n  display: flex;\n  flex-direction: column;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1_KgPKtpgp-dUtANXnKYL4 ._1teNATLbWQMtrqL27szIOq._2ipuSn4v09VFmEW69lGJs_ {\n  width: calc(66.6% - 0.6rem);\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1_KgPKtpgp-dUtANXnKYL4 ._1teNATLbWQMtrqL27szIOq._3JaPQUsBGu0pAIbr51n4GD {\n  width: calc(33.3% - 1.2rem);\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1_KgPKtpgp-dUtANXnKYL4 ._1teNATLbWQMtrqL27szIOq ._18v_JzaA8gGUfrycNp7tQx {\n  width: 100%;\n  height: calc(50% - 1rem);\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 2rem;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1_KgPKtpgp-dUtANXnKYL4 ._1teNATLbWQMtrqL27szIOq ._18v_JzaA8gGUfrycNp7tQx:last-child {\n  margin-bottom: 0;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._29j4oEAwBXPsQsqD4TQj-f {\n  height: calc(50% - 1rem);\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1xBRAaPfeC6gq_vp2kYk9S {\n  width: 100%;\n  height: calc(50% - 1rem);\n  margin-top: 2rem;\n  position: relative;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1xBRAaPfeC6gq_vp2kYk9S ._3I_XB8QCjAopy_n7cqODZ_ {\n  display: flex;\n  align-items: center;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #000000;\n}\n._2Dk565AqxJwxet-HPmyyEk .ETZfyyjqHXVYu9_NIaHXN ._20Sj63Q4-j7OgfWj_iUuz7 ._1xBRAaPfeC6gq_vp2kYk9S ._3I_XB8QCjAopy_n7cqODZ_ img {\n  margin-left: 1rem;\n  width: 3.2rem;\n  display: block;\n}", ""]);
+exports.push([module.i, "._1HGkA-vKWN36coAdqVGmsE {\n  width: 100%;\n  padding: 6rem 0;\n  background: #ffffff;\n}\n._1HGkA-vKWN36coAdqVGmsE ._6UbC6zyFlc1oqrlTkI-e3 {\n  width: calc(100% - 32rem);\n  height: auto;\n  max-width: 110rem;\n  position: relative;\n  margin: 0 auto;\n  padding-left: 8rem;\n}\n._1HGkA-vKWN36coAdqVGmsE ._7Z2s2-cvPg4yO7rYb-6Bj {\n  position: absolute;\n  transform: rotate(-90deg);\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #000000;\n  font-weight: bold;\n  top: 16rem;\n  left: -25rem;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 {\n  display: flex;\n  flex-direction: column;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz {\n  position: relative;\n  width: 100%;\n  padding-top: 70%;\n  margin-bottom: 2rem;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._25ZUbpFRPXeEX283hZ-QNx {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: space-between;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._25ZUbpFRPXeEX283hZ-QNx .NBkL8dMnZc4SJiBeiCDeg {\n  display: flex;\n  flex-direction: column;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._25ZUbpFRPXeEX283hZ-QNx .NBkL8dMnZc4SJiBeiCDeg._1CNM_xv5sg7ES8Vs17BYmI {\n  width: calc(66.6% - 0.6rem);\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._25ZUbpFRPXeEX283hZ-QNx .NBkL8dMnZc4SJiBeiCDeg._2bj2udGMlIxHkNFApN8pU4 {\n  width: calc(33.3% - 1.2rem);\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._25ZUbpFRPXeEX283hZ-QNx .NBkL8dMnZc4SJiBeiCDeg ._2w665wE5d1khCzgXOFk-Ic {\n  width: 100%;\n  height: calc(50% - 1rem);\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 2rem;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._25ZUbpFRPXeEX283hZ-QNx .NBkL8dMnZc4SJiBeiCDeg ._2w665wE5d1khCzgXOFk-Ic:last-child {\n  margin-bottom: 0;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._2dUxdK-tEfT0tW1KK0gGuS {\n  height: calc(50% - 1rem);\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._1O0nKNh1lX9QNnmnGBDZzP {\n  width: 100%;\n  height: calc(50% - 1rem);\n  margin-top: 2rem;\n  position: relative;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._1O0nKNh1lX9QNnmnGBDZzP .hjuqDMZoeOPc7wXphYuWs {\n  display: flex;\n  align-items: center;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  font-size: 2.4rem;\n  line-height: 2.8rem;\n  color: #000000;\n}\n._1HGkA-vKWN36coAdqVGmsE ._1JB23c64SYIRIL7X6DYzi9 ._2NdmPwb930akU5C28U9kIz ._1O0nKNh1lX9QNnmnGBDZzP .hjuqDMZoeOPc7wXphYuWs img {\n  margin-left: 1rem;\n  width: 3.2rem;\n  display: block;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_2Dk565AqxJwxet-HPmyyEk",
-	"content": "KcY6PW1tHUCPf6-VkJtlh",
-	"back_text": "_1XAWVUl1clrJxZALdg8ppW",
-	"article_container": "ETZfyyjqHXVYu9_NIaHXN",
-	"row_container": "_20Sj63Q4-j7OgfWj_iUuz7",
-	"row": "_1_KgPKtpgp-dUtANXnKYL4",
-	"column": "_1teNATLbWQMtrqL27szIOq",
-	"long": "_2ipuSn4v09VFmEW69lGJs_",
-	"short": "_3JaPQUsBGu0pAIbr51n4GD",
-	"sub_row": "_18v_JzaA8gGUfrycNp7tQx",
-	"short_row": "_29j4oEAwBXPsQsqD4TQj-f",
-	"link_container": "_1xBRAaPfeC6gq_vp2kYk9S",
-	"show_all": "_3I_XB8QCjAopy_n7cqODZ_"
+	"container": "_1HGkA-vKWN36coAdqVGmsE",
+	"content": "_6UbC6zyFlc1oqrlTkI-e3",
+	"back_text": "_7Z2s2-cvPg4yO7rYb-6Bj",
+	"article_container": "_1JB23c64SYIRIL7X6DYzi9",
+	"row_container": "_2NdmPwb930akU5C28U9kIz",
+	"row": "_25ZUbpFRPXeEX283hZ-QNx",
+	"column": "NBkL8dMnZc4SJiBeiCDeg",
+	"long": "_1CNM_xv5sg7ES8Vs17BYmI",
+	"short": "_2bj2udGMlIxHkNFApN8pU4",
+	"sub_row": "_2w665wE5d1khCzgXOFk-Ic",
+	"short_row": "_2dUxdK-tEfT0tW1KK0gGuS",
+	"link_container": "_1O0nKNh1lX9QNnmnGBDZzP",
+	"show_all": "hjuqDMZoeOPc7wXphYuWs"
 };
 
 /***/ }),
@@ -7216,17 +7229,17 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".gEPj-VoltiVVvmdjCY2Lg {\n  height: 8rem;\n  width: 100%;\n  background: rgba(0, 0, 0, 0.3);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 3;\n}\n\n._1MDU56wIbu-ZJ4cYVaUDW2 {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n._1MDU56wIbu-ZJ4cYVaUDW2 ._3TkhYbfCM755GIztGbXfa- {\n  display: block;\n  padding: 0 3rem;\n}\n._1MDU56wIbu-ZJ4cYVaUDW2 ._3TkhYbfCM755GIztGbXfa-._2e923a9PaHtub1bBGztl7r img {\n  width: 3rem;\n}\n._1MDU56wIbu-ZJ4cYVaUDW2 ._3TkhYbfCM755GIztGbXfa-._9TpOEQZh1YiX48aGgMscv img {\n  width: 2rem;\n}\n._1MDU56wIbu-ZJ4cYVaUDW2 ._3TkhYbfCM755GIztGbXfa-._2YILlSbz4arTuUhAYeEWAU img {\n  width: 2rem;\n}\n._1MDU56wIbu-ZJ4cYVaUDW2 ._3TkhYbfCM755GIztGbXfa-._3P99BhWi2itjJtNZZnQ4gZ img {\n  width: 3rem;\n}", ""]);
+exports.push([module.i, "._2-qjLAlBbUJpktaH2cEi6w {\n  height: 8rem;\n  width: 100%;\n  background: rgba(0, 0, 0, 0.3);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 3;\n}\n\n._3c-CpG4J-ZF4h_BMUFiQoj {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n._3c-CpG4J-ZF4h_BMUFiQoj ._1hg4IxRdboI_NZhhqn3kVK {\n  display: block;\n  padding: 0 3rem;\n}\n._3c-CpG4J-ZF4h_BMUFiQoj ._1hg4IxRdboI_NZhhqn3kVK._19JstYIfCgu03mEh5YuwLD img {\n  width: 3rem;\n}\n._3c-CpG4J-ZF4h_BMUFiQoj ._1hg4IxRdboI_NZhhqn3kVK._39jPkzRkK2NUoNCEKUPoDd img {\n  width: 2rem;\n}\n._3c-CpG4J-ZF4h_BMUFiQoj ._1hg4IxRdboI_NZhhqn3kVK._1vFCV8m9r96MfRcevsGtjd img {\n  width: 2rem;\n}\n._3c-CpG4J-ZF4h_BMUFiQoj ._1hg4IxRdboI_NZhhqn3kVK.mfSkIcmddOJYN39EL-nic img {\n  width: 3rem;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "gEPj-VoltiVVvmdjCY2Lg",
-	"social_icons": "_1MDU56wIbu-ZJ4cYVaUDW2",
-	"social_item": "_3TkhYbfCM755GIztGbXfa-",
-	"vk": "_2e923a9PaHtub1bBGztl7r",
-	"inst": "_9TpOEQZh1YiX48aGgMscv",
-	"tg": "_2YILlSbz4arTuUhAYeEWAU",
-	"youtube": "_3P99BhWi2itjJtNZZnQ4gZ"
+	"container": "_2-qjLAlBbUJpktaH2cEi6w",
+	"social_icons": "_3c-CpG4J-ZF4h_BMUFiQoj",
+	"social_item": "_1hg4IxRdboI_NZhhqn3kVK",
+	"vk": "_19JstYIfCgu03mEh5YuwLD",
+	"inst": "_39jPkzRkK2NUoNCEKUPoDd",
+	"tg": "_1vFCV8m9r96MfRcevsGtjd",
+	"youtube": "mfSkIcmddOJYN39EL-nic"
 };
 
 /***/ }),
@@ -7243,13 +7256,13 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._3E8vH7U6pzbnHiyXK63rxF {\n  width: 100%;\n  padding: 6rem 0;\n  height: 70rem;\n  background: transparent;\n}\n._3E8vH7U6pzbnHiyXK63rxF ._1Q-DD-22kBMdVoFBjrFYW6 {\n  width: calc(100% - 12rem);\n  height: 6rem;\n  max-width: 110rem;\n  position: relative;\n  margin: 0 auto;\n}\n._3E8vH7U6pzbnHiyXK63rxF ._2N593cWeePPR95D21LUtYx {\n  position: absolute;\n  transform: rotate(-90deg);\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #ffffff;\n  font-weight: bold;\n  top: 16rem;\n  left: -25rem;\n}", ""]);
+exports.push([module.i, ".fZ0Sr20W03YfxRq3mYCVA {\n  width: 100%;\n  padding: 6rem 0;\n  height: 70rem;\n  background: transparent;\n}\n.fZ0Sr20W03YfxRq3mYCVA ._2qJsKFnoqeWUSiEkPP-k-Z {\n  width: calc(100% - 12rem);\n  height: 6rem;\n  max-width: 110rem;\n  position: relative;\n  margin: 0 auto;\n}\n.fZ0Sr20W03YfxRq3mYCVA .WNLGUeA5zGLvmsaIeWX8B {\n  position: absolute;\n  transform: rotate(-90deg);\n  font-size: 14.4rem;\n  line-height: 16.9rem;\n  color: #ffffff;\n  font-weight: bold;\n  top: 16rem;\n  left: -25rem;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_3E8vH7U6pzbnHiyXK63rxF",
-	"content": "_1Q-DD-22kBMdVoFBjrFYW6",
-	"back_text": "_2N593cWeePPR95D21LUtYx"
+	"container": "fZ0Sr20W03YfxRq3mYCVA",
+	"content": "_2qJsKFnoqeWUSiEkPP-k-Z",
+	"back_text": "WNLGUeA5zGLvmsaIeWX8B"
 };
 
 /***/ }),
@@ -7266,12 +7279,12 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "._1a3pIV0xKfY1Ki5w7EZqeS {\n  width: 100%;\n  height: 64rem;\n  position: relative;\n}\n._1a3pIV0xKfY1Ki5w7EZqeS img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._1a3pIV0xKfY1Ki5w7EZqeS ._3hTW4kMP8bAgd-4l1c73IU {\n  background: rgba(0, 0, 0, 0.5);\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}", ""]);
+exports.push([module.i, "._3VHyoKOzw0kgBPBi7Oo7mB {\n  width: 100%;\n  height: 64rem;\n  position: relative;\n}\n._3VHyoKOzw0kgBPBi7Oo7mB img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n._3VHyoKOzw0kgBPBi7Oo7mB ._2jO_Ir3WE_BHTA14Q28F9U {\n  background: rgba(0, 0, 0, 0.5);\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}", ""]);
 
 // exports
 exports.locals = {
-	"container": "_1a3pIV0xKfY1Ki5w7EZqeS",
-	"shadow": "_3hTW4kMP8bAgd-4l1c73IU"
+	"container": "_3VHyoKOzw0kgBPBi7Oo7mB",
+	"shadow": "_2jO_Ir3WE_BHTA14Q28F9U"
 };
 
 /***/ }),
@@ -85172,6 +85185,765 @@ if ( true && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed
 
 /***/ }),
 
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function define(obj, key, value) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+    return obj[key];
+  }
+  try {
+    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+    define({}, "");
+  } catch (err) {
+    define = function(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunction.displayName = define(
+    GeneratorFunctionPrototype,
+    toStringTagSymbol,
+    "GeneratorFunction"
+  );
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      define(prototype, method, function(arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      define(genFun, toStringTagSymbol, "GeneratorFunction");
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  define(Gp, toStringTagSymbol, "Generator");
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  Function("r", "regeneratorRuntime = r")(runtime);
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js ***!
@@ -94153,11 +94925,13 @@ var AppView = function AppView() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
- // import userReducer from './userReducer'
-// import stateReducer from './stateRed'
+/* harmony import */ var _userReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./userReducer */ "./resources/js/ReduxStore/userReducer.ts");
 
-var reducers = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({// userReducer,
-  // stateReducer,
+ // import stateReducer from './stateRed'
+
+var reducers = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
+  userReducer: _userReducer__WEBPACK_IMPORTED_MODULE_1__["default"] // stateReducer,
+
 });
 
 var createStore = function createStore(preloadedState) {
@@ -94165,6 +94939,100 @@ var createStore = function createStore(preloadedState) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (createStore);
+
+/***/ }),
+
+/***/ "./resources/js/ReduxStore/userReducer.ts":
+/*!************************************************!*\
+  !*** ./resources/js/ReduxStore/userReducer.ts ***!
+  \************************************************/
+/*! exports provided: setUser, setUserToken, setPageUser, setUserRefLink, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUser", function() { return setUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUserToken", function() { return setUserToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPageUser", function() { return setPageUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUserRefLink", function() { return setUserRefLink; });
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var SET_USER = 'SET_USER';
+var SET_USER_TOKEN = 'SET_USER_TOKEN';
+var SET_PAGE_USER = 'SET_PAGE_USER';
+var SET_USER_REF_LINK = 'SET_USER_REF_LINK';
+var setUser = function setUser(user) {
+  return {
+    type: SET_USER,
+    user: user
+  };
+};
+var setUserToken = function setUserToken(token) {
+  return {
+    type: SET_USER_TOKEN,
+    token: token
+  };
+};
+var setPageUser = function setPageUser(page_user) {
+  return {
+    type: SET_PAGE_USER,
+    page_user: page_user
+  };
+};
+var setUserRefLink = function setUserRefLink(refLink) {
+  return {
+    type: SET_USER_REF_LINK,
+    refLink: refLink
+  };
+};
+var initialState = {
+  user: null,
+  token: null,
+  page_user: null,
+  isLoading: true,
+  refLink: ''
+};
+
+var userReducer = function userReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case SET_USER:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        user: action.user,
+        isLoading: false
+      });
+
+    case SET_PAGE_USER:
+      return _objectSpread(_objectSpread({}, state), {}, {
+        page_user: action.page_user
+      });
+
+    case SET_USER_TOKEN:
+      {
+        return _objectSpread(_objectSpread({}, state), {}, {
+          token: action.token
+        });
+      }
+
+    case SET_USER_REF_LINK:
+      {
+        return _objectSpread(_objectSpread({}, state), {}, {
+          refLink: action.refLink
+        });
+      }
+
+    default:
+      return state;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (userReducer);
 
 /***/ }),
 
@@ -94682,6 +95550,8 @@ var CategoriesNavBar = function CategoriesNavBar() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _CategoriesNavBar_scss__WEBPACK_IMPORTED_MODULE_5___default.a.container
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _CategoriesNavBar_scss__WEBPACK_IMPORTED_MODULE_5___default.a.inner_container
   }, !isLoading && categories && categories.map(function (item) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "".concat(_CategoriesNavBar_scss__WEBPACK_IMPORTED_MODULE_5___default.a.item, " ").concat(params.slug === item.slug ? _CategoriesNavBar_scss__WEBPACK_IMPORTED_MODULE_5___default.a.active : ''),
@@ -94723,7 +95593,7 @@ var CategoriesNavBar = function CategoriesNavBar() {
         className: _CategoriesNavBar_scss__WEBPACK_IMPORTED_MODULE_5___default.a.text
       }, item2.name));
     }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null));
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (CategoriesNavBar);
@@ -94787,55 +95657,93 @@ if(false) {}
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Comments_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Comments.scss */ "./resources/js/components/common/Comments/Comments.scss");
-/* harmony import */ var _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Comments_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _Comments_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Comments.scss */ "./resources/js/components/common/Comments/Comments.scss");
+/* harmony import */ var _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Comments_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
 
 
-var Comments = function Comments() {
+
+var Comments = function Comments(_ref) {
+  var data = _ref.data,
+      addCommentMutation = _ref.addCommentMutation;
+
+  var _useSelector = Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["useSelector"])(function (_ref2) {
+    var userReducer = _ref2.userReducer;
+    return {
+      user: userReducer.user
+    };
+  }),
+      user = _useSelector.user;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+      _useState2 = _slicedToArray(_useState, 2),
+      comment = _useState2[0],
+      setComment = _useState2[1];
+
+  var sendComment = function sendComment() {
+    addCommentMutation.mutate({
+      comment: comment
+    });
+    setComment('');
+  };
+
+  var handleKeyPress = function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      sendComment();
+    }
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.container
+    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.container
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.title
-  }, "\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0438 (10)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.input_block
+    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.title
+  }, "\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0438 (", data && data.length ? data.length : 0, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.input_block
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.comment_input
+    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.comment_input
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/images/video1.png",
+    src: user ? user.photo : '/images/user_default.png',
     alt: "",
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.user_img
+    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.user_img
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
-    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439..."
+    placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439...",
+    value: comment,
+    onChange: function onChange(e) {
+      return setComment(e.target.value);
+    },
+    onKeyPress: handleKeyPress
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.comments_items
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.top_block
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/images/video1.png",
-    alt: "",
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.user_img
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.nickname
-  }, "moseffect21")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text
-  }, "\u0421\u043E\u0433\u043B\u044B \u043D\u0443 \u0438 \u0444\u043B\u044D\u043A\u0441. \u041A\u0443\u0440\u044E \u043F\u0438\u0441\u043E\u0441\u043A\u0443 \u044D\u0432\u0435\u0440\u0438\u0434\u0435\u0439, \u0449\u0430 \u043A\u0430\u043A \u0432\u044B\u0438\u0433\u0440\u0430\u044E \u0447\u0435 \u043D\u0438\u0431\u0443\u0434\u044C \u0438 \u0431\u0443\u0434\u0443 \u043A\u0443\u0440\u0438\u0442\u044C \u0432 \u0434\u0432\u0430 \u0440\u0430\u0437\u0430 \u043E\u043B\u044C\u0448\u0435, \u0443\u0443\u0443\u0443\u0443\u0435\u0435\u0435\u0435\u0435\u0435\u0421\u043E\u0433\u043B\u044B \u043D\u0443 \u0438 \u0444\u043B\u044D\u043A\u0441. \u041A\u0443\u0440\u044E \u043F\u0438\u0441\u043E\u0441\u043A\u0443 \u044D\u0432\u0435\u0440\u0438\u0434\u0435\u0439, \u0449\u0430 \u043A\u0430\u043A \u0432\u044B\u0438\u0433\u0440\u0430\u044E \u0447\u0435 \u043D\u0438\u0431\u0443\u0434\u044C \u0438 \u0431\u0443\u0434\u0443 \u043A\u0443\u0440\u0438\u0442\u044C \u0432 \u0434\u0432\u0430 \u0440\u0430\u0437\u0430 \u043E\u043B\u044C\u0448\u0435, \u0443\u0443\u0443\u0443\u0443\u0435\u0435\u0435\u0435\u0435\u0435\u0421\u043E\u0433\u043B\u044B \u043D\u0443 \u0438 \u0444\u043B\u044D\u043A\u0441. \u041A\u0443\u0440\u044E \u043F\u0438\u0441\u043E\u0441\u043A\u0443 \u044D\u0432\u0435\u0440\u0438\u0434\u0435\u0439, \u0449\u0430 \u043A\u0430\u043A \u0432\u044B\u0438\u0433\u0440\u0430\u044E \u0447\u0435 \u043D\u0438\u0431\u0443\u0434\u044C \u0438 \u0431\u0443\u0434\u0443 \u043A\u0443\u0440\u0438\u0442\u044C \u0432 \u0434\u0432\u0430 \u0440\u0430\u0437\u0430 \u043E\u043B\u044C\u0448\u0435, \u0443\u0443\u0443\u0443\u0443\u0435\u0435\u0435\u0435\u0435\u0435")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.item
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.top_block
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/images/video2.png",
-    alt: "",
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.user_img
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.nickname
-  }, "vlad")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_1___default.a.text
-  }, "\u0421\u043E\u0433\u043B\u044B \u043D\u0443 \u0438 \u0444\u043B\u044D\u043A\u0441. \u041A\u0443\u0440\u044E \u043F\u0438\u0441\u043E\u0441\u043A\u0443 \u044D\u0432\u0435\u0440\u0438\u0434\u0435\u0439, \u0449\u0430 \u043A\u0430\u043A \u0432\u044B\u0438\u0433\u0440\u0430\u044E \u0447\u0435 \u043D\u0438\u0431\u0443\u0434\u044C \u0438 \u0431\u0443\u0434\u0443 \u043A\u0443\u0440\u0438\u0442\u044C \u0432 \u0434\u0432\u0430 \u0440\u0430\u0437\u0430 \u043E\u043B\u044C\u0448\u0435, \u0443\u0443\u0443\u0443\u0443\u0435\u0435\u0435\u0435\u0435\u0435"))));
+    className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.comments_items
+  }, data ? data.map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.item
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.top_block
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: item.user_image ? item.user_image : '/images/user_default.png',
+      alt: "",
+      className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.user_img
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.nickname
+    }, item.nickname ? item.nickname : 'Аноним')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: _Comments_scss__WEBPACK_IMPORTED_MODULE_2___default.a.text
+    }, item.text ? item.text : ''));
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Comments);
@@ -95310,7 +96218,8 @@ var OfferBar = function OfferBar(_ref) {
   }, data.map(function (item) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
       to: "/blog/".concat(item.categ_slug, "/").concat(item.id),
-      className: _OfferBar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.item
+      className: _OfferBar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.item,
+      key: item.id
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
       src: item.photo,
       alt: "",
@@ -95491,10 +96400,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+react_modal__WEBPACK_IMPORTED_MODULE_1___default.a.setAppElement('#root');
 
 var AuthMW = function AuthMW() {
   var location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useLocation"])();
-  console.log(location);
   var params = new URLSearchParams(location.search);
   var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]);
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useHistory"])();
@@ -96034,32 +96943,42 @@ if(false) {}
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_common_Comments__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! components/common/Comments */ "./resources/js/components/common/Comments/index.ts");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ArticleContent.scss */ "./resources/js/components/pages/BlogArticlePage/ArticleContent.scss");
-/* harmony import */ var _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var components_common_Loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/common/Loader */ "./resources/js/components/common/Loader/index.ts");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ArticleContent.scss */ "./resources/js/components/pages/BlogArticlePage/ArticleContent.scss");
+/* harmony import */ var _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _useArticle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useArticle */ "./resources/js/components/pages/BlogArticlePage/useArticle.ts");
 
 
 
 
-var ArticleContent = function ArticleContent() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2___default.a.content
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2___default.a.title
-  }, "\u041A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0447\u0430\u0448\u0438 MOON | \u041A\u0430\u043A \u0437\u0430\u0431\u0438\u0432\u0430\u0442\u044C \u0438 \u043F\u0440\u043E\u0433\u0440\u0435\u0432\u0430\u0442\u044C? | \u041E\u0431\u0437\u043E\u0440 + \u0420\u043E\u0437\u044B\u0433\u0440\u044B\u0448"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2___default.a.video_block
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
+
+
+var ArticleContent = function ArticleContent(_ref) {
+  var article = _ref.article,
+      isLoading = _ref.isLoading;
+  var addCommentMutation = Object(_useArticle__WEBPACK_IMPORTED_MODULE_4__["addComment"])(article.id);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content
+  }, isLoading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(components_common_Loader__WEBPACK_IMPORTED_MODULE_1__["default"], null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3___default.a.title
+  }, article.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3___default.a.video_block
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("iframe", {
     width: "560",
     height: "315",
-    src: "https://www.youtube.com/embed/marWMcSnPlU",
+    src: article.url,
     title: "YouTube video player",
     frameBorder: "0",
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     allowFullScreen: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_2___default.a.text
-  }, "\u0422\u0443\u0442 \u0431\u0443\u0434\u0435\u0442 \u043A\u0430\u043A\u043E\u0435 \u043D\u0438\u0431\u0443\u0434\u044C \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u043A \u0432\u0438\u0434\u0435\u043E \u0438 \u0432\u0441\u044F\u043A\u0438\u0435 \u043F\u0440\u043E\u0447\u0438\u0435 \u043F\u0440\u0438\u043C\u043E\u0447\u043A\u0438 \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(components_common_Comments__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_3___default.a.text
+  }, article.content), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(components_common_Comments__WEBPACK_IMPORTED_MODULE_0__["default"], {
+    data: article.comments,
+    addCommentMutation: addCommentMutation
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ArticleContent);
@@ -96082,7 +97001,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _ArticleContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ArticleContent */ "./resources/js/components/pages/BlogArticlePage/ArticleContent.tsx");
+/* harmony import */ var _useArticle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./useArticle */ "./resources/js/components/pages/BlogArticlePage/useArticle.ts");
 /* eslint-disable no-nested-ternary */
+
 
 
 
@@ -96112,10 +97033,18 @@ var BlogArticlePage = function BlogArticlePage() {
 
   var isVideo = params.slug === 'video';
   var isArticle = params.slug === 'article';
+
+  var _useArticle = Object(_useArticle__WEBPACK_IMPORTED_MODULE_6__["default"])(params.id ? params.id : ''),
+      data = _useArticle.data,
+      isLoading = _useArticle.isLoading;
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_common_ContentLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     cols: 3,
     title: isVideo ? 'Видео' : isArticle ? 'Статьи' : 'Блог'
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_common_CategoriesNavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ArticleContent__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_common_OfferBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_common_CategoriesNavBar__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ArticleContent__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    isLoading: isLoading,
+    article: data ? data.data : []
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_common_OfferBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     data: offerData
   }));
 };
@@ -96137,6 +97066,141 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _BlogArticlePage__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/BlogArticlePage/useArticle.ts":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/pages/BlogArticlePage/useArticle.ts ***!
+  \*********************************************************************/
+/*! exports provided: addComment, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addComment", function() { return addComment; });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var apiClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apiClient */ "./resources/js/apiClient/index.ts");
+/* harmony import */ var apiClient_queryClient__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apiClient/queryClient */ "./resources/js/apiClient/queryClient.ts");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-query */ "./node_modules/react-query/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+/* eslint-disable react-hooks/rules-of-hooks */
+
+
+
+
+
+var addCommentAction = function addCommentAction(id, comment) {
+  var data = apiClient__WEBPACK_IMPORTED_MODULE_1__["default"].post("/api/v1/article/".concat(id, "/comment"), {
+    text: comment,
+    nickname: 'Аноним'
+  });
+  return data;
+};
+
+var addComment = function addComment(id) {
+  var _useSelector = Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["useSelector"])(function (_ref) {
+    var userReducer = _ref.userReducer;
+    return {
+      user: userReducer.user
+    };
+  }),
+      user = _useSelector.user;
+
+  var mutation = Object(react_query__WEBPACK_IMPORTED_MODULE_3__["useMutation"])(function (_ref2) {
+    var comment = _ref2.comment;
+    return addCommentAction(id, comment);
+  }, {
+    onMutate: function () {
+      var _onMutate = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref3) {
+        var comment, previousData;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                comment = _ref3.comment;
+                _context.next = 3;
+                return apiClient_queryClient__WEBPACK_IMPORTED_MODULE_2__["default"].cancelQueries('article');
+
+              case 3:
+                previousData = apiClient_queryClient__WEBPACK_IMPORTED_MODULE_2__["default"].getQueryData(['article', id.toString()]);
+                console.log(previousData);
+
+                if (previousData) {
+                  apiClient_queryClient__WEBPACK_IMPORTED_MODULE_2__["default"].setQueryData(['article', id], _objectSpread(_objectSpread({}, previousData), {}, {
+                    data: _objectSpread(_objectSpread({}, previousData.data), {}, {
+                      comments: previousData.data.comments.push({
+                        id: 0,
+                        user_id: 0,
+                        nickname: user ? user.nickname : 'Аноним',
+                        text: comment,
+                        article_id: id
+                      })
+                    })
+                  })); // if (callback) {
+                  //   callback()
+                  // }
+                }
+
+                return _context.abrupt("return", {
+                  previousData: previousData
+                });
+
+              case 7:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      function onMutate(_x) {
+        return _onMutate.apply(this, arguments);
+      }
+
+      return onMutate;
+    }(),
+    onError: function onError(err, variables, context) {
+      if (context !== null && context !== void 0 && context.previousData) {
+        apiClient_queryClient__WEBPACK_IMPORTED_MODULE_2__["default"].setQueryData(['article', id], context.previousData);
+      }
+    },
+    // Always refetch after error or success:
+    onSettled: function onSettled() {
+      apiClient_queryClient__WEBPACK_IMPORTED_MODULE_2__["default"].invalidateQueries('article');
+    }
+  });
+  return mutation;
+};
+
+var fetchArticle = function fetchArticle(id) {
+  var data = apiClient__WEBPACK_IMPORTED_MODULE_1__["default"].get("/api/v1/article/".concat(id));
+  return data;
+};
+
+var useArticle = function useArticle(id) {
+  var query = Object(react_query__WEBPACK_IMPORTED_MODULE_3__["useQuery"])(['article', id], function () {
+    return fetchArticle(id);
+  }, {
+    enabled: !!id
+  });
+  return _objectSpread({}, query);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (useArticle);
 
 /***/ }),
 
@@ -96194,7 +97258,6 @@ __webpack_require__.r(__webpack_exports__);
 var ArticleContainer = function ArticleContainer(_ref) {
   var data = _ref.data;
   var articles = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortArticles"])(data.articles);
-  console.log(articles);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _ArticleContainer_scss__WEBPACK_IMPORTED_MODULE_3___default.a.article_container
   }, articles.map(function (item, i) {
@@ -97176,7 +98239,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /opt/lampp/htdocs/okolo_kalyana/resources/js/index.tsx */"./resources/js/index.tsx");
+module.exports = __webpack_require__(/*! C:\xampp2\htdocs\okolo_kalyana\resources\js\index.tsx */"./resources/js/index.tsx");
 
 
 /***/ })

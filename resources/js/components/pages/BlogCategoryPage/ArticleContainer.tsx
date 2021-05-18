@@ -11,7 +11,6 @@ type Props = {
 
 const ArticleContainer = ({ data }: Props) => {
   const articles = SortArticles(data.articles)
-  console.log(articles)
   return (
     <div className={s.article_container}>
       {articles.map((item: any, i: number) => {

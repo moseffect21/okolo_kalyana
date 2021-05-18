@@ -43,6 +43,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/categories',[GetRequest::class, 'getCategories']);
     Route::get('/category/{slug}',[GetRequest::class, 'getCategory']);
     Route::get('/article/{id}',[GetRequest::class, 'gelArticle']);
+    Route::get('/team',[GetRequest::class, 'getTeam']);
     Route::post('/article/{id}/comment ',[GetRequest::class, 'pushComment']);
 
     Route::get('/{nickname}',[GetRequest::class, 'getNickname']);

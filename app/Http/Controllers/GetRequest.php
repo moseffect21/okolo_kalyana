@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\categories;
 use App\Models\articles;
+use App\Models\team;
+use App\Models\comments as CommentDB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\comments;
 
@@ -43,24 +45,45 @@ class GetRequest extends Controller
     //  запрос на получение статьи/видео
     public function gelArticle(Request $request,$id)
     {
-        return response()->json(articles::where('id',$id)->first(), 200); 
+        $article = articles::where('id',$id)->first();
+        $article['comments'] = CommentDB::where('article_id',$article['id'])->get();
+        return response()->json($article, 200); 
+        
+    }
+
+    //  запрос на получение команды
+    public function getTeam(Request $request)
+    {
+        $team = team::where('id',1)->first();
+        return response()->json($team, 200); 
         
     }
 
     public function pushComment(Request $request,$id)
     {
-        if(Auth::check()){
-            $comments = New comments;
-            $comments->user_id=Auth::id();
-            $comments->nickname=$request['nickname'];
-            $comments->text=$request['text'];
-            $comments->save();
-            
-            return response()->json("success",200);
-            
-        }else{
-            return response( 0,420);
-        } 
+        if ($request['text']) {
+            if(Auth::check()){
+                $comments = New CommentDB;
+                $comments->user_id=Auth::id();
+                $comments->nickname=$request['nickname'];
+                $comments->text=$request['text'];
+                $comments->article_id=$id;
+                $comments->save();
+                
+                return response()->json("success",200);
+                
+            }else{
+                $comments = New CommentDB;
+                $comments->user_id=0;
+                $comments->nickname=$request['nickname'];
+                $comments->text=$request['text'];
+                $comments->article_id=$id;
+                $comments->save();
+                return response("success",200);
+            } 
+        }
+        return response(0,420);
+        
     }
 
 

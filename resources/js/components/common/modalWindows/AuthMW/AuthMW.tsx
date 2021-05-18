@@ -8,10 +8,11 @@ import mwStyle from '../ModalWindow.scss'
 
 import s from './AuthMW.scss'
 
+Modal.setAppElement('#root')
+
 const AuthMW = () => {
   const location = useLocation()
 
-  console.log(location)
   const params = new URLSearchParams(location.search)
   const isMobile = useContext(Context)
   const history = useHistory()

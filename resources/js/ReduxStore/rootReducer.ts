@@ -1,10 +1,10 @@
 import { createStore as reduxCreateStore, combineReducers, PreloadedState } from 'redux'
 
-// import userReducer from './userReducer'
+import userReducer from './userReducer'
 // import stateReducer from './stateRed'
 
 const reducers = combineReducers({
-  // userReducer,
+  userReducer,
   // stateReducer,
 })
 
