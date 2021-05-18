@@ -20,16 +20,20 @@ const SecondBlock = () => {
                   <div className={s.row}>
                     <div className={`${s.column} ${s.long}`}>
                       <div className={s.sub_row}>
-                        {item[0] && <ArticleCard item={item[0]} type="long" />}
+                        {item[0] && <ArticleCard item={item[0]} type="long" categSlug="articles" />}
                       </div>
                       <div className={s.sub_row}>
-                        {item[1] && <ArticleCard item={item[1]} type="short" />}
-                        {item[2] && <ArticleCard item={item[2]} type="short" />}
+                        {item[1] && (
+                          <ArticleCard item={item[1]} type="short" categSlug="articles" />
+                        )}
+                        {item[2] && (
+                          <ArticleCard item={item[2]} type="short" categSlug="articles" />
+                        )}
                       </div>
                     </div>
                     <div className={`${s.column} ${s.short}`}>
                       <div className={s.short_row}>
-                        {item[3] && <ArticleCard item={item[3]} type="long" />}
+                        {item[3] && <ArticleCard item={item[3]} type="long" categSlug="articles" />}
                       </div>
                       <div className={s.link_container}>
                         <NavLink to="/blog/article" className={s.show_all}>

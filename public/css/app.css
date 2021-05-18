@@ -11117,3 +11117,7 @@ a:hover {
   transform: rotate(180deg);
 }
 
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+

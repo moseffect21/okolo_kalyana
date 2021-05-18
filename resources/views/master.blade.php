@@ -30,6 +30,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/image/favicons/fav.svg">
     <link rel="icon" type="image/png" sizes="16x16" href="/image/favicons/fav.svg">
     <link rel="icon" sizes="any" type="image/svg+xml" href="/image/favicons/fav.svg">
+    <link href="/css/swiper.min.css" rel="stylesheet">
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
     {{-- @auth
             <script>
