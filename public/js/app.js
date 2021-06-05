@@ -110857,9 +110857,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var ArticleContainer = function ArticleContainer(_ref) {
   var data = _ref.data;
-  var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]); // const articles = SortArticles(data.articles)
+  var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]);
+  var articles = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortArticles"])(data.articles); // const articles = SortArticles(videoMap)
 
-  var articles = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortArticles"])(_VideoData__WEBPACK_IMPORTED_MODULE_5__["videoMap"]);
   var mobArticlesData = _VideoData__WEBPACK_IMPORTED_MODULE_5__["videoMap"];
   return isMobile ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _ArticleContainer_scss__WEBPACK_IMPORTED_MODULE_4___default.a.article_container
@@ -111035,9 +111035,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var VideoContainer = function VideoContainer(_ref) {
   var data = _ref.data;
-  var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]); // const videoArr = SortVideo(data.articles ? data.articles : [])
+  var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]);
+  var videoArr = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortVideo"])(data.articles ? data.articles : []); // const videoArr = SortVideo(videoMap)
 
-  var videoArr = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortVideo"])(_VideoData__WEBPACK_IMPORTED_MODULE_5__["videoMap"]);
   var mobVideoData = _VideoData__WEBPACK_IMPORTED_MODULE_5__["videoMap"];
   return isMobile ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _VideoContainer_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video_container

@@ -13,8 +13,8 @@ type Props = {
 
 const ArticleContainer = ({ data }: Props) => {
   const isMobile = useContext(Context)
-  // const articles = SortArticles(data.articles)
-  const articles = SortArticles(videoMap)
+  const articles = SortArticles(data.articles)
+  // const articles = SortArticles(videoMap)
   const mobArticlesData = videoMap
   return isMobile ? (
     <div className={s.article_container}>

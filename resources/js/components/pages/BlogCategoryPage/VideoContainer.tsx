@@ -13,8 +13,8 @@ type Props = {
 }
 const VideoContainer = ({ data }: Props) => {
   const isMobile = useContext(Context)
-  // const videoArr = SortVideo(data.articles ? data.articles : [])
-  const videoArr = SortVideo(videoMap)
+  const videoArr = SortVideo(data.articles ? data.articles : [])
+  // const videoArr = SortVideo(videoMap)
   const mobVideoData = videoMap
   return isMobile ? (
     <div className={s.video_container}>
