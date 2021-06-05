@@ -110917,9 +110917,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/app/IsMobile */ "./resources/js/components/app/IsMobile/index.ts");
 /* harmony import */ var _ArticleContainer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ArticleContainer.scss */ "./resources/js/components/pages/BlogCategoryPage/ArticleContainer.scss");
 /* harmony import */ var _ArticleContainer_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ArticleContainer_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _VideoData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./VideoData */ "./resources/js/components/pages/BlogCategoryPage/VideoData.ts");
 /* eslint-disable no-plusplus */
-
 
 
 
@@ -110930,8 +110928,9 @@ var ArticleContainer = function ArticleContainer(_ref) {
   var data = _ref.data;
   var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]);
   var articles = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortArticles"])(data.articles); // const articles = SortArticles(videoMap)
+  // const mobArticlesData = videoMap
 
-  var mobArticlesData = _VideoData__WEBPACK_IMPORTED_MODULE_5__["videoMap"];
+  var mobArticlesData = data.articles ? data.articles : [];
   return isMobile ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _ArticleContainer_scss__WEBPACK_IMPORTED_MODULE_4___default.a.article_container
   }, mobArticlesData.map(function (item) {
@@ -111093,11 +111092,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/app/IsMobile */ "./resources/js/components/app/IsMobile/index.ts");
 /* harmony import */ var _VideoContainer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VideoContainer.scss */ "./resources/js/components/pages/BlogCategoryPage/VideoContainer.scss");
 /* harmony import */ var _VideoContainer_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_VideoContainer_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _VideoData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./VideoData */ "./resources/js/components/pages/BlogCategoryPage/VideoData.ts");
 /* eslint-disable array-callback-return */
 
 /* eslint-disable no-plusplus */
-
 
 
 
@@ -111108,8 +111105,9 @@ var VideoContainer = function VideoContainer(_ref) {
   var data = _ref.data;
   var isMobile = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(components_app_IsMobile__WEBPACK_IMPORTED_MODULE_3__["Context"]);
   var videoArr = Object(components_common_Sorting__WEBPACK_IMPORTED_MODULE_2__["SortVideo"])(data.articles ? data.articles : []); // const videoArr = SortVideo(videoMap)
+  // const mobVideoData = videoMap
 
-  var mobVideoData = _VideoData__WEBPACK_IMPORTED_MODULE_5__["videoMap"];
+  var mobVideoData = data.articles ? data.articles : [];
   return isMobile ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _VideoContainer_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video_container
   }, mobVideoData.map(function (item) {

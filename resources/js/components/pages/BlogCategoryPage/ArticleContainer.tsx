@@ -15,7 +15,8 @@ const ArticleContainer = ({ data }: Props) => {
   const isMobile = useContext(Context)
   const articles = SortArticles(data.articles)
   // const articles = SortArticles(videoMap)
-  const mobArticlesData = videoMap
+  // const mobArticlesData = videoMap
+  const mobArticlesData = data.articles ? data.articles : []
   return isMobile ? (
     <div className={s.article_container}>
       {mobArticlesData.map((item) => {
