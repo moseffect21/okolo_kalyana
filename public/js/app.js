@@ -109311,7 +109311,7 @@ var HeaderMobile = function HeaderMobile() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     to: "/",
     onClick: function onClick() {
-      return setMenuOpened(!menuOpened);
+      return setMenuOpened(false);
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/images/logo.svg",

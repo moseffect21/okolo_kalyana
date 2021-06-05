@@ -25,7 +25,7 @@ const HeaderMobile = () => {
           <img src="/images/icons/menu_icon.svg" alt="" className={s.menu_icon} />
         </div>
         <div className={s.right}>
-          <NavLink to="/" onClick={() => setMenuOpened(!menuOpened)}>
+          <NavLink to="/" onClick={() => setMenuOpened(false)}>
             <img src="/images/logo.svg" alt="" className={s.logo} />
           </NavLink>
         </div>
