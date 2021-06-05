@@ -22,15 +22,19 @@ const ArticleContent = ({ article, isLoading }: Props) => {
       ) : isMobile ? (
         <div className={s.mobile_content}>
           <div className={s.video_block}>
-            <iframe
-              width="560"
-              height="315"
-              src={article.url}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {article.type === 'video' ? (
+              <iframe
+                width="560"
+                height="315"
+                src={article.url}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <img src={article.preview_img} alt="" />
+            )}
           </div>
           <div className={s.inner_content}>
             <div className={s.title}>{article.title}</div>
@@ -62,15 +66,19 @@ const ArticleContent = ({ article, isLoading }: Props) => {
         <>
           <div className={s.title}>{article.title}</div>
           <div className={s.video_block}>
-            <iframe
-              width="560"
-              height="315"
-              src={article.url}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {article.type === 'video' ? (
+              <iframe
+                width="560"
+                height="315"
+                src={article.url}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <img src={article.preview_img} alt="" />
+            )}
           </div>
           <div className={s.text}>{article.content}</div>
           <Comments data={article.comments} addCommentMutation={addCommentMutation} />
