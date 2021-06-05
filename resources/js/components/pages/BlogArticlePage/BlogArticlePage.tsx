@@ -1,8 +1,9 @@
 /* eslint-disable no-nested-ternary */
+import { Context } from 'components/app/IsMobile'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import ContentLayout from 'components/common/ContentLayout'
 import OfferBar from 'components/common/OfferBar'
-import React from 'react'
+import React, { useContext } from 'react'
 import { useRouteMatch } from 'react-router-dom'
 
 import ArticleContent from './ArticleContent'
@@ -31,10 +32,13 @@ const offerData = [
 
 const BlogArticlePage = () => {
   const { params } = useRouteMatch<{ slug?: string; id?: string }>()
+  const isMobile = useContext(Context)
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'article'
   const { data, isLoading } = useArticle(params.id ? params.id : '')
-  return (
+  return isMobile ? (
+    <ArticleContent isLoading={isLoading} article={data ? data.data : []} />
+  ) : (
     <ContentLayout cols={3} title={isVideo ? 'Видео' : isArticle ? 'Статьи' : 'Блог'}>
       <CategoriesNavBar />
       <ArticleContent isLoading={isLoading} article={data ? data.data : []} />
