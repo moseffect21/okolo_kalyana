@@ -18,11 +18,19 @@
   background: #1a3d4a;
   width: 100%;
   max-width: 63rem;
+  &.white_modal {
+    background: #ffffff;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .modal_window {
     height: 100%;
     border-radius: 0;
+    &.not_full {
+      width: calc(100% - 8rem);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
   }
 }

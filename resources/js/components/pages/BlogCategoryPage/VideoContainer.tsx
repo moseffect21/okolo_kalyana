@@ -1,17 +1,27 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable no-plusplus */
-import React from 'react'
+import React, { useContext } from 'react'
 import { VideoCard } from 'components/common/Cards'
 import { SortVideo } from 'components/common/Sorting'
+import { Context } from 'components/app/IsMobile'
 
 import s from './VideoContainer.scss'
+import { videoMap } from './VideoData'
 
 type Props = {
   data: any
 }
 const VideoContainer = ({ data }: Props) => {
-  const videoArr = SortVideo(data.articles ? data.articles : [])
-  return (
+  const isMobile = useContext(Context)
+  // const videoArr = SortVideo(data.articles ? data.articles : [])
+  const videoArr = videoMap
+  return isMobile ? (
+    <div className={s.video_container}>
+      {videoArr.map((item: any) => {
+        return <VideoCard item={item} categSlug={data.slug} />
+      })}
+    </div>
+  ) : (
     <div className={s.video_container}>
       {videoArr.map((item: any, i: number) => {
         return (

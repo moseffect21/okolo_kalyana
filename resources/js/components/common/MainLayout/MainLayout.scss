@@ -27,3 +27,9 @@
     background: linear-gradient(180deg, rgba(26, 61, 74, 0) 0%, #1a3d4a 100%);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .background_block {
+    top: 6rem;
+  }
+}

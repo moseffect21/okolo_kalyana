@@ -1,17 +1,27 @@
 /* eslint-disable no-plusplus */
 import { ArticleCard } from 'components/common/Cards'
-import React from 'react'
+import React, { useContext } from 'react'
 import { SortArticles } from 'components/common/Sorting'
+import { Context } from 'components/app/IsMobile'
 
 import s from './ArticleContainer.scss'
+import { videoMap } from './VideoData'
 
 type Props = {
   data: any
 }
 
 const ArticleContainer = ({ data }: Props) => {
-  const articles = SortArticles(data.articles)
-  return (
+  const isMobile = useContext(Context)
+  // const articles = SortArticles(data.articles)
+  const articles = videoMap
+  return isMobile ? (
+    <div className={s.article_container}>
+      {articles.map((item) => {
+        return <ArticleCard item={item} categSlug={data.slug} type="short" />
+      })}
+    </div>
+  ) : (
     <div className={s.article_container}>
       {articles.map((item: any, i: number) => {
         const isReverse = i % 2 === 1

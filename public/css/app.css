@@ -1,4 +1,4 @@
-@import url(/fonts/Roboto/stylesheet.css);@charset "UTF-8";
+@import url(/fonts/SFPro/stylesheet.css);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -10911,7 +10911,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "SF Pro Display";
   width: 100%;
   height: 100%;
 }
@@ -11009,11 +11009,18 @@ a:hover {
   justify-content: center;
   transition: opacity 300ms ease-in-out;
   opacity: 0;
+  padding: 3rem 0;
+  overflow: auto;
 }
 
 .ReactModal__Overlay .ReactModal__Content {
   transform: scale(0.6);
   transition: transform 300ms ease-in-out;
+  margin: auto;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden !important;
 }
 
 .ReactModal__Overlay--after-open {

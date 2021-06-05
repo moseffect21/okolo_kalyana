@@ -21,3 +21,10 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .video_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

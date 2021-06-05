@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import s from './PartnersBlock.scss'
@@ -28,6 +28,14 @@ const partnersMap = [
     id: 6,
     image: '/images/krass.png',
   },
+  {
+    id: 7,
+    image: '/images/krass.png',
+  },
+  {
+    id: 8,
+    image: '/images/krass.png',
+  },
 ]
 
 const PartnersBlock = () => {
@@ -44,11 +52,11 @@ const PartnersBlock = () => {
                 </NavLink>
               )
             })}
-            <div className={s.link_container}>
+            {/* <div className={s.link_container}>
               <NavLink to="/blog/video" className={s.show_all}>
                 <span>Смотреть все</span> <img src="/images/icons/black_right_arrow.svg" alt="" />{' '}
               </NavLink>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

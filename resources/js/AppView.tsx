@@ -6,6 +6,7 @@ import MainLayout from 'components/common/MainLayout'
 import AboutPage from 'components/pages/AboutPage'
 import BlogCategoryPage from 'components/pages/BlogCategoryPage'
 import BlogArticlePage from 'components/pages/BlogArticlePage'
+import AgeNotify from 'components/common/modalWindows/AgeNotify'
 
 const AppView = () => {
   return (
@@ -37,6 +38,7 @@ const AppView = () => {
           </Switch>
         </div>
       </MainLayout>
+      <AgeNotify />
     </div>
   )
 }

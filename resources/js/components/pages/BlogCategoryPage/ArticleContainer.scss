@@ -58,3 +58,11 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .article_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    marign-top: 1rem;
+  }
+}

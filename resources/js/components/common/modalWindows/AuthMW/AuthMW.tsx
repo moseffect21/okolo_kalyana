@@ -36,9 +36,9 @@ const AuthMW = () => {
           viewBox="0 0 30 28"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          // onClick={() => {
-          //   dispatch(setAuthMwOpened(false))
-          // }}
+          onClick={() => {
+            history.goBack()
+          }}
         >
           <line
             x1="2.70711"

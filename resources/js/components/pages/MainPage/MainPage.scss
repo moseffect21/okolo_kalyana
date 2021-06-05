@@ -23,3 +23,11 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .block_with_background {
+    .background_img {
+      background-position: right;
+    }
+  }
+}

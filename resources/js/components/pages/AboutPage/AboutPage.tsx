@@ -59,15 +59,15 @@ const teamMap = [
 const AboutPage = () => {
   const [hovered, setHovered] = useState<boolean>(false)
   return (
-    <ContentLayout cols={2} title="О нас">
-      <CategoriesNavBar />
+    <ContentLayout cols={1}>
+      {/* <CategoriesNavBar /> */}
       <div className={s.container}>
         <div className={s.info}>
           Команда энтузиастов, которая хочет помочь сделать для вас кальянный мир проще, понятней и
           доступней. Наша цель — не пичкать вас сухими текстами, а создать атмосферу общения с
           друзьями на кухне за хорошим кальяном.
         </div>
-        <div className={s.title}>Наша команда:</div>
+        {/* <div className={s.title}>Наша команда:</div> */}
         <div className={s.cards}>
           {teamMap.map((item: any) => {
             return <AboutCard key={item.id} item={item} hovered={hovered} setHovered={setHovered} />

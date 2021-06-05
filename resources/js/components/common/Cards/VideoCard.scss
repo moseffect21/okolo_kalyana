@@ -102,3 +102,73 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .horiz_card {
+    display: flex;
+    margin-top: 2rem;
+
+    .img_block {
+      width: 16rem;
+      height: 9rem;
+      flex-shrink: 0;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .shadow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(180deg, rgba(25, 26, 31, 0) 0%, #191a1f 100%);
+      }
+      .time_block {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 0.3rem 0.5rem;
+        background: #191a1f;
+        border-radius: 0.5rem;
+        top: 1rem;
+        right: 1rem;
+        img {
+          width: 1.2rem;
+        }
+        div {
+          font-size: 0.9rem;
+          line-height: 0.9rem;
+          text-transform: uppercase;
+          color: #ffffff;
+          padding-left: 0.5rem;
+        }
+      }
+    }
+    .info_block {
+      padding-left: 2rem;
+      color: #fff;
+      .title {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 115%;
+      }
+      .description {
+        margin-top: 1.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #fff;
+      }
+    }
+  }
+}

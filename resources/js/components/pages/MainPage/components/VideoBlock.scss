@@ -88,3 +88,24 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    .content {
+      width: calc(100% - 6rem);
+      height: auto;
+      position: relative;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+    .back_text {
+      position: unset;
+      transform: rotate(0deg);
+      font-size: 3.6rem;
+      line-height: 4.3rem;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+  }
+}
