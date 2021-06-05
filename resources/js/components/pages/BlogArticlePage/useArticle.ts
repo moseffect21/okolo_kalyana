@@ -62,6 +62,7 @@ const fetchArticle = (id: string) => {
 const useArticle = (id: string) => {
   const query = useQuery(['article', id], () => fetchArticle(id), {
     enabled: !!id,
+    retry: false,
   })
   return {
     ...query,

@@ -9,6 +9,7 @@ const fetchCategory = (slug: string) => {
 const useCategory = (slug: string) => {
   const query = useQuery(['category', slug], () => fetchCategory(slug), {
     enabled: !!slug,
+    retry: false,
   })
   return {
     ...query,

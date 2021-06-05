@@ -110790,7 +110790,8 @@ var useArticle = function useArticle(id) {
   var query = Object(react_query__WEBPACK_IMPORTED_MODULE_3__["useQuery"])(['article', id], function () {
     return fetchArticle(id);
   }, {
-    enabled: !!id
+    enabled: !!id,
+    retry: false
   });
   return _objectSpread({}, query);
 };
@@ -111191,7 +111192,8 @@ var useCategory = function useCategory(slug) {
   var query = Object(react_query__WEBPACK_IMPORTED_MODULE_1__["useQuery"])(['category', slug], function () {
     return fetchCategory(slug);
   }, {
-    enabled: !!slug
+    enabled: !!slug,
+    retry: false
   });
   return _objectSpread({}, query);
 };
