@@ -14,10 +14,11 @@ type Props = {
 const VideoContainer = ({ data }: Props) => {
   const isMobile = useContext(Context)
   // const videoArr = SortVideo(data.articles ? data.articles : [])
-  const videoArr = videoMap
+  const videoArr = SortVideo(videoMap)
+  const mobVideoData = videoMap
   return isMobile ? (
     <div className={s.video_container}>
-      {videoArr.map((item: any) => {
+      {mobVideoData.map((item: any) => {
         return <VideoCard item={item} categSlug={data.slug} />
       })}
     </div>

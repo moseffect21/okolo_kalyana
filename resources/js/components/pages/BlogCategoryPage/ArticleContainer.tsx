@@ -14,10 +14,11 @@ type Props = {
 const ArticleContainer = ({ data }: Props) => {
   const isMobile = useContext(Context)
   // const articles = SortArticles(data.articles)
-  const articles = videoMap
+  const articles = SortArticles(videoMap)
+  const mobArticlesData = videoMap
   return isMobile ? (
     <div className={s.article_container}>
-      {articles.map((item) => {
+      {mobArticlesData.map((item) => {
         return <ArticleCard item={item} categSlug={data.slug} type="short" />
       })}
     </div>
