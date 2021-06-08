@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\categories;
 use App\Models\articles;
+use App\Models\partners;
 use App\Models\team;
+use App\Models\product_categories;
+use App\Models\products;
+
 use App\Models\comments as CommentDB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\comments;
@@ -36,6 +40,20 @@ class GetRequest extends Controller
         return response()->json($parentCateg, 200); 
     }
 
+    //Получение всех категорий магазина
+    public function getShopCategories(Request $request)
+    {   
+        
+        return response()->json(product_categories::get(), 200); 
+    }
+
+    public function getCategoriesProducts(Request $request,$id){
+        return response()->json(product_categories::where('id',$id)->get(), 200); 
+
+    }
+    public function getProducts(){
+        
+    }
     public function getCategory(Request $request,$slug)
     {
         $category = categories::where('slug',$slug)->first();
@@ -57,6 +75,11 @@ class GetRequest extends Controller
         $team = team::where('id',1)->first();
         return response()->json($team, 200); 
         
+    }
+
+     //  запрос на получение партнеров
+    public function getPartners(Request $request){
+        return response()->json(partners::get(),200)
     }
 
     public function pushComment(Request $request,$id)

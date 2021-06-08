@@ -39,41 +39,23 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/auth-vk',[Login::class, 'authVK']);
     Route::get('/auth-fb',[Login::class, 'authFB']);
     Route::get('/auth-google',[Login::class, 'authGOOGLE']);
-    
+
+    Route::get('/partners',[GetRequest::class, 'getPartners']);
+    Route::get('/team',[GetRequest::class, 'getTeam']);
     Route::get('/categories',[GetRequest::class, 'getCategories']);
+    Route::get('/shop/categories',[GetRequest::class, 'getShopCategories']);
+    Route::get('/shop/categories/{id}',[GetRequest::class, 'getCategoriesProducts']);
+    Route::get('/shop/product/{id}',[GetRequest::class, 'getProducts']);
     Route::get('/category/{slug}',[GetRequest::class, 'getCategory']);
     Route::get('/article/{id}',[GetRequest::class, 'gelArticle']);
-    Route::get('/team',[GetRequest::class, 'getTeam']);
     Route::post('/article/{id}/comment ',[GetRequest::class, 'pushComment']);
+  
 
     Route::get('/{nickname}',[GetRequest::class, 'getNickname']);
 
   
 
-    // Route::group(['prefix' => '/user'], function () {
-    //     Route::get('/{nickname}',[Profile::class, 'getUser']);
-    //     Route::post('/edit',[Profile::class, 'EditNick']);
-    // });
-
-    // Route::get('/click',[Links::class, 'click']);
-
-    // Route::group(['prefix' => '/buttons'], function () {
-    //     Route::post('/order',[buttons::class, 'changeposition']);
-    //     Route::post('/{id}',[buttons::class, 'changebutton']);
-    //     Route::post('/',[buttons::class, 'addbutton']);
-    //     Route::delete('/{id}',[buttons::class, 'deletebutton']);
-    //     Route::get('/{id}',[buttons::class, 'getButton']);
-    //     Route::get('/',[buttons::class, 'getButtonsArray']);
-    // });
-
-    // Route::group(['prefix' => '/links'], function () {
-    //     Route::post('/search',[Links::class, 'searchKey']);
-    //     Route::get('/',[Links::class, 'getLinks']);
-    //     Route::post('/{id}',[Links::class, 'editLink']);
-    //     Route::post('/',[Links::class, 'addLink']);
-    //     Route::delete('/{id}',[Links::class, 'deleteLink']);
-    //     Route::get('/{key}',[Links::class, 'getLink']);
-    // });
+  
 });
 
 
