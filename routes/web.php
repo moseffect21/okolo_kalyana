@@ -45,6 +45,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/categories',[GetRequest::class, 'getCategories']);
     Route::get('/shop/categories',[GetRequest::class, 'getShopCategories']);
     Route::get('/shop/categories/{id}',[GetRequest::class, 'getCategoriesProducts']);
+    Route::get('/shop/product/{id}/comment',[GetRequest::class, 'getCommentProducts']);
     Route::get('/shop/product/{id}',[GetRequest::class, 'getProducts']);
     Route::get('/category/{slug}',[GetRequest::class, 'getCategory']);
     Route::get('/article/{id}',[GetRequest::class, 'gelArticle']);

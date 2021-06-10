@@ -48,11 +48,11 @@ class GetRequest extends Controller
     }
 
     public function getCategoriesProducts(Request $request,$id){
-        return response()->json(product_categories::where('id',$id)->get(), 200); 
+        return response()->json(product_categories::where('id',$id)->with('products')->get(), 200); 
 
     }
     public function getProducts(){
-        
+        return response()->json(products::where('id',$id)->with('comments')->get(), 200); 
     }
     public function getCategory(Request $request,$slug)
     {
