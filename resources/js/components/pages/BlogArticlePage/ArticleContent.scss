@@ -66,9 +66,14 @@
     font-size: 1.6rem;
     line-height: 115%;
     color: #212121;
+    margin-top: 2rem;
   }
   .inner_content {
     padding: 1.5rem 2rem;
+
+    &.comments_content {
+      padding: 1.5rem 2rem 6rem 2rem;
+    }
   }
   .action_block {
     display: flex;
@@ -131,6 +136,12 @@
         height: 2.4rem;
       }
     }
+    &.fixed_input {
+      position: fixed;
+      bottom: 2rem;
+      left: 1.5rem;
+      width: calc(100% - 3rem);
+    }
   }
   .see_also {
     background: #191a1f;
@@ -141,6 +152,45 @@
       font-size: 2.4rem;
       line-height: 115%;
       color: #ffffff;
+    }
+  }
+  .comments_content {
+    .title {
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #314f61;
+      margin-bottom: 1.5rem;
+    }
+    .comment_item {
+      display: flex;
+      margin-bottom: 2.5rem;
+    }
+    .comment_img {
+      width: 3rem;
+      height: 3rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    .center {
+      margin-left: 1rem;
+      flex: 1;
+      .comment_name {
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 115%;
+        color: #191a1f;
+      }
+      .comment_txt {
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
+        line-height: 115%;
+        color: #000000;
+      }
     }
   }
 }

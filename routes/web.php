@@ -41,6 +41,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/auth-google',[Login::class, 'authGOOGLE']);
 
     Route::get('/partners',[GetRequest::class, 'getPartners']);
+    Route::get('/partners/{id}',[GetRequest::class, 'getPartner']);
     Route::get('/team',[GetRequest::class, 'getTeam']);
     Route::get('/categories',[GetRequest::class, 'getCategories']);
     Route::get('/shop/categories',[GetRequest::class, 'getShopCategories']);

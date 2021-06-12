@@ -74,12 +74,19 @@ class GetRequest extends Controller
     {
         $team = team::where('id',1)->first();
         return response()->json($team, 200); 
-        
     }
 
      //  запрос на получение партнеров
     public function getPartners(Request $request){
-        return response()->json(partners::get(),200)
+        return response()->json(partners::get(),200);
+    }
+
+     //  запрос на получение партнера
+     public function getPartner(Request $request, $id){
+         $partner = partners::where('id', $id)->first();
+         $partner->articles = [];
+         $partner->videos = [];
+        return response()->json($partner,200);
     }
 
     public function pushComment(Request $request,$id)

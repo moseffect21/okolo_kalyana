@@ -35,6 +35,7 @@ const BlogArticlePage = () => {
   const isMobile = useContext(Context)
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'article'
+  const isContests = params.slug === 'contests'
   const { data, isLoading } = useArticle(params.id ? params.id : '')
   return isMobile ? (
     <ArticleContent isLoading={isLoading} article={data ? data.data : []} />

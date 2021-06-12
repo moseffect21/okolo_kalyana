@@ -11,6 +11,7 @@ import { videoMap } from './VideoData'
 import VideoContainer from './VideoContainer'
 import ArticleContainer from './ArticleContainer'
 import useCategory from './useCategory'
+import ContestsContainer from './ContestsContainer'
 
 const BlogCategoryPage = () => {
   const { params } = useRouteMatch<{ slug?: string }>()
@@ -19,6 +20,7 @@ const BlogCategoryPage = () => {
   const categData = data ? data.data : []
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'articles'
+  const isContests = params.slug === 'contests'
   return (
     <ContentLayout
       cols={isMobile ? 1 : 2}
@@ -32,6 +34,7 @@ const BlogCategoryPage = () => {
           <>
             {isVideo && <VideoContainer data={categData} />}
             {isArticle && <ArticleContainer data={categData} />}
+            {isContests && <ContestsContainer data={categData} />}
           </>
         )}
       </div>

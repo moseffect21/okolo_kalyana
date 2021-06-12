@@ -13,7 +13,7 @@ type Props = {
 const ContentLayout = ({ children, cols, className, title }: Props): React.ReactElement => {
   return (
     <section className={`${s.content_layout} ${className || ''}`}>
-      {title && <div className={s.headline}>{title}</div>}
+      {/* {title && <div className={s.headline}>{title}</div>} */}
       <div
         className={`${s.cols_container} ${
           cols && cols === 3 ? s.three : cols === 2 ? s.two : s.one

@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import apiClient from 'apiClient'
 import queryClient from 'apiClient/queryClient'
+import ToastNotify from 'components/common/ToastNotify'
 import { useMutation, useQuery } from 'react-query'
 import { useSelector } from 'react-redux'
 import { RootState } from 'ReduxStore/rootReducer'
@@ -14,7 +15,7 @@ const addCommentAction = (id: string, comment: string) => {
   return data
 }
 
-export const addComment = (id: string) => {
+export const addComment = (id: string, callback?: Function) => {
   const { user } = useSelector(({ userReducer }: RootState) => ({ user: userReducer.user }))
   const mutation = useMutation(({ comment }: any) => addCommentAction(id, comment), {
     onMutate: async ({ comment }: any) => {
@@ -35,9 +36,9 @@ export const addComment = (id: string) => {
             }),
           },
         })
-        // if (callback) {
-        //   callback()
-        // }
+        if (callback) {
+          callback()
+        }
       }
       return { previousData }
     },

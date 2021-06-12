@@ -7,6 +7,8 @@ import AboutPage from 'components/pages/AboutPage'
 import BlogCategoryPage from 'components/pages/BlogCategoryPage'
 import BlogArticlePage from 'components/pages/BlogArticlePage'
 import AgeNotify from 'components/common/modalWindows/AgeNotify'
+import PartnersPage from 'components/pages/PartnersPage'
+import PartnerItemPage from 'components/pages/PartnerItemPage'
 
 const AppView = () => {
   return (
@@ -26,10 +28,16 @@ const AppView = () => {
             <Route path="/blog" exact>
               <Redirect to="/blog/video" />
             </Route>
+            <Route path="/partners" exact>
+              <PartnersPage />
+            </Route>
+            <Route path="/partners/:id" exact>
+              <PartnerItemPage />
+            </Route>
             <Route path="/blog/:slug" exact>
               <BlogCategoryPage />
             </Route>
-            <Route path="/blog/:slug/:id" exact>
+            <Route path="/blog/:slug/:id/:comments(comments)?" exact>
               <BlogArticlePage />
             </Route>
             <Route path="/about/:id?" exact>

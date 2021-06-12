@@ -1,7 +1,6 @@
 .header_container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 6rem;
   z-index: 3;
   background: #191a1f;
@@ -11,8 +10,17 @@
   .menu_icon {
     width: 2.4rem;
   }
+  .right {
+    margin-left: auto;
+  }
   .logo {
     width: 12rem;
+  }
+  .title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #fff;
+    margin-left: 2rem;
   }
 }
 .mobile_menu {
