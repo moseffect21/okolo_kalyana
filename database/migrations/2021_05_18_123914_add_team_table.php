@@ -13,7 +13,7 @@ class AddTeamTable extends Migration
      */
     public function up()
     {
-        Schema::create('team', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->string('name');
             $table->string('little_desc');
             $table->string('description');
@@ -21,7 +21,7 @@ class AddTeamTable extends Migration
             $table->string('vk_url')->nullable();
             $table->string('inst_url')->nullable();
             $table->string('tg_url')->nullable();
-            $table->string('youtube_url')->nullable(); 
+            $table->string('youtube_url')->nullable();
         });
     }
 
@@ -32,7 +32,7 @@ class AddTeamTable extends Migration
      */
     public function down()
     {
-        Schema::table('team', function (Blueprint $table) {
+        Schema::table('teams', function (Blueprint $table) {
             //
         });
     }

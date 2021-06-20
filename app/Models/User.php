@@ -11,6 +11,11 @@ class User extends \TCG\Voyager\Models\User
 {
     use HasFactory, Notifiable;
 
+    public function articles()
+    {
+        return $this->hasMany('App\Models\articles', 'authors_id', 'id');
+    }
+
     /**
      * The attributes that are mass assignable.
      *

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddTeamId extends Migration
+class AddAuthor extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddTeamId extends Migration
      */
     public function up()
     {
-        Schema::table('teams', function (Blueprint $table) {
-            $table->id();
+        Schema::table('articles', function (Blueprint $table) {
+            $table->text('partner_id')->nullable();
+            $table->text('authors_id')->nullable();
         });
     }
 
@@ -25,7 +26,7 @@ class AddTeamId extends Migration
      */
     public function down()
     {
-        Schema::table('teams', function (Blueprint $table) {
+        Schema::table('articles', function (Blueprint $table) {
             //
         });
     }

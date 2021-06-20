@@ -13,7 +13,7 @@ class AddPhoto extends Migration
      */
     public function up()
     {
-        Schema::table('team', function (Blueprint $table) {
+        Schema::table('teams', function (Blueprint $table) {
             $table->longText('description')->change();
             $table->string('photo');
         });
@@ -26,7 +26,7 @@ class AddPhoto extends Migration
      */
     public function down()
     {
-        Schema::table('team', function (Blueprint $table) {
+        Schema::table('teams', function (Blueprint $table) {
             //
         });
     }
