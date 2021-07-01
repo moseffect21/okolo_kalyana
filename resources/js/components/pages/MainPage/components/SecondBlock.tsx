@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { videoMap } from 'components/pages/BlogCategoryPage/VideoData'
 import { SortArticles } from 'components/common/Sorting'
 import { ArticleCard } from 'components/common/Cards'
 import { NavLink } from 'react-router-dom'
@@ -7,16 +6,20 @@ import { Context } from 'components/app/IsMobile'
 
 import s from './SecondBlock.scss'
 
-const SecondBlock = () => {
+type Props = {
+  data: any
+}
+
+const SecondBlock = ({ data }: Props) => {
   const isMobile = useContext(Context)
-  const articles = SortArticles(videoMap)
+  const articles = SortArticles(data)
   return (
     <div className={s.container}>
       <div className={s.content}>
         <div className={s.back_text}>Статьи</div>
         {isMobile ? (
           <div className={s.article_container}>
-            {videoMap.map((item: any, i: number) => {
+            {data.map((item: any, i: number) => {
               return i < 3 ? <ArticleCard item={item} categSlug="articles" key={item.id} /> : <></>
             })}
           </div>

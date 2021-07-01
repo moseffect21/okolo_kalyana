@@ -55,8 +55,8 @@ export const addComment = (id: string, callback?: Function) => {
   return mutation
 }
 
-const fetchArticle = (id: string) => {
-  const data = apiClient.get(`/api/v1/article/${id}`)
+const fetchArticle = async (id: string) => {
+  const { data } = await apiClient.get(`/api/v1/article/${id}`)
   return data
 }
 

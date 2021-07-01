@@ -14,8 +14,8 @@ const OfferBar = ({ data }: Props) => {
       <div className={s.items_container}>
         {data.map((item: any) => {
           return (
-            <NavLink to={`/blog/${item.categ_slug}/${item.id}`} className={s.item} key={item.id}>
-              <img src={item.photo} alt="" className={s.back_img} />
+            <NavLink to={`/blog/${item.type}/${item.id}`} className={s.item} key={item.id}>
+              <img src={item.preview_img} alt="" className={s.back_img} />
               <div className={s.gradient} />
               <div className={s.text_block}>
                 <div className={s.name}>{item.title}</div>

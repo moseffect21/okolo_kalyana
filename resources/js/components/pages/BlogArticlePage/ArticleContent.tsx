@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable no-nested-ternary */
@@ -6,7 +7,9 @@ import Comments from 'components/common/Comments'
 import Loader from 'components/common/Loader'
 import ToastNotify from 'components/common/ToastNotify'
 import React, { useContext, useEffect, useState } from 'react'
-import { useRouteMatch } from 'react-router-dom'
+import { NavLink, useLocation, useRouteMatch } from 'react-router-dom'
+import moment from 'moment'
+import OfferBar from 'components/common/OfferBar'
 
 import s from './ArticleContent.scss'
 import { addComment } from './useArticle'
@@ -14,9 +17,10 @@ import { addComment } from './useArticle'
 type Props = {
   isLoading: boolean
   article: any
+  offer: any
 }
 
-const ArticleContent = ({ article, isLoading }: Props) => {
+const ArticleContent = ({ article, isLoading, offer }: Props) => {
   const isMobile = useContext(Context)
   const { params } = useRouteMatch<{ comments?: string }>()
   const isComments = !!(params && params.comments)
@@ -24,6 +28,8 @@ const ArticleContent = ({ article, isLoading }: Props) => {
     ToastNotify('Комментарий отправлен!', 'success')
   })
   const [comment, setComment] = useState<string>('')
+  const location = useLocation()
+
   return (
     <div className={s.content}>
       {isLoading ? (
@@ -102,10 +108,12 @@ const ArticleContent = ({ article, isLoading }: Props) => {
                     <img src="/images/icons/heart_icon.svg" alt="" />
                     <span>0</span>
                   </div>
-                  <div className={s.item}>
+                  <NavLink className={s.item} to={`${location.pathname}/comments`}>
                     <img src="/images/icons/comment_icon.svg" alt="" />
-                    <span>0</span>
-                  </div>
+                    <span>
+                      {article.comments && article.comments.length ? article.comments.length : 0}
+                    </span>
+                  </NavLink>
                   <div className={s.date}>10 августа 2013</div>
                 </div>
                 <div className={s.input_block}>
@@ -131,6 +139,21 @@ const ArticleContent = ({ article, isLoading }: Props) => {
               </div>
               <div className={s.see_also}>
                 <div className={s.title}>Посмотрите также:</div>
+                <div className={s.offer_container}>
+                  {offer ? (
+                    offer.map((item: any) => {
+                      return (
+                        <div className={s.offer_item}>
+                          <img src={item.preview_img} alt="" />
+                          <div className={s.shadow} />
+                          <div className={s.offer_name}>{item.title}</div>
+                        </div>
+                      )
+                    })
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </div>
             </>
           )}

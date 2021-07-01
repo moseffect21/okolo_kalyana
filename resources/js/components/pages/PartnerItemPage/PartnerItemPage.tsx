@@ -8,7 +8,9 @@ import React, { useContext } from 'react'
 import { useQuery } from 'react-query'
 import { useRouteMatch } from 'react-router-dom'
 
+import ArticlesBlock from './ArticlesBlock'
 import s from './PartnerItemPage.scss'
+import VideosBlock from './VideosBlock'
 
 const fetchPartner = async (id: string) => {
   const { data } = await apiClient.get(`/api/v1/partners/${id}`)
@@ -35,6 +37,8 @@ const PartnerItemPage = () => {
             <div className={s.title}>{data.name}</div>
             <div className={s.text}>{data.description}</div>
           </div>
+          <ArticlesBlock data={data.articles} />
+          <VideosBlock data={data.videos} />
         </div>
       ) : (
         <div className={s.cards} />

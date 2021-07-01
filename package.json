@@ -63,6 +63,7 @@
     "laravel-mix-react-css-modules": "^3.0.0-alpha.0",
     "laravel-mix-react-typescript-extension": "^1.0.3",
     "lodash": "^4.17.19",
+    "moment": "^2.29.1",
     "net": "^1.0.2",
     "react": "^16.2.0",
     "react-activity": "^2.0.1",

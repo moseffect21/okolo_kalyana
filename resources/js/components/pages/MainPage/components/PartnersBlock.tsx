@@ -38,17 +38,21 @@ const partnersMap = [
   },
 ]
 
-const PartnersBlock = () => {
+type Props = {
+  data: any
+}
+
+const PartnersBlock = ({ data }: Props) => {
   return (
     <div className={s.container}>
       <div className={s.content}>
         <div className={s.back_text}>Партнеры</div>
         <div className={s.article_container}>
           <div className={s.partner_container}>
-            {partnersMap.map((item: any, i: number) => {
+            {data.map((item: any, i: number) => {
               return (
-                <NavLink className={s.item} to="#">
-                  <img src={item.image} alt="" />
+                <NavLink className={s.item} to={`/partners/${item.id}`}>
+                  <img src={item.photo} alt="" />
                 </NavLink>
               )
             })}

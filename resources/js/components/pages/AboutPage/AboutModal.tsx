@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Context } from 'components/app/IsMobile'
 import React, { useContext } from 'react'
 import Modal from 'react-modal'
@@ -37,31 +38,47 @@ const AboutModal = ({ item }: Props) => {
               <>
                 <div className={s.shadow} />
                 <div className={s.name}>{item.name}</div>
-                <div className={s.desc}>{item.desc}</div>
+                <div className={s.desc}>{item.little_desc}</div>
               </>
             )}
           </div>
           {!isMobile && (
             <>
               <div className={s.name}>{item.name}</div>
-              <div className={s.desc}>{item.desc}</div>
+              <div className={s.desc}>{item.little_desc}</div>
             </>
           )}
 
           {isMobile && (
             <div className={s.social_icons}>
-              <a href="#" className={`${s.social_item}`}>
-                <img src="/images/icons/inst_black.svg" alt="" />
-              </a>
-              <a href="#" className={`${s.social_item}`}>
-                <img src="/images/icons/vk_black.svg" alt="" />
-              </a>
-              <a href="#" className={`${s.social_item}`}>
-                <img src="/images/icons/tg_black.svg" alt="" />
-              </a>
-              <a href="#" className={`${s.social_item}`}>
-                <img src="/images/icons/youtube_black.svg" alt="" />
-              </a>
+              {item.inst_url ? (
+                <a href={item.inst_url} className={`${s.social_item}`}>
+                  <img src="/images/icons/inst_black.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
+              {item.vk_url ? (
+                <a href={item.vk_url} className={`${s.social_item}`}>
+                  <img src="/images/icons/vk_black.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
+              {item.tg_url ? (
+                <a href={item.tg_url} className={`${s.social_item}`}>
+                  <img src="/images/icons/tg_black.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
+              {item.youtube_url ? (
+                <a href={item.youtube_url} className={`${s.social_item}`}>
+                  <img src="/images/icons/youtube_black.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
             </div>
           )}
 
@@ -72,7 +89,7 @@ const AboutModal = ({ item }: Props) => {
               </div>
             )}
 
-            <div className={s.text}>{item.full_desc}</div>
+            <div className={s.text}>{item.description}</div>
 
             {!isMobile && (
               <div className={`${s.quote} ${s.last}`}>
@@ -82,18 +99,34 @@ const AboutModal = ({ item }: Props) => {
           </div>
           {!isMobile && (
             <div className={s.social_icons}>
-              <a href="#" className={`${s.social_item} ${s.inst}`}>
-                <img src="/images/icons/inst.svg" alt="" />
-              </a>
-              <a href="#" className={`${s.social_item} ${s.vk}`}>
-                <img src="/images/icons/vk.svg" alt="" />
-              </a>
-              <a href="#" className={`${s.social_item} ${s.tg}`}>
-                <img src="/images/icons/telegram.svg" alt="" />
-              </a>
-              <a href="#" className={`${s.social_item} ${s.youtube}`}>
-                <img src="/images/icons/youtube2.svg" alt="" />
-              </a>
+              {item.inst_url ? (
+                <a href={item.inst_url} className={`${s.social_item} ${s.inst}`}>
+                  <img src="/images/icons/inst.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
+              {item.vk_url ? (
+                <a href={item.vk_url} className={`${s.social_item} ${s.vk}`}>
+                  <img src="/images/icons/vk.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
+              {item.tg_url ? (
+                <a href={item.tg_url} className={`${s.social_item} ${s.tg}`}>
+                  <img src="/images/icons/telegram.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
+              {item.youtube_url ? (
+                <a href={item.youtube_url} className={`${s.social_item} ${s.youtube}`}>
+                  <img src="/images/icons/youtube2.svg" alt="" />
+                </a>
+              ) : (
+                <></>
+              )}
             </div>
           )}
         </div>

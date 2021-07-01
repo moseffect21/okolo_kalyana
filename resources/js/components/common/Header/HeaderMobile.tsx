@@ -2,10 +2,12 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import apiClient from 'apiClient'
+import { isArray } from 'lodash'
 import React, { useEffect, useMemo, useState } from 'react'
 import { useQuery } from 'react-query'
 import { NavLink, useLocation, useRouteMatch } from 'react-router-dom'
 
+import Loader from '../Loader'
 import { AuthMW } from '../modalWindows'
 
 import s from './HeaderMobile.scss'
@@ -19,8 +21,9 @@ const fetchCategories = async () => {
 const HeaderMobile = () => {
   const [menuOpened, setMenuOpened] = useState<boolean>(false)
   const [searchVal, setSearchVal] = useState<string>('')
+  const [searchIsLoading, setSearchIsLoading] = useState<boolean>(false)
+  const [searchResult, setSearchResult] = useState<any>()
   const { params } = useRouteMatch<{ pathname1?: string; pathname2?: string }>()
-  console.log(params)
 
   const title = useMemo(() => {
     let val: string = ''
@@ -55,6 +58,21 @@ const HeaderMobile = () => {
       $('html,body').css('overflow', 'unset')
     }
   }, [menuOpened])
+
+  useEffect(() => {
+    if (searchVal) {
+      setSearchIsLoading(true)
+      apiClient.get(`/api/v1/search?text=${searchVal}`).then((response: any) => {
+        if (isArray(response.data)) {
+          setSearchResult(response.data)
+        } else {
+          setSearchResult([])
+        }
+        setSearchIsLoading(false)
+      })
+    }
+  }, [searchVal])
+
   return (
     <>
       <div className={s.header_container}>
@@ -83,38 +101,69 @@ const HeaderMobile = () => {
             />
           </label>
         </div>
-        <div className={s.nav_container}>
-          {categories ? (
-            categories.map((item: any) => {
-              return (
-                <NavLink
-                  to={`/blog/${item.slug}`}
-                  onClick={() => setMenuOpened(false)}
-                  key={item.id}
-                >
-                  {item.name}
-                </NavLink>
-              )
-            })
-          ) : (
-            <></>
-          )}
-          {/* <NavLink to="/blog/articles" onClick={() => setMenuOpened(false)}>
-            Статьи
-          </NavLink>
-          <NavLink to="/blog/video" onClick={() => setMenuOpened(false)}>
-            Видео
-          </NavLink> */}
-          <NavLink to="/partners" onClick={() => setMenuOpened(false)}>
-            Партнеры
-          </NavLink>
-          <NavLink to="/about" onClick={() => setMenuOpened(false)}>
-            О нас
-          </NavLink>
-          <NavLink to={`${location.pathname}?auth=1`} onClick={() => setMenuOpened(false)}>
-            Войти
-          </NavLink>
-        </div>
+        {searchVal ? (
+          <div className={s.search_container}>
+            {searchIsLoading ? (
+              <Loader color="#6e6e73" />
+            ) : (
+              <div>
+                <div className={s.txt}>Результаты поиска</div>
+                {searchResult && searchResult.length ? (
+                  searchResult.map((item: any) => {
+                    return (
+                      <NavLink
+                        className={s.search_item}
+                        key={item.id}
+                        onClick={() => setMenuOpened(false)}
+                        to={`/blog/${
+                          item.type === 'video'
+                            ? 'videos'
+                            : item.type === 'article'
+                            ? 'articles'
+                            : 'contests'
+                        }/${item.id}`}
+                      >
+                        <div className={s.img_block}>
+                          <img src={item.preview_img} alt="" />
+                        </div>
+                        <div className={s.item_title}>{item.title}</div>
+                      </NavLink>
+                    )
+                  })
+                ) : (
+                  <div className={s.empty}>По вашему запросу ничего не найдено</div>
+                )}
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className={s.nav_container}>
+            {categories ? (
+              categories.map((item: any) => {
+                return (
+                  <NavLink
+                    to={`/blog/${item.slug}`}
+                    onClick={() => setMenuOpened(false)}
+                    key={item.id}
+                  >
+                    {item.name}
+                  </NavLink>
+                )
+              })
+            ) : (
+              <></>
+            )}
+            <NavLink to="/partners" onClick={() => setMenuOpened(false)}>
+              Партнеры
+            </NavLink>
+            <NavLink to="/about" onClick={() => setMenuOpened(false)}>
+              О нас
+            </NavLink>
+            <NavLink to={`${location.pathname}?auth=1`} onClick={() => setMenuOpened(false)}>
+              Войти
+            </NavLink>
+          </div>
+        )}
       </div>
       <AuthMW />
     </>

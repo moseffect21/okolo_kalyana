@@ -15,6 +15,6 @@ class articles extends Model
     }
     public function authors()
     {
-        return $this->hasMany('App\Models\users', 'id', 'authors_id ');
+        return $this->hasMany('App\Models\User', 'id', 'authors_id');
     }
 }

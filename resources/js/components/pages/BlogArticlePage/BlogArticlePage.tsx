@@ -38,12 +38,20 @@ const BlogArticlePage = () => {
   const isContests = params.slug === 'contests'
   const { data, isLoading } = useArticle(params.id ? params.id : '')
   return isMobile ? (
-    <ArticleContent isLoading={isLoading} article={data ? data.data : []} />
+    <ArticleContent
+      isLoading={isLoading}
+      article={data ? data.article : []}
+      offer={data ? data.random : []}
+    />
   ) : (
     <ContentLayout cols={3} title={isVideo ? 'Видео' : isArticle ? 'Статьи' : 'Блог'}>
       <CategoriesNavBar />
-      <ArticleContent isLoading={isLoading} article={data ? data.data : []} />
-      <OfferBar data={offerData} />
+      <ArticleContent
+        isLoading={isLoading}
+        article={data ? data.article : []}
+        offer={data ? data.random : []}
+      />
+      <OfferBar data={data ? data.random : []} />
     </ContentLayout>
   )
 }

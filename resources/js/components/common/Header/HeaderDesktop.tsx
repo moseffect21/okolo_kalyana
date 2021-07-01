@@ -1,8 +1,11 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react'
+import apiClient from 'apiClient'
+import { isArray } from 'lodash'
+import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 
 import Loader from '../Loader'
@@ -13,7 +16,24 @@ import s from './HeaderDesktop.scss'
 const HeaderDesktop = () => {
   const [showSearch, setShowSearch] = useState<boolean>(false)
   const [searchVal, setSearchVal] = useState<string>('')
+  const [searchIsLoading, setSearchIsLoading] = useState<boolean>(false)
+  const [searchResult, setSearchResult] = useState<any>()
   const location = useLocation()
+
+  useEffect(() => {
+    if (searchVal) {
+      setSearchIsLoading(true)
+      apiClient.get(`/api/v1/search?text=${searchVal}`).then((response: any) => {
+        if (isArray(response.data)) {
+          setSearchResult(response.data)
+        } else {
+          setSearchResult([])
+        }
+        setSearchIsLoading(false)
+      })
+    }
+  }, [searchVal])
+
   return (
     <>
       {showSearch && <div className={s.shadow} />}
@@ -41,7 +61,37 @@ const HeaderDesktop = () => {
               {searchVal ? (
                 <div className={s.search_result}>
                   <div className={s.txt}>Результаты поиска:</div>
-                  <Loader color="#6e6e73" />
+                  {searchIsLoading ? (
+                    <Loader color="#6e6e73" />
+                  ) : (
+                    <div>
+                      {searchResult && searchResult.length ? (
+                        searchResult.map((item: any) => {
+                          return (
+                            <NavLink
+                              className={s.search_item}
+                              key={item.id}
+                              onClick={() => setShowSearch(false)}
+                              to={`/blog/${
+                                item.type === 'video'
+                                  ? 'videos'
+                                  : item.type === 'article'
+                                  ? 'articles'
+                                  : 'contests'
+                              }/${item.id}`}
+                            >
+                              <div className={s.img_block}>
+                                <img src={item.preview_img} alt="" />
+                              </div>
+                              <div className={s.item_title}>{item.title}</div>
+                            </NavLink>
+                          )
+                        })
+                      ) : (
+                        <div className={s.empty}>По вашему запросу ничего не найдено</div>
+                      )}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <></>

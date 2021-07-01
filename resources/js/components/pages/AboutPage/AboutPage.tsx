@@ -1,6 +1,9 @@
+import apiClient from 'apiClient'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import ContentLayout from 'components/common/ContentLayout'
+import Loader from 'components/common/Loader'
 import React, { useState } from 'react'
+import { useQuery } from 'react-query'
 
 import AboutCard from './AboutCard'
 import s from './AboutPage.scss'
@@ -56,8 +59,14 @@ const teamMap = [
   },
 ]
 
+const fetchTeam = async () => {
+  const { data } = await apiClient.get('/api/v1/team')
+  return data
+}
+
 const AboutPage = () => {
   const [hovered, setHovered] = useState<boolean>(false)
+  const { data, isLoading } = useQuery('team', fetchTeam)
   return (
     <ContentLayout cols={1}>
       {/* <CategoriesNavBar /> */}
@@ -68,11 +77,17 @@ const AboutPage = () => {
           друзьями на кухне за хорошим кальяном.
         </div>
         {/* <div className={s.title}>Наша команда:</div> */}
-        <div className={s.cards}>
-          {teamMap.map((item: any) => {
-            return <AboutCard key={item.id} item={item} hovered={hovered} setHovered={setHovered} />
-          })}
-        </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className={s.cards}>
+            {data.map((item: any) => {
+              return (
+                <AboutCard key={item.id} item={item} hovered={hovered} setHovered={setHovered} />
+              )
+            })}
+          </div>
+        )}
       </div>
     </ContentLayout>
   )

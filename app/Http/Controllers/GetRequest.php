@@ -111,8 +111,8 @@ class GetRequest extends Controller
 
     public function getUser($id)
     {
-        if (count(User::where('id', $id)->get()) === 0) {
-            return response()->json(User::where('id', $id)->with('articles')->get(), 200);
+        if (count(User::where('id', $id)->get()) !== 0) {
+            return response()->json(User::where('id', $id)->with('articles')->first(), 200);
         } else {
             return response()->json("user not found", 420);
         }
@@ -133,7 +133,7 @@ class GetRequest extends Controller
     //  запрос на получение партнера
     public function getPartner(Request $request, $id)
     {
-        $partner = partners::where('id', $id)->with('videos', 'articles')->get();
+        $partner = partners::where('id', $id)->with('videos', 'articles')->get()->first();
 
         return response()->json($partner, 200);
     }
