@@ -108570,7 +108570,7 @@ var ArticleCard = function ArticleCard(_ref) {
     className: _ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a.date
   }, "10 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 2018"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a.author
-  }, "\u0410\u0432\u0442\u043E\u0440: \u0410\u0440\u0442\u0451\u043C \u0415\u0433\u043E\u0440\u043E\u0432")));
+  }, "\u0410\u0432\u0442\u043E\u0440: ", item.authors && item.authors.lenght ? item.authors[0].name : '')));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ArticleCard);

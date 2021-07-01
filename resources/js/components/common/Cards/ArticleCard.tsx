@@ -25,7 +25,9 @@ const ArticleCard = ({ item, type, categSlug }: Props) => {
       </div>
       <div className={s.info}>
         <div className={s.date}>10 августа 2018</div>
-        <div className={s.author}>Автор: Артём Егоров</div>
+        <div className={s.author}>
+          Автор: {item.authors && item.authors.lenght ? item.authors[0].name : ''}
+        </div>
       </div>
     </NavLink>
   )
