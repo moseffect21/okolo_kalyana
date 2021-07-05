@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\categories;
+use App\Models\categor;
 use App\Models\articles;
 use App\Models\partners;
 use App\Models\team;
@@ -67,10 +67,10 @@ class GetRequest extends Controller
     //Получение всех категорий
     public function getCategories(Request $request)
     {
-        $parentCateg = categories::where('parent', "0")->get();
+        $parentCateg = categor::where('parent', "0")->get();
 
         foreach ($parentCateg as $item) {
-            $item['child_categories'] = categories::where('parent', $item['id'])->get();
+            $item['child_categories'] = categor::where('parent', $item['id'])->get();
         }
         return response()->json($parentCateg, 200);
     }
@@ -95,7 +95,7 @@ class GetRequest extends Controller
     }
     public function getCategory(Request $request, $slug)
     {
-        $category = categories::where('slug', $slug)->first();
+        $category = categor::where('slug', $slug)->first();
         $category['articles'] = articles::where('id_categories', $category['id'])->get();
         return response()->json($category, 200);
     }
