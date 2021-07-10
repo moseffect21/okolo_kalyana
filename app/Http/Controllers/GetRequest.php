@@ -102,8 +102,14 @@ class GetRequest extends Controller
     //  запрос на получение статьи/видео
     public function getArticle(Request $request, $id)
     {
-        $article = articles::where('id', $id)->with('comments', 'authors')->first();
-        $random = articles::all()->random(5);
+        $article = articles::where('id', $id)->with('comments')->first();
+
+        foreach (explode(",", $article->authors_id) as $item) {
+
+            $article->authors[] = User::where('id', $item)->first();
+        }
+        unset($article->authors[1]);
+        $random = articles::all()->random(1);
 
         return response()->json(['article' => $article, 'random' => $random], 200);
     }
