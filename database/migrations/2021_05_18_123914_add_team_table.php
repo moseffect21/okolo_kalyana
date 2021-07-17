@@ -14,10 +14,11 @@ class AddTeamTable extends Migration
     public function up()
     {
         Schema::create('teams', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
             $table->string('name');
             $table->string('little_desc');
             $table->string('description');
-            // $table->date('birthdate');
             $table->string('vk_url')->nullable();
             $table->string('inst_url')->nullable();
             $table->string('tg_url')->nullable();
