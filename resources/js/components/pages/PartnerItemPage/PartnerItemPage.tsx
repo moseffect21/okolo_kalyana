@@ -31,7 +31,7 @@ const PartnerItemPage = () => {
       ) : isMobile ? (
         <div className={s.mobile_content}>
           <div className={s.img_block}>
-            <img src={data.photo} alt="" />
+            <img src={`/storage/${data.photo}`} alt="" />
           </div>
           <div className={s.inner_content}>
             <div className={s.title}>{data.name}</div>

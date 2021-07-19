@@ -52,7 +52,7 @@ const PartnersBlock = ({ data }: Props) => {
             {data.map((item: any, i: number) => {
               return (
                 <NavLink className={s.item} to={`/partners/${item.id}`}>
-                  <img src={item.photo} alt="" />
+                  <img src={`/storage/${item.photo}`} alt="" />
                 </NavLink>
               )
             })}

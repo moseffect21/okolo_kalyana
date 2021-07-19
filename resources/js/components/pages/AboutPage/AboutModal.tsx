@@ -33,7 +33,7 @@ const AboutModal = ({ item }: Props) => {
         </button>
         <div className={s.content}>
           <div className={s.img_block}>
-            <img src={item.photo} alt="" />
+            <img src={`/storage/${item.photo}`} alt="" />
             {isMobile && (
               <>
                 <div className={s.shadow} />

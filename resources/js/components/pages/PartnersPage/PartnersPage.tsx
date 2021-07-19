@@ -15,7 +15,7 @@ const fetchPartners = async () => {
 const PartnerItem = ({ item }: any) => {
   return (
     <NavLink to={`/partners/${item.id}`} className={s.card}>
-      <img src={item.photo} alt="" />
+      <img src={`/storage/${item.photo}`} alt="" />
       <div className={s.name}>{item.name}</div>
     </NavLink>
   )

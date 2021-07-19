@@ -81,7 +81,7 @@ const HeaderDesktop = () => {
                               }/${item.id}`}
                             >
                               <div className={s.img_block}>
-                                <img src={item.preview_img} alt="" />
+                                <img src={`/storage/${item.preview_img}`} alt="" />
                               </div>
                               <div className={s.item_title}>{item.title}</div>
                             </NavLink>

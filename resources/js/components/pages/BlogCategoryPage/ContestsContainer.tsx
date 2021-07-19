@@ -16,7 +16,7 @@ const ContestsItem = ({ item, hovered, setHovered }: any) => {
       }}
     >
       <div className={s.photo}>
-        <img src={item.preview_img} alt="" />
+        <img src={`/storage/${item.preview_img}`} alt="" />
         <div className={s.shadow} />
       </div>
       <div className={s.name}>{item.title}</div>

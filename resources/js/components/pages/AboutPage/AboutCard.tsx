@@ -23,7 +23,7 @@ const AboutCard = ({ item, hovered, setHovered }: Props) => {
             setHovered(false)
           }}
         >
-          <img src={item.photo} alt="" />
+          <img src={`/storage/${item.photo}`} alt="" />
           <div className={s.gradient} />
           <div className={s.name}>{item.name}</div>
           <div className={s.desc}>{item.desc}</div>

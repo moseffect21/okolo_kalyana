@@ -11,7 +11,7 @@ const ArticleItem = ({ item }: any) => {
   return (
     <NavLink className={s.video_item} to={`/blog/articles/${item.id}`}>
       <div className={s.video_img}>
-        <img src={item.preview_img} alt="" />
+        <img src={`/storage/${item.preview_img}`} alt="" />
         <div className={s.shadow} />
       </div>
       <div className={s.video_name}>{item.title}</div>

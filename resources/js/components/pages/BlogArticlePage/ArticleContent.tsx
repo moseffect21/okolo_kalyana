@@ -48,7 +48,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                 allowFullScreen
               />
             ) : (
-              <img src={article.preview_img} alt="" />
+              <img src={`/storage/${article.preview_img}`} alt="" />
             )}
           </div>
           {isComments ? (
@@ -144,7 +144,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                     offer.map((item: any) => {
                       return (
                         <div className={s.offer_item}>
-                          <img src={item.preview_img} alt="" />
+                          <img src={`/storage/${item.preview_img}`} alt="" />
                           <div className={s.shadow} />
                           <div className={s.offer_name}>{item.title}</div>
                         </div>
@@ -173,7 +173,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                 allowFullScreen
               />
             ) : (
-              <img src={article.preview_img} alt="" />
+              <img src={`/storage/${article.preview_img}`} alt="" />
             )}
           </div>
           <div className={s.text}>{article.content}</div>

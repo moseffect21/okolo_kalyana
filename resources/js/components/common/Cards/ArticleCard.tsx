@@ -16,7 +16,7 @@ const ArticleCard = ({ item, type, categSlug }: Props) => {
         type === 'high' ? s.high : ''
       }`}
     >
-      <img src={item.preview_img} alt="" className={s.back_img} />
+      <img src={`/storage/${item.preview_img}`} alt="" className={s.back_img} />
       <div className={s.gradient} />
       <div className={s.shadow} />
       <div className={s.anim}>
