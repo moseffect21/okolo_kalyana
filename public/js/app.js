@@ -108551,7 +108551,7 @@ var ArticleCard = function ArticleCard(_ref) {
     to: "/blog/".concat(categSlug, "/").concat(item.id),
     className: "".concat(_ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a.card, " ").concat(type === 'long' ? _ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a["long"] : '', " ").concat(type === 'short' ? _ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a["short"] : '', " ").concat(type === 'high' ? _ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a.high : '')
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: item.preview_img,
+    src: "/storage/".concat(item.preview_img),
     alt: "",
     className: _ArticleCard_scss__WEBPACK_IMPORTED_MODULE_2___default.a.back_img
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -108640,7 +108640,7 @@ var VideoCard = function VideoCard(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _VideoCard_scss__WEBPACK_IMPORTED_MODULE_3___default.a.shadow
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: item.preview_img,
+    src: "/storage/".concat(item.preview_img),
     alt: "",
     className: _VideoCard_scss__WEBPACK_IMPORTED_MODULE_3___default.a.back_img
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -108660,7 +108660,7 @@ var VideoCard = function VideoCard(_ref) {
     to: "/blog/".concat(categSlug, "/").concat(item.id),
     className: "".concat(_VideoCard_scss__WEBPACK_IMPORTED_MODULE_3___default.a.card, " ").concat(type === 'long' ? _VideoCard_scss__WEBPACK_IMPORTED_MODULE_3___default.a["long"] : '', " ").concat(type === 'short' ? _VideoCard_scss__WEBPACK_IMPORTED_MODULE_3___default.a["short"] : '')
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: item.preview_img,
+    src: "/storage/".concat(item.preview_img),
     alt: "",
     className: _VideoCard_scss__WEBPACK_IMPORTED_MODULE_3___default.a.back_img
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -109344,7 +109344,7 @@ var HeaderDesktop = function HeaderDesktop() {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _HeaderDesktop_scss__WEBPACK_IMPORTED_MODULE_6___default.a.img_block
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      src: item.preview_img,
+      src: "/storage/".concat(item.preview_img),
       alt: ""
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _HeaderDesktop_scss__WEBPACK_IMPORTED_MODULE_6___default.a.item_title
@@ -109642,7 +109642,7 @@ var HeaderMobile = function HeaderMobile() {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       className: _HeaderMobile_scss__WEBPACK_IMPORTED_MODULE_8___default.a.img_block
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      src: item.preview_img,
+      src: "/storage/".concat(item.preview_img),
       alt: ""
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       className: _HeaderMobile_scss__WEBPACK_IMPORTED_MODULE_8___default.a.item_title
@@ -109922,7 +109922,7 @@ var OfferBar = function OfferBar(_ref) {
       className: _OfferBar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.item,
       key: item.id
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: item.preview_img,
+      src: "/storage/".concat(item.preview_img),
       alt: "",
       className: _OfferBar_scss__WEBPACK_IMPORTED_MODULE_2___default.a.back_img
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -110521,7 +110521,7 @@ var AboutCard = function AboutCard(_ref) {
       setHovered(false);
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: item.photo,
+    src: "/storage/".concat(item.photo),
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _AboutPage_scss__WEBPACK_IMPORTED_MODULE_3___default.a.gradient
@@ -110627,7 +110627,7 @@ var AboutModal = function AboutModal(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _AboutModal_scss__WEBPACK_IMPORTED_MODULE_4___default.a.img_block
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: item.photo,
+    src: "/storage/".concat(item.photo),
     alt: ""
   }), isMobile && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: _AboutModal_scss__WEBPACK_IMPORTED_MODULE_4___default.a.shadow
@@ -111014,7 +111014,7 @@ var ArticleContent = function ArticleContent(_ref) {
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     allowFullScreen: true
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
-    src: article.preview_img,
+    src: "/storage/".concat(article.preview_img),
     alt: ""
   })), isComments ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "".concat(_ArticleContent_scss__WEBPACK_IMPORTED_MODULE_6___default.a.inner_content, " ").concat(_ArticleContent_scss__WEBPACK_IMPORTED_MODULE_6___default.a.comments_content)
@@ -111120,7 +111120,7 @@ var ArticleContent = function ArticleContent(_ref) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_6___default.a.offer_item
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
-      src: item.preview_img,
+      src: "/storage/".concat(item.preview_img),
       alt: ""
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
       className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_6___default.a.shadow
@@ -111140,7 +111140,7 @@ var ArticleContent = function ArticleContent(_ref) {
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     allowFullScreen: true
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
-    src: article.preview_img,
+    src: "/storage/".concat(article.preview_img),
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: _ArticleContent_scss__WEBPACK_IMPORTED_MODULE_6___default.a.text
@@ -111665,7 +111665,7 @@ var ContestsItem = function ContestsItem(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _ContestsContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.photo
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: item.preview_img,
+    src: "/storage/".concat(item.preview_img),
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _ContestsContainer_scss__WEBPACK_IMPORTED_MODULE_2___default.a.shadow
@@ -112267,7 +112267,7 @@ var PartnersBlock = function PartnersBlock(_ref) {
       className: _PartnersBlock_scss__WEBPACK_IMPORTED_MODULE_2___default.a.item,
       to: "/partners/".concat(item.id)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: item.photo,
+      src: "/storage/".concat(item.photo),
       alt: ""
     }));
   })))));
@@ -112825,7 +112825,7 @@ var ArticleItem = function ArticleItem(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _PartnerItemPage_scss__WEBPACK_IMPORTED_MODULE_2___default.a.video_img
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: item.preview_img,
+    src: "/storage/".concat(item.preview_img),
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _PartnerItemPage_scss__WEBPACK_IMPORTED_MODULE_2___default.a.shadow
@@ -112975,7 +112975,7 @@ var PartnerItemPage = function PartnerItemPage() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: _PartnerItemPage_scss__WEBPACK_IMPORTED_MODULE_8___default.a.img_block
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
-    src: data.photo,
+    src: "/storage/".concat(data.photo),
     alt: ""
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: _PartnerItemPage_scss__WEBPACK_IMPORTED_MODULE_8___default.a.inner_content
@@ -113022,7 +113022,7 @@ var VideoItem = function VideoItem(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _PartnerItemPage_scss__WEBPACK_IMPORTED_MODULE_2___default.a.video_img
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: item.preview_img,
+    src: "/storage/".concat(item.preview_img),
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _PartnerItemPage_scss__WEBPACK_IMPORTED_MODULE_2___default.a.shadow
@@ -113165,7 +113165,7 @@ var PartnerItem = function PartnerItem(_ref2) {
     to: "/partners/".concat(item.id),
     className: _PartnersPage_scss__WEBPACK_IMPORTED_MODULE_7___default.a.card
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("img", {
-    src: item.photo,
+    src: "/storage/".concat(item.photo),
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: _PartnersPage_scss__WEBPACK_IMPORTED_MODULE_7___default.a.name
