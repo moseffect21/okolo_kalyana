@@ -22,8 +22,8 @@ const HeaderDesktop = () => {
   const [searchResult, setSearchResult] = useState<any>()
   const location = useLocation()
 
-  const {user} = useSelector(({userReducer}:RootState) => ({
-    user:userReducer.user
+  const { user } = useSelector(({ userReducer }: RootState) => ({
+    user: userReducer.user,
   }))
 
   console.log(user)
@@ -132,15 +132,19 @@ const HeaderDesktop = () => {
                   О нас
                 </NavLink>
               </div>
-              {user ? <div className={s.user}>
-                <div className={s.user_img}>
-                  <img src={`/storage/${user.avatar ? user.avatar : ''}`} alt=""/>
+              {user ? (
+                <div className={s.user}>
+                  <div className={s.user_img}>
+                    <img src={user.avatar ? user.avatar : ''} alt="" />
+                  </div>
                   <div className={s.user_name}>{user.name ? user.name : `@${user.id}`}</div>
                 </div>
-              </div> : <div className={s.nav_item}>
-                <NavLink to={`${location.pathname}?auth=1`}>Войти</NavLink>
-              </div>}
-              
+              ) : (
+                <div className={s.nav_item}>
+                  <NavLink to={`${location.pathname}?auth=1`}>Войти</NavLink>
+                </div>
+              )}
+
               <div
                 className={s.img_block}
                 onClick={() => {
