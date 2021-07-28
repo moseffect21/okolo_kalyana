@@ -6,10 +6,10 @@ import { useMutation, useQuery } from 'react-query'
 import { useSelector } from 'react-redux'
 import { RootState } from 'ReduxStore/rootReducer'
 
-const addCommentAction = (id: string, comment: string) => {
+const addCommentAction = (id: string, comment: string, user: any) => {
   const data = apiClient.post(`/api/v1/article/${id}/comment`, {
     text: comment,
-    nickname: 'Аноним',
+    nickname: user.name ? user.name : 'Аноним',
   })
 
   return data
@@ -17,7 +17,7 @@ const addCommentAction = (id: string, comment: string) => {
 
 export const addComment = (id: string, callback?: Function) => {
   const { user } = useSelector(({ userReducer }: RootState) => ({ user: userReducer.user }))
-  const mutation = useMutation(({ comment }: any) => addCommentAction(id, comment), {
+  const mutation = useMutation(({ comment }: any) => addCommentAction(id, comment, user), {
     onMutate: async ({ comment }: any) => {
       await queryClient.cancelQueries('article')
       const previousData = queryClient.getQueryData<any>(['article', id.toString()])
