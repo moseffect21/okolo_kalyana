@@ -32,16 +32,15 @@
     <link rel="icon" sizes="any" type="image/svg+xml" href="/image/favicons/fav.svg">
     <link href="/css/swiper.min.css" rel="stylesheet">
     <link href="{{mix('css/app.css')}}" rel="stylesheet">
-    {{-- @auth
-            <script>
-                var auth_user = {!! auth()->user()->toJson() !!};
-                console.log(auth_user)
-            </script>
-        @else
-            <script>
-                var auth_user = null;
-            </script>
-        @endauth --}}
+    @auth
+        <script>
+            var auth_user = {!! auth()->user()->toJson() !!};
+        </script>
+    @else
+        <script>
+            var auth_user = null;
+        </script>
+    @endauth
 
 </head>
 

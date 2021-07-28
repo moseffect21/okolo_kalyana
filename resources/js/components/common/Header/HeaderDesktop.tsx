@@ -6,7 +6,9 @@
 import apiClient from 'apiClient'
 import { isArray } from 'lodash'
 import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import { NavLink, useLocation } from 'react-router-dom'
+import { RootState } from 'ReduxStore/rootReducer'
 
 import Loader from '../Loader'
 import { AuthMW } from '../modalWindows'
@@ -19,6 +21,12 @@ const HeaderDesktop = () => {
   const [searchIsLoading, setSearchIsLoading] = useState<boolean>(false)
   const [searchResult, setSearchResult] = useState<any>()
   const location = useLocation()
+
+  const {user} = useSelector(({userReducer}:RootState) => ({
+    user:userReducer.user
+  }))
+
+  console.log(user)
 
   useEffect(() => {
     if (searchVal) {
@@ -124,9 +132,15 @@ const HeaderDesktop = () => {
                   О нас
                 </NavLink>
               </div>
-              <div className={s.nav_item}>
+              {user ? <div className={s.user}>
+                <div className={s.user_img}>
+                  <img src={`/storage/${user.avatar ? user.avatar : ''}`} alt=""/>
+                  <div className={s.user_name}>{user.name ? user.name : `@${user.id}`}</div>
+                </div>
+              </div> : <div className={s.nav_item}>
                 <NavLink to={`${location.pathname}?auth=1`}>Войти</NavLink>
-              </div>
+              </div>}
+              
               <div
                 className={s.img_block}
                 onClick={() => {
