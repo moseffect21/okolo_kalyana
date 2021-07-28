@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Context } from 'components/app/IsMobile'
 import React, { useContext } from 'react'
@@ -89,7 +90,7 @@ const AboutModal = ({ item }: Props) => {
               </div>
             )}
 
-            <div className={s.text}>{item.description}</div>
+            <div className={s.text} dangerouslySetInnerHTML={{ __html: item.description }} />
 
             {!isMobile && (
               <div className={`${s.quote} ${s.last}`}>

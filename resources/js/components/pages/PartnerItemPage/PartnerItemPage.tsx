@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable @typescript-eslint/naming-convention */
 import apiClient from 'apiClient'
@@ -35,13 +36,21 @@ const PartnerItemPage = () => {
           </div>
           <div className={s.inner_content}>
             <div className={s.title}>{data.name}</div>
-            <div className={s.text}>{data.description}</div>
+            <div className={s.text} dangerouslySetInnerHTML={{ __html: data.description }} />
           </div>
           <ArticlesBlock data={data.articles} />
           <VideosBlock data={data.videos} />
         </div>
       ) : (
-        <div className={s.cards} />
+        <div className={s.desc_container}>
+          <div className={s.img_block}>
+            <img src={`/storage/${data.photo}`} alt="" />
+          </div>
+          <div className={s.partner_title}>{data.name}</div>
+          <div className={s.text} dangerouslySetInnerHTML={{ __html: data.description }} />
+          <ArticlesBlock data={data.articles} />
+          <VideosBlock data={data.videos} />
+        </div>
       )}
     </div>
   )

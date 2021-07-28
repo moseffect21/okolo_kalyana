@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -102,7 +103,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
             <>
               <div className={s.inner_content}>
                 <div className={s.title}>{article.title}</div>
-                <div className={s.text}>{article.content}</div>
+                <div className={s.text} dangerouslySetInnerHTML={{ __html: article.content }} />
                 <div className={s.action_block}>
                   <div className={s.item}>
                     <img src="/images/icons/heart_icon.svg" alt="" />
@@ -114,7 +115,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                       {article.comments && article.comments.length ? article.comments.length : 0}
                     </span>
                   </NavLink>
-                  <div className={s.date}>10 августа 2013</div>
+                  <div className={s.date}>{moment(item.created_at).format('DD MMMM YYYY')}</div>
                 </div>
                 <div className={s.input_block}>
                   <label className={s.comment_input}>

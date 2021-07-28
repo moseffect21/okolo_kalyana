@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import moment from 'moment'
 
 import s from './ArticleCard.scss'
 
@@ -24,7 +25,7 @@ const ArticleCard = ({ item, type, categSlug }: Props) => {
         <div className={s.description}>{item.preview_text}</div>
       </div>
       <div className={s.info}>
-        <div className={s.date}>10 августа 2018</div>
+        <div className={s.date}>{moment(item.created_at).format('DD MMMM YYYY')}</div>
         <div className={s.author}>
           Автор: {item.authors && item.authors.lenght ? item.authors[0].name : ''}
         </div>
