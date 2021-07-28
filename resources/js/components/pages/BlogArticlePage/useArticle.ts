@@ -21,19 +21,21 @@ export const addComment = (id: string, callback?: Function) => {
     onMutate: async ({ comment }: any) => {
       await queryClient.cancelQueries('article')
       const previousData = queryClient.getQueryData<any>(['article', id.toString()])
-      console.log(previousData)
       if (previousData) {
         queryClient.setQueryData(['article', id], {
           ...previousData,
-          data: {
-            ...previousData.data,
-            comments: previousData.data.comments.push({
-              id: 0,
-              user_id: 0,
-              nickname: user ? user.nickname : 'Аноним',
-              text: comment,
-              article_id: id,
-            }),
+          article: {
+            ...previousData.article,
+            data: {
+              ...previousData.data,
+              comments: previousData.data.comments.push({
+                id: 0,
+                user_id: user ? user.id : 0,
+                nickname: user ? user.nickname : 'Аноним',
+                text: comment,
+                article_id: id,
+              }),
+            },
           },
         })
         if (callback) {
