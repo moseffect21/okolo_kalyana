@@ -26,16 +26,13 @@ export const addComment = (id: string, callback?: Function) => {
           ...previousData,
           article: {
             ...previousData.article,
-            data: {
-              ...previousData.data,
-              comments: previousData.data.comments.push({
-                id: 0,
-                user_id: user ? user.id : 0,
-                nickname: user ? user.nickname : 'Аноним',
-                text: comment,
-                article_id: id,
-              }),
-            },
+            comments: previousData.data.comments.push({
+              id: 0,
+              user_id: user ? user.id : 0,
+              nickname: user ? user.nickname : 'Аноним',
+              text: comment,
+              article_id: id,
+            }),
           },
         })
         if (callback) {
