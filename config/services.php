@@ -33,19 +33,19 @@ return [
     'vkontakte' => [
         'client_id' => env('VK_ID'), 
         'client_secret' => env('VK_SECRET'),
-        'redirect' => env('APP_URL').'/api/v1/auth-vk',
+        'redirect' => env('APP_URL').'api/v1/auth-vk',
     ],
 
     'google' => [
         'client_id' => env('GOOGLE_ID'), 
         'client_secret' => env('GOOGLE_SECRET'), 
-        'redirect' => env('APP_URL').'/api/v1/auth-google',
+        'redirect' => env('APP_URL').'api/v1/auth-google',
     ],
 
     'facebook' => [
         'client_id' => env('FB_ID'), 
         'client_secret' => env('FB_SECRET'),
-        'redirect' => env('APP_URL').'/api/v1/auth-fb',
+        'redirect' => env('APP_URL').'api/v1/auth-fb',
     ],
 
 ];
