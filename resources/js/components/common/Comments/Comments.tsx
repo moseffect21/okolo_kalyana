@@ -32,7 +32,11 @@ const Comments = ({ data, addCommentMutation }: Props) => {
       <div className={s.title}>Комментарии ({data && data.length ? data.length : 0})</div>
       <div className={s.input_block}>
         <label className={s.comment_input}>
-          <img src={user ? user.photo : '/images/user_default.png'} alt="" className={s.user_img} />
+          <img
+            src={user ? user.avatar : '/images/user_default.png'}
+            alt=""
+            className={s.user_img}
+          />
           <input
             type="text"
             placeholder="Введите комментарий..."
