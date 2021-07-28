@@ -75,7 +75,7 @@ const AuthMW = () => {
                 <span className={s.text}>ВКонтакте</span>
               </a>
             </div>
-            <div className={s.button_item}>
+            {/* <div className={s.button_item}>
               <a className={s.fb} href="/api/v1/login-fb">
                 <div className={s.img_container}>
                   <img src="/image/icon/fb.svg" alt="" />
@@ -90,7 +90,7 @@ const AuthMW = () => {
                 </div>
                 <span className={s.text}>Google</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className={s.term}>
