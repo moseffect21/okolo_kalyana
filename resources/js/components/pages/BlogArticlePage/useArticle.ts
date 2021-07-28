@@ -26,7 +26,7 @@ export const addComment = (id: string, callback?: Function) => {
           ...previousData,
           article: {
             ...previousData.article,
-            comments: previousData.data.comments.push({
+            comments: previousData.article.comments.push({
               id: 0,
               user_id: user ? user.id : 0,
               nickname: user ? user.nickname : 'Аноним',
