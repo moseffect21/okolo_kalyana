@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import MainPage from 'components/pages/MainPage'
 import Header from 'components/common/Header'
@@ -9,8 +9,12 @@ import BlogArticlePage from 'components/pages/BlogArticlePage'
 import AgeNotify from 'components/common/modalWindows/AgeNotify'
 import PartnersPage from 'components/pages/PartnersPage'
 import PartnerItemPage from 'components/pages/PartnerItemPage'
+import moment from 'moment'
 
 const AppView = () => {
+  useEffect(() => {
+    moment.locale('ru')
+  }, [])
   return (
     <div className="app-container">
       <MainLayout>

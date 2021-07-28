@@ -115,7 +115,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                       {article.comments && article.comments.length ? article.comments.length : 0}
                     </span>
                   </NavLink>
-                  <div className={s.date}>{moment(item.created_at).format('DD MMMM YYYY')}</div>
+                  <div className={s.date}>{moment(article.created_at).format('DD MMMM YYYY')}</div>
                 </div>
                 <div className={s.input_block}>
                   <label className={s.comment_input}>
@@ -177,7 +177,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
               <img src={`/storage/${article.preview_img}`} alt="" />
             )}
           </div>
-          <div className={s.text}>{article.content}</div>
+          <div className={s.text} dangerouslySetInnerHTML={{ __html: article.content }} />
           <Comments data={article.comments} addCommentMutation={addCommentMutation} />
         </>
       )}
