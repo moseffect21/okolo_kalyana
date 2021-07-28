@@ -29,7 +29,7 @@ export const addComment = (id: string, callback?: Function) => {
             comments: previousData.article.comments.push({
               id: 0,
               user_id: user ? user.id : 0,
-              nickname: user ? user.nickname : 'Аноним',
+              nickname: user ? user.name : 'Аноним',
               text: comment,
               article_id: id,
             }),
