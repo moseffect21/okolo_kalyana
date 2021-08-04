@@ -97,6 +97,13 @@ class GetRequest extends Controller
     {
         $category = CategorMain::where('slug', $slug)->first();
         $category['articles'] = articles::where('id_categories', $category['id'])->get();
+        foreach ($category['articles'] as $item) {
+
+            foreach (explode(",", $item->authors_id) as $item2) {
+                $item['authors'][] = User::where('id', $item2)->first();
+            }
+            unset($item['authors'][0]);
+        }
         return response()->json($category, 200);
     }
     //  запрос на получение статьи/видео
@@ -109,6 +116,11 @@ class GetRequest extends Controller
             $article->authors[] = User::where('id', $item)->first();
         }
         unset($article->authors[1]);
+        foreach ($article->comments as $item) {
+
+
+            $item['user'] = User::where('id', $item->user_id)->first();
+        }
         $random = articles::all()->random(1);
 
         return response()->json(['article' => $article, 'random' => $random], 200);
