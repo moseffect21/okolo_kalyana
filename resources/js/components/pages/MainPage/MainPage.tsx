@@ -1,5 +1,6 @@
 import apiClient from 'apiClient'
 import { Context } from 'components/app/IsMobile'
+import { MetaDescriptionMain, MetaKeywordsMain, MetaTitleMain } from 'components/app/MetaTags'
 import Loader from 'components/common/Loader'
 import React, { useContext } from 'react'
 import { useQuery } from 'react-query'
@@ -27,11 +28,12 @@ const MainPage = () => {
 
   const { data, isLoading } = useQuery('main', fetchMain)
 
-  console.log(data)
-
   return (
     <>
       <div className={s.container}>
+        <MetaTitleMain />
+        <MetaDescriptionMain />
+        <MetaKeywordsMain />
         <FirstBlock />
         <SocialBlock />
         {isLoading ? (

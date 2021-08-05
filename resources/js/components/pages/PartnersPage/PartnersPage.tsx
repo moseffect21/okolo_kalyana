@@ -1,4 +1,9 @@
 import apiClient from 'apiClient'
+import {
+  MetaDescriptionPartners,
+  MetaKeywordsPartners,
+  MetaTitlePartners,
+} from 'components/app/MetaTags'
 import ContentLayout from 'components/common/ContentLayout'
 import Loader from 'components/common/Loader'
 import React from 'react'
@@ -16,7 +21,7 @@ const PartnerItem = ({ item }: any) => {
   return (
     <NavLink to={`/partners/${item.id}`} className={s.card}>
       <img src={`/storage/${item.photo}`} alt="" />
-      <div className={s.name}>{item.name}</div>
+      {/* <div className={s.name}>{item.name}</div> */}
     </NavLink>
   )
 }
@@ -25,6 +30,9 @@ const PartnersPage = () => {
   const { isLoading, data } = useQuery('partners', fetchPartners)
   return (
     <ContentLayout cols={1}>
+      <MetaTitlePartners />
+      <MetaDescriptionPartners />
+      <MetaKeywordsPartners />
       <div className={s.container}>
         {isLoading ? (
           <Loader />

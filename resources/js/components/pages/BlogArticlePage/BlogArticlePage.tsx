@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { Context } from 'components/app/IsMobile'
+import { MetaTitle } from 'components/app/MetaTags'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import ContentLayout from 'components/common/ContentLayout'
 import OfferBar from 'components/common/OfferBar'
@@ -37,22 +38,27 @@ const BlogArticlePage = () => {
   const isArticle = params.slug === 'article'
   const isContests = params.slug === 'contests'
   const { data, isLoading } = useArticle(params.id ? params.id : '')
-  return isMobile ? (
-    <ArticleContent
-      isLoading={isLoading}
-      article={data ? data.article : []}
-      offer={data ? data.random : []}
-    />
-  ) : (
-    <ContentLayout cols={3} title={isVideo ? 'Видео' : isArticle ? 'Статьи' : 'Блог'}>
-      <CategoriesNavBar />
-      <ArticleContent
-        isLoading={isLoading}
-        article={data ? data.article : []}
-        offer={data ? data.random : []}
-      />
-      <OfferBar data={data ? data.random : []} />
-    </ContentLayout>
+  return (
+    <>
+      <MetaTitle>{data && data.article ? data.article.name : 'Статья'}</MetaTitle>
+      {isMobile ? (
+        <ArticleContent
+          isLoading={isLoading}
+          article={data ? data.article : []}
+          offer={data ? data.random : []}
+        />
+      ) : (
+        <ContentLayout cols={3} title={isVideo ? 'Видео' : isArticle ? 'Статьи' : 'Блог'}>
+          <CategoriesNavBar />
+          <ArticleContent
+            isLoading={isLoading}
+            article={data ? data.article : []}
+            offer={data ? data.random : []}
+          />
+          <OfferBar data={data ? data.random : []} />
+        </ContentLayout>
+      )}
+    </>
   )
 }
 

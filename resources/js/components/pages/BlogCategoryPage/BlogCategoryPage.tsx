@@ -6,8 +6,14 @@ import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import { useRouteMatch } from 'react-router-dom'
 import Loader from 'components/common/Loader'
 import { Context } from 'components/app/IsMobile'
+import {
+  MetaDescriptionArticles,
+  MetaDescriptionVideos,
+  MetaKeywordsArticles,
+  MetaKeywordsVideos,
+  MetaTitle,
+} from 'components/app/MetaTags'
 
-import { videoMap } from './VideoData'
 import VideoContainer from './VideoContainer'
 import ArticleContainer from './ArticleContainer'
 import useCategory from './useCategory'
@@ -26,6 +32,9 @@ const BlogCategoryPage = () => {
       cols={isMobile ? 1 : 2}
       title={categData && categData.name ? categData.name : 'Блог'}
     >
+      <MetaTitle>{categData && categData.name ? categData.name : 'Блог'}</MetaTitle>
+      {isArticle ? <MetaDescriptionArticles /> : isVideo ? <MetaDescriptionVideos /> : <></>}
+      {isArticle ? <MetaKeywordsArticles /> : isVideo ? <MetaKeywordsVideos /> : <></>}
       {!isMobile && <CategoriesNavBar />}
       <div>
         {isLoading || !categData ? (

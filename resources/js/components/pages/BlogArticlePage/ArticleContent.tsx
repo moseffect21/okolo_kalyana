@@ -105,10 +105,10 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                 <div className={s.title}>{article.title}</div>
                 <div className={s.text} dangerouslySetInnerHTML={{ __html: article.content }} />
                 <div className={s.action_block}>
-                  <div className={s.item}>
+                  {/* <div className={s.item}>
                     <img src="/images/icons/heart_icon.svg" alt="" />
                     <span>0</span>
-                  </div>
+                  </div> */}
                   <NavLink className={s.item} to={`${location.pathname}/comments`}>
                     <img src="/images/icons/comment_icon.svg" alt="" />
                     <span>

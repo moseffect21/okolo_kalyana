@@ -1,4 +1,5 @@
 import apiClient from 'apiClient'
+import { MetaDescriptionAbout, MetaKeywordsAbout, MetaTitleAbout } from 'components/app/MetaTags'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import ContentLayout from 'components/common/ContentLayout'
 import Loader from 'components/common/Loader'
@@ -69,6 +70,9 @@ const AboutPage = () => {
   const { data, isLoading } = useQuery('team', fetchTeam)
   return (
     <ContentLayout cols={1}>
+      <MetaTitleAbout />
+      <MetaDescriptionAbout />
+      <MetaKeywordsAbout />
       {/* <CategoriesNavBar /> */}
       <div className={s.container}>
         <div className={s.info}>
