@@ -3,6 +3,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import apiClient from 'apiClient'
 import { Context } from 'components/app/IsMobile'
+import { MetaTitle } from 'components/app/MetaTags'
 import ContentLayout from 'components/common/ContentLayout'
 import Loader from 'components/common/Loader'
 import React, { useContext } from 'react'
@@ -27,6 +28,7 @@ const PartnerItemPage = () => {
   })
   return (
     <div className={s.container}>
+      <MetaTitle>{data ? data.name : 'Партнер'}</MetaTitle>
       {isLoading ? (
         <Loader />
       ) : isMobile ? (
