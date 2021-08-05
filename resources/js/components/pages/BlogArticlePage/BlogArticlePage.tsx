@@ -40,7 +40,7 @@ const BlogArticlePage = () => {
   const { data, isLoading } = useArticle(params.id ? params.id : '')
   return (
     <>
-      <MetaTitle>{data && data.article ? data.article.name : 'Статья'}</MetaTitle>
+      <MetaTitle>{data && data.article ? data.article.title : 'Статья'}</MetaTitle>
       {isMobile ? (
         <ArticleContent
           isLoading={isLoading}
