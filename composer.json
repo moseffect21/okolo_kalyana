@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.1",
         "microweber/screen": "^1.0",
+        "nesk/puphpeteer": "^2.0",
         "socialiteproviders/vkontakte": "^4.2",
         "tcg/voyager": "^1.4"
     },
