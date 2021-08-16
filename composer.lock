@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "3ee02c2bd0458db1b828784b296ebfb4",
+=======
+    "content-hash": "6c9971989c72a8227f6337c4c49a7508",
+>>>>>>> 2bed8821f0e13b87d2430a91236b7c6ce8816ae2
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1875,10 +1879,13 @@
                 "rest",
                 "web service"
             ],
+<<<<<<< HEAD
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
                 "source": "https://github.com/guzzle/guzzle/tree/7.3.0"
             },
+=======
+>>>>>>> 2bed8821f0e13b87d2430a91236b7c6ce8816ae2
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
