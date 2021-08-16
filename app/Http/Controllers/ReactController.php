@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\WebApi;
+namespace App\Http\Controllers;
 
 use Nesk\Puphpeteer\Puppeteer;
 use Nesk\Rialto\Data\JsFunction;
