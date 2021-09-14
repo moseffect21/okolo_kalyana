@@ -30,6 +30,11 @@
     color: #ffffff !important;
     font-family: 'SF Pro Display' !important;
 
+    p,
+    span {
+      font-family: 'SF Pro Display' !important;
+    }
+
     img {
       max-width: 100%;
       object-fit: contain;
