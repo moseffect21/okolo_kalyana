@@ -146,7 +146,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                       return (
                         <NavLink
                           className={s.offer_item}
-                          to={`/${item.type === 'video' ? 'videos' : 'articles'}/${item.id}`}
+                          to={`/blog/${item.type === 'video' ? 'videos' : 'articles'}/${item.id}`}
                         >
                           <img src={`/storage/${item.preview_img}`} alt="" />
                           <div className={s.shadow} />
