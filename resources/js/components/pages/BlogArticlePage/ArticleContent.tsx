@@ -144,11 +144,14 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                   {offer ? (
                     offer.map((item: any) => {
                       return (
-                        <div className={s.offer_item}>
+                        <NavLink
+                          className={s.offer_item}
+                          to={`/${item.type === 'video' ? 'videos' : 'articles'}/${item.id}`}
+                        >
                           <img src={`/storage/${item.preview_img}`} alt="" />
                           <div className={s.shadow} />
                           <div className={s.offer_name}>{item.title}</div>
-                        </div>
+                        </NavLink>
                       )
                     })
                   ) : (
