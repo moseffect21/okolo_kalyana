@@ -10,10 +10,13 @@ const AboutBlock = ({ data }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false)
   return (
     <div className={s.container}>
-      <div className={s.cards}>
-        {data.map((item: any) => {
-          return <AboutCard key={item.id} item={item} hovered={hovered} setHovered={setHovered} />
-        })}
+      <div className={s.content}>
+        <div className={s.back_text}>О нас</div>
+        <div className={s.cards}>
+          {data.map((item: any) => {
+            return <AboutCard key={item.id} item={item} hovered={hovered} setHovered={setHovered} />
+          })}
+        </div>
       </div>
     </div>
   )

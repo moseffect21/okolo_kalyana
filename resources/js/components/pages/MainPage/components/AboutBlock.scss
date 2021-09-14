@@ -1,11 +1,32 @@
 .container {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  padding: 6rem 0;
+  padding: 6rem;
   height: 50rem;
 }
+.content {
+  width: calc(100% - 32rem);
+  height: auto;
+  max-width: 110rem;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 8rem;
+}
+.back_text {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 14.4rem;
+  line-height: 16.9rem;
+  color: #ffffff;
+  font-weight: bold;
+  top: 16rem;
+  left: -40rem;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  padding: 0 6rem;
+  // max-width: 132rem;
+  // margin: 4rem auto 0 auto;
 }
