@@ -113,15 +113,18 @@ class GetRequest extends Controller
         if (!empty($article)) {
             $article = articles::where('slug', $id)->with('comments')->first();
         }
-        foreach (explode(",", $article->authors_id) as $item) {
+        if ($article) {
+            if ($article->authors_id) {
+                foreach (explode(",", $article->authors_id) as $item) {
 
-            $article->authors[] = User::where('id', $item)->first();
-        }
-        unset($article->authors[1]);
-        foreach ($article->comments as $item) {
-
-
-            $item['user'] = User::where('id', $item->user_id)->first();
+                    $article->authors[] = User::where('id', $item)->first();
+                }
+                unset($article->authors[1]); 
+            }
+            foreach ($article->comments as $item) {
+                $item['user'] = User::where('id', $item->user_id)->first();
+            }  
+            
         }
         $random = articles::all()->random(1);
 
