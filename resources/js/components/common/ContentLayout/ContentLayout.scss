@@ -41,7 +41,7 @@
       flex-shrink: 0;
     }
     > div:nth-child(2) {
-      width: 100%;
+      width: calc(100% - 66rem);
     }
     > div:last-child {
       width: 34.5rem;
