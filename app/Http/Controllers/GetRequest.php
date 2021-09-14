@@ -110,7 +110,7 @@ class GetRequest extends Controller
     public function getArticle(Request $request, $id)
     {
         $article = articles::where('id', $id)->with('comments')->first();
-        if (!empty($article)) {
+        if (empty($article)) {
             $article = articles::where('slug', $id)->with('comments')->first();
         }
         foreach (explode(",", $article->authors_id) as $item) {
