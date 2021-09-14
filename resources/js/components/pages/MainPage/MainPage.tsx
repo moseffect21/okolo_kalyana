@@ -55,7 +55,7 @@ const MainPage = () => {
               )}
             </div>
             <PartnersBlock data={data.partners} />
-            <AboutBlock />
+            <AboutBlock data={data.team} />
           </>
         )}
       </div>
