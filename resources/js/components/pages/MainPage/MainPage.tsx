@@ -47,15 +47,16 @@ const MainPage = () => {
                 <div className={s.shadow} />
               </div>
               <VideoBlock data={data.videos} />
+              <AboutBlock data={data.team} />
               {!isMobile && (
                 <>
-                  <ProductsBlock />
+                  {/* <ProductsBlock /> */}
                   <InfoBlock />
                 </>
               )}
             </div>
             <PartnersBlock data={data.partners} />
-            <AboutBlock data={data.team} />
+            {/* <AboutBlock data={data.team} /> */}
           </>
         )}
       </div>
