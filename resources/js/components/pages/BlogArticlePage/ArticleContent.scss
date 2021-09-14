@@ -27,7 +27,8 @@
     margin-top: 3rem;
     font-size: 1.8rem;
     line-height: 2.1rem;
-    color: #ffffff;
+    color: #ffffff !important;
+    font-family: 'SF Pro Display' !important;
 
     img {
       max-width: 100%;
@@ -71,7 +72,8 @@
   .text {
     font-size: 1.6rem;
     line-height: 115%;
-    color: #212121;
+    color: #212121 !important;
+    font-family: 'SF Pro Display' !important;
     margin-top: 2rem;
   }
   .inner_content {
