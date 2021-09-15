@@ -96,7 +96,7 @@ class GetRequest extends Controller
     public function getCategory(Request $request, $slug)
     {
         $category = CategorMain::where('slug', $slug)->first();
-        $category['articles'] = articles::where(['id_categories' => $category['id'], 'visible' => 1])->get();
+        $category['articles'] = articles::where(['id_categories' => $category['id'], 'visible' => 1])->orderBy('created_at', 'desc')->get();
         foreach ($category['articles'] as $item) {
 
             foreach (explode(",", $item->authors_id) as $item2) {
