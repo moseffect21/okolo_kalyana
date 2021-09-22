@@ -26,9 +26,11 @@ const ArticleCard = ({ item, type, categSlug }: Props) => {
       </div>
       <div className={s.info}>
         <div className={s.date}>{moment(item.created_at).format('DD MMMM YYYY')}</div>
-        <div className={s.author}>
-          Автор: {item.authors && item.authors.lenght ? item.authors[0].name : ''}
-        </div>
+        {item.authors && item.authors.length ? (
+          <div className={s.author}>Автор: {item.authors[0].name}</div>
+        ) : (
+          <></>
+        )}
       </div>
     </NavLink>
   )
