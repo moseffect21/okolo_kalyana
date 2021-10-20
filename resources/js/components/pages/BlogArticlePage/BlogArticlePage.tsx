@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { Context } from 'components/app/IsMobile'
-import { MetaTitle } from 'components/app/MetaTags'
+import { MetaDescription, MetaKeywords, MetaTitle } from 'components/app/MetaTags'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import ContentLayout from 'components/common/ContentLayout'
 import OfferBar from 'components/common/OfferBar'
@@ -40,7 +40,9 @@ const BlogArticlePage = () => {
   const { data, isLoading } = useArticle(params.id ? params.id : '')
   return (
     <>
-      <MetaTitle>{data && data.article ? data.article.title : 'Статья'}</MetaTitle>
+      <MetaTitle>{data && data.article ? data.article.seo_title : 'Статья'}</MetaTitle>
+      <MetaDescription>{data && data.article ? data.article.seo_description : ''}</MetaDescription>
+      <MetaKeywords>{data && data.article ? data.article.seo_keywords : ''}</MetaKeywords>
       {isMobile ? (
         <ArticleContent
           isLoading={isLoading}
