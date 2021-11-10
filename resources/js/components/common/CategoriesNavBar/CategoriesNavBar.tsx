@@ -92,6 +92,8 @@ const CategoriesNavBar = () => {
                         ? '/images/icons/youtube.svg'
                         : item.slug === 'articles'
                         ? '/images/icons/doc.svg'
+                        : item.slug === 'giveaway'
+                        ? '/images/icons/trophy.svg'
                         : '/images/icons/speaker.svg'
                     }
                     alt=""
