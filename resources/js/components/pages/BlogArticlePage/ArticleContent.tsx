@@ -7,10 +7,11 @@ import { Context } from 'components/app/IsMobile'
 import Comments from 'components/common/Comments'
 import Loader from 'components/common/Loader'
 import ToastNotify from 'components/common/ToastNotify'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { NavLink, useLocation, useRouteMatch } from 'react-router-dom'
 import moment from 'moment'
-import OfferBar from 'components/common/OfferBar'
+import { useSelector } from 'react-redux'
+import { RootState } from 'ReduxStore/rootReducer'
 
 import s from './ArticleContent.scss'
 import { addComment } from './useArticle'
@@ -23,6 +24,9 @@ type Props = {
 
 const ArticleContent = ({ article, isLoading, offer }: Props) => {
   const isMobile = useContext(Context)
+  const { user } = useSelector(({ userReducer }: RootState) => ({
+    user: userReducer.user,
+  }))
   const { params } = useRouteMatch<{ comments?: string }>()
   const isComments = !!(params && params.comments)
   const addCommentMutation = addComment(article.id, () => {
@@ -77,26 +81,34 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                     <div className={s.empty_list}>Список комментариев пуст</div>
                   )}
                 </div>
-                <div className={`${s.input_block} ${s.fixed_input}`}>
-                  <label className={s.comment_input}>
-                    <img src="/images/user_default.png" alt="" className={s.user_img} />
-                    <input
-                      type="text"
-                      placeholder="Введите комментарий..."
-                      value={comment}
-                      onChange={(e: any) => setComment(e.target.value)}
-                    />
-                    <img
-                      src="/images/icons/send_icon.svg"
-                      alt=""
-                      className={s.send_img}
-                      onClick={() => {
-                        addCommentMutation.mutate({ comment })
-                        setComment('')
-                      }}
-                    />
-                  </label>
-                </div>
+                {user ? (
+                  <div className={`${s.input_block} ${s.fixed_input}`}>
+                    <label className={s.comment_input}>
+                      <img
+                        src={user ? user.avatar : '/images/user_default.png'}
+                        alt=""
+                        className={s.user_img}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Введите комментарий..."
+                        value={comment}
+                        onChange={(e: any) => setComment(e.target.value)}
+                      />
+                      <img
+                        src="/images/icons/send_icon.svg"
+                        alt=""
+                        className={s.send_img}
+                        onClick={() => {
+                          addCommentMutation.mutate({ comment })
+                          setComment('')
+                        }}
+                      />
+                    </label>
+                  </div>
+                ) : (
+                  <div className={s.not_auth_txt}>Авторизуйтесь, чтобы оставить комментарий</div>
+                )}
               </div>
             </>
           ) : (
@@ -105,10 +117,6 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                 <div className={s.title}>{article.title}</div>
                 <div className={s.text} dangerouslySetInnerHTML={{ __html: article.content }} />
                 <div className={s.action_block}>
-                  {/* <div className={s.item}>
-                    <img src="/images/icons/heart_icon.svg" alt="" />
-                    <span>0</span>
-                  </div> */}
                   <NavLink className={s.item} to={`${location.pathname}/comments`}>
                     <img src="/images/icons/comment_icon.svg" alt="" />
                     <span>
@@ -117,26 +125,34 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
                   </NavLink>
                   <div className={s.date}>{moment(article.created_at).format('DD MMMM YYYY')}</div>
                 </div>
-                <div className={s.input_block}>
-                  <label className={s.comment_input}>
-                    <img src="/images/user_default.png" alt="" className={s.user_img} />
-                    <input
-                      type="text"
-                      placeholder="Введите комментарий..."
-                      value={comment}
-                      onChange={(e: any) => setComment(e.target.value)}
-                    />
-                    <img
-                      src="/images/icons/send_icon.svg"
-                      alt=""
-                      className={s.send_img}
-                      onClick={() => {
-                        addCommentMutation.mutate({ comment })
-                        setComment('')
-                      }}
-                    />
-                  </label>
-                </div>
+                {user ? (
+                  <div className={s.input_block}>
+                    <label className={s.comment_input}>
+                      <img
+                        src={user ? user.avatar : '/images/user_default.png'}
+                        alt=""
+                        className={s.user_img}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Введите комментарий..."
+                        value={comment}
+                        onChange={(e: any) => setComment(e.target.value)}
+                      />
+                      <img
+                        src="/images/icons/send_icon.svg"
+                        alt=""
+                        className={s.send_img}
+                        onClick={() => {
+                          addCommentMutation.mutate({ comment })
+                          setComment('')
+                        }}
+                      />
+                    </label>
+                  </div>
+                ) : (
+                  <div className={s.not_auth_txt}>Авторизуйтесь, чтобы оставить комментарий</div>
+                )}
               </div>
               <div className={s.see_also}>
                 <div className={s.title}>Посмотрите также:</div>
@@ -163,8 +179,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
           )}
         </div>
       ) : (
-        <>
-          <div className={s.title}>{article.title}</div>
+        <div className={s.desk_content}>
           <div className={s.video_block}>
             {article.type === 'video' ? (
               <iframe
@@ -179,10 +194,13 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
             ) : (
               <img src={`/storage/${article.preview_img}`} alt="" />
             )}
+            <div className={s.shadow} />
+            <div className={s.title}>{article.title}</div>
           </div>
+          <div className={s.desk_date}>{moment(article.created_at).format('DD MMMM YYYY')}</div>
           <div className={s.text} dangerouslySetInnerHTML={{ __html: article.content }} />
           <Comments data={article.comments} addCommentMutation={addCommentMutation} />
-        </>
+        </div>
       )}
     </div>
   )

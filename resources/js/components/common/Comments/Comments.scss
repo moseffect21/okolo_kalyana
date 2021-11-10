@@ -1,27 +1,37 @@
 .container {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 0.2rem solid #2a444e;
-  .title {
+  margin-top: 3rem;
+  padding: 0 6rem;
+  .not_auth_txt {
     font-size: 2.4rem;
-    line-height: 2.8rem;
-    color: #ffffff;
+    line-height: 115%;
+    color: #000000;
+    text-align: center;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #314f61;
+    margin-top: 5rem;
   }
   .input_block {
-    margin-top: 2rem;
     .comment_input {
       display: flex;
       width: calc(100% - 5rem);
-      background: #2a444e;
-      border-radius: 1rem;
-      padding: 2.5rem;
-      img {
-        width: 3.4rem;
-        height: 3.4rem;
+      background: #424242;
+      border-radius: 10rem;
+      padding: 1.5rem 2.5rem;
+      .user_img {
+        width: 4rem;
+        height: 4rem;
         object-fit: cover;
         flex-shrink: 0;
         margin-right: 2rem;
         border-radius: 50%;
+      }
+      .send_img {
+        flex-shrink: 0;
+        width: 3.4rem;
       }
       input {
         border: 0;
@@ -40,34 +50,33 @@
   .comments_items {
     margin-top: 4rem;
     .item {
-      background: #232b2e;
-      border-radius: 1rem;
-      padding: 2.5rem 2.5rem 3rem 2.5rem;
-      margin-top: 1.5rem;
-
-      .top_block {
-        display: flex;
-        align-items: center;
-
-        img {
-          width: 3.4rem;
-          height: 3.4rem;
-          object-fit: cover;
-          flex-shrink: 0;
-          margin-right: 2rem;
-          border-radius: 50%;
-        }
-        .nickname {
-          font-size: 1.8rem;
-          line-height: 2.1rem;
-          color: #ffffff;
-        }
+      margin: 1.5rem 0;
+      display: flex;
+      padding: 0 1rem;
+      img {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin-right: 2rem;
+        border-radius: 50%;
+        box-shadow: 0 0.4rem 3rem #f0f0f0;
+      }
+      .center {
+        margin-left: 1rem;
+      }
+      .nickname {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        color: #191a1f;
+        font-weight: bold;
       }
       .text {
-        margin-top: 2.5rem;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        color: #ffffff;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        color: #000000;
       }
     }
   }

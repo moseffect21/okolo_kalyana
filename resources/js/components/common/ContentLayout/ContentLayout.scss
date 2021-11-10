@@ -2,7 +2,7 @@
   width: calc(100% - 12rem);
   padding: 0 6rem 6rem;
   margin: 0 auto;
-  max-width: 132rem;
+  max-width: 144rem;
 
   .headline {
     font-weight: bold;
@@ -41,10 +41,10 @@
       flex-shrink: 0;
     }
     > div:nth-child(2) {
-      width: calc(100% - 66rem);
+      width: calc(100% - 62rem);
     }
     > div:last-child {
-      width: 34.5rem;
+      width: 30.5rem;
       padding-left: 6rem;
       flex-shrink: 0;
     }
