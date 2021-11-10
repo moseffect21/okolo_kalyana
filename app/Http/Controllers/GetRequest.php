@@ -46,7 +46,7 @@ class GetRequest extends Controller
             'like',
             '%' . $request['text'] . '%'
 
-        )->get();
+        )->where('visible',1)->get();
         if (count($data) === 0) {
             return response("don't search", 200);
         } else {
@@ -123,7 +123,7 @@ class GetRequest extends Controller
 
             $item['user'] = User::where('id', $item->user_id)->first();
         }
-        $random = articles::all()->random(3);
+        $random = articles::where('visible', 1)->random(3);
 
         return response()->json(['article' => $article, 'random' => $random], 200);
     }
