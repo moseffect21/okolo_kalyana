@@ -28,7 +28,7 @@ const BlogCategoryPage = () => {
   const categData = data ? data.data : []
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'articles'
-  const isContests = params.slug === 'giveaways'
+  const isContests = params.slug === 'giveaway'
   return (
     <ContentLayout
       cols={isMobile ? 1 : 2}
