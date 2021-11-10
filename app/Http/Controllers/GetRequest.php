@@ -160,8 +160,8 @@ class GetRequest extends Controller
     public function getMain()
     {
         return response()->json([
-            'articles' => articles::where(['show_main' => 1, 'type' => 'article'])->get(),
-            'videos' => articles::where(['show_main' => 1, 'type' => 'video'])->get(),
+            'articles' => articles::where(['show_main' => 1, 'type' => 'article'])->orderBy('created_at', 'desc')->get(),
+            'videos' => articles::where(['show_main' => 1, 'type' => 'video'])->orderBy('created_at', 'desc')->get(),
             'product_categories' => product_categories::where('show_main', 1)->get(),
             'partners' => partners::where('show_main', 1)->get(),
             'team' => team::get()
