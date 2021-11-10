@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Nesk\Puphpeteer\Puppeteer;
-use Nesk\Rialto\Data\JsFunction;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use Nesk\Puphpeteer\Puppeteer;
+use Nesk\Rialto\Data\JsFunction;
 
 class ReactController extends Controller
 {
-
 
     public function show(Request $request)
     {
@@ -33,12 +31,15 @@ class ReactController extends Controller
                 '--no-first-run',
                 '--no-zygote',
                 '--single-process', // <- this one doesn't works in Windows
-                '--disable-gpu'
+                '--disable-gpu',
             ], 'headless' => true]);
 
             $page = $browser->newPage();
+            $page->setDefaultNavigationTimeout(0);
+            $page->goto(strval($request->url()));
+            $page->waitForTimeout(5000);
             // $page->goto(strval($request->url()) . '?no_category=true&bot=true');
-            // 
+            //
 
             $data = $page->evaluate(JsFunction::createWithBody('return document.documentElement.outerHTML'));
             $data = str_replace(mix('js/app.js'), '', $data);
@@ -46,10 +47,8 @@ class ReactController extends Controller
             $data = str_replace($yandex, '', $data);
             $browser->close();
 
-
             return response($data, 200);
         } else {
-
 
             return view('master');
         }

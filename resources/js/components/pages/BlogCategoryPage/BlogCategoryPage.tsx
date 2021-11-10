@@ -7,8 +7,10 @@ import { useRouteMatch } from 'react-router-dom'
 import Loader from 'components/common/Loader'
 import { Context } from 'components/app/IsMobile'
 import {
+  MetaDescription,
   MetaDescriptionArticles,
   MetaDescriptionVideos,
+  MetaKeywords,
   MetaKeywordsArticles,
   MetaKeywordsVideos,
   MetaTitle,
@@ -32,9 +34,15 @@ const BlogCategoryPage = () => {
       cols={isMobile ? 1 : 2}
       title={categData && categData.name ? categData.name : 'Блог'}
     >
-      <MetaTitle>{categData && categData.name ? categData.name : 'Блог'}</MetaTitle>
-      {isArticle ? <MetaDescriptionArticles /> : isVideo ? <MetaDescriptionVideos /> : <></>}
-      {isArticle ? <MetaKeywordsArticles /> : isVideo ? <MetaKeywordsVideos /> : <></>}
+      <MetaTitle>{categData && categData.seo_title ? categData.seo_title : 'Блог'}</MetaTitle>
+      <MetaDescription>
+        {categData && categData.seo_description ? categData.seo_description : ''}
+      </MetaDescription>
+      <MetaKeywords>
+        {categData && categData.seo_keywords ? categData.seo_keywords : ''}
+      </MetaKeywords>
+      {/* {isArticle ? <MetaDescriptionArticles /> : isVideo ? <MetaDescriptionVideos /> : <></>}
+      {isArticle ? <MetaKeywordsArticles /> : isVideo ? <MetaKeywordsVideos /> : <></>} */}
       {!isMobile && <CategoriesNavBar />}
       <div>
         {isLoading || !categData ? (
