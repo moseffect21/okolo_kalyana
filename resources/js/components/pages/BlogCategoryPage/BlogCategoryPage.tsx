@@ -28,7 +28,7 @@ const BlogCategoryPage = () => {
   const categData = data ? data.data : []
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'articles'
-  const isContests = params.slug === 'contests'
+  const isContests = params.slug === 'giveaways'
   return (
     <ContentLayout
       cols={isMobile ? 1 : 2}
@@ -52,6 +52,7 @@ const BlogCategoryPage = () => {
             {isVideo && <VideoContainer data={categData} />}
             {isArticle && <ArticleContainer data={categData} />}
             {isContests && <ContestsContainer data={categData} />}
+            {!isVideo && !isArticle && !isContests && <ArticleContainer data={categData} />}
           </>
         )}
       </div>
