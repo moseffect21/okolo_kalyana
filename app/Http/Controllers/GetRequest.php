@@ -123,7 +123,7 @@ class GetRequest extends Controller
 
             $item['user'] = User::where('id', $item->user_id)->first();
         }
-        $random = articles::where('visible', 1)->random(3);
+        $random = articles::where('visible', 1)->get()->random(3);
 
         return response()->json(['article' => $article, 'random' => $random], 200);
     }
