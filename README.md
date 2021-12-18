@@ -1,4 +1,4 @@
-# 2me.to
+# okolokalyana.ru
 
 ## Развертывание для разработки
 
@@ -6,7 +6,7 @@
 - `php -v` - Должен стоять от 7.3
 - `mysql --version` - Минимальная версия - `Ver 8.0.20-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))`
 - `git init ` - Устанавливаем гит
-- `git pull https://github.com/alfa-genesis/2me.to.git` - Пуллим обновление
+- `git pull https://github.com/moseffect21/okolo_kalyana.git` - Пуллим обновление
 - `cp .env.example .env` - Делаем локальный конфиг .env
 - Изменяем .env файл, то есть вставляем данные для подключения к БД и ключи для авторизации.
 - `npm install`
