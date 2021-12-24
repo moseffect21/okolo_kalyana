@@ -180,7 +180,7 @@ const ArticleContent = ({ article, isLoading, offer }: Props) => {
         </div>
       ) : (
         <div className={s.desk_content}>
-          <div className={s.video_block}>
+          <div className={`${s.video_block} ${article.type === 'video' ? s.video : ''}`}>
             {article.type === 'video' ? (
               <iframe
                 width="560"
