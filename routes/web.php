@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Login;
+use App\Models\Mixes;
 use App\Http\Controllers\GetRequest;
 use App\Http\Controllers\WebApi\ReactController;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +44,11 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/auth-google', [Login::class, 'authGOOGLE']);
 
     Route::get('/search', [GetRequest::class, 'search']);
+
+    Route::group(['prefix' => '/mixes'], function () {
+        Route::get('/all', [Mixes::class, 'getAll']);
+        Route::get('/get', [Mixes::class, 'getMix']);
+    });
 
     Route::get('/user/{id}', [GetRequest::class, 'getUser']);
     Route::get('/main', [GetRequest::class, 'getMain']);
