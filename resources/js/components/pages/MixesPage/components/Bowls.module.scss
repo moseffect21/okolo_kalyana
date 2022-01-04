@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  width: 33rem;
+}
+.item {
+  background: rgba(25, 26, 31, 0.7);
+  border-radius: 10rem;
+  padding: 1.2rem 2.5rem 1rem 2.5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+  &.hovered {
+    opacity: 0.5;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

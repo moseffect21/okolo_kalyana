@@ -10,6 +10,7 @@ import AgeNotify from 'components/common/modalWindows/AgeNotify'
 import PartnersPage from 'components/pages/PartnersPage'
 import PartnerItemPage from 'components/pages/PartnerItemPage'
 import moment from 'moment'
+import MixesPage from 'components/pages/MixesPage'
 
 const AppView = () => {
   useEffect(() => {
@@ -28,6 +29,9 @@ const AppView = () => {
             <Route exact path="/:slug" component={OtherProfile} /> */}
             <Route path="/" exact>
               <MainPage />
+            </Route>
+            <Route path="/mixes" exact>
+              <MixesPage />
             </Route>
             <Route path="/blog" exact>
               <Redirect to="/blog/video" />

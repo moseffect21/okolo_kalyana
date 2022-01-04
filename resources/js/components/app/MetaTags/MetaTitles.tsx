@@ -24,3 +24,6 @@ export const MetaTitleArticles = (): React.ReactElement => {
 export const MetaTitleVideos = (): React.ReactElement => {
   return <Title>Видео</Title>
 }
+export const MetaTitleMixes = (): React.ReactElement => {
+  return <Title>Забивки</Title>
+}

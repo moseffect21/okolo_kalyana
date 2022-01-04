@@ -49,3 +49,11 @@ export const MetaKeywordsVideos = (): React.ReactElement => {
     />
   )
 }
+export const MetaKeywordsMixes = (): React.ReactElement => {
+  return (
+    <Meta
+      name="keywords"
+      content="кальян, табак, чаша, чашка, смесь, чай, обзор, видеообзор, ютуб, околокальяна, россия, рф, ру, смотреть, блог, кальянный, про, около кальяна, туториал, обучение, забить, забивка, купить, заказать"
+    />
+  )
+}

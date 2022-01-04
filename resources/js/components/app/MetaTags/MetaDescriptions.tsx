@@ -41,3 +41,12 @@ export const MetaDescriptionVideos = (): React.ReactElement => {
     />
   )
 }
+
+export const MetaDescriptionMixes = (): React.ReactElement => {
+  return (
+    <Meta
+      name="description"
+      content="Информативные и обучающие видео, обзоры на кальянные продукты."
+    />
+  )
+}

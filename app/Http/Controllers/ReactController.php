@@ -35,11 +35,10 @@ class ReactController extends Controller
             ], 'headless' => true]);
 
             $page = $browser->newPage();
-            $page->setDefaultNavigationTimeout(0);
-            $page->goto(strval($request->url()));
-            $page->waitForTimeout(5000);
-            // $page->goto(strval($request->url()) . '?no_category=true&bot=true');
-            //
+            // $page->setDefaultNavigationTimeout(0);
+            $page->goto(strval($request->url()) . '?no_category=true&bot=true');
+            // $page->waitForTimeout(10000);
+
 
             $data = $page->evaluate(JsFunction::createWithBody('return document.documentElement.outerHTML'));
             $data = str_replace(mix('js/app.js'), '', $data);
