@@ -40,6 +40,37 @@ class Mixes extends Model
         ], 200);
     }
 
+    public function getVariants(Request $request) {
+        $tobacco_id = $request->input('tobacco_id');
+        $bowl_id = $request->input('bowl_id');
+        if (empty($tobacco_id) && empty($bowl_id)) {
+            return response(['error'=>[
+                'detail' => 'Не передан ни один параметр (bowl_id или tobacco_id)',
+            ]]);
+        }
+        if (!empty($bowl_id)) {
+            $variants = Mixes::where('bowl_id', $bowl_id)->get()->map(function ($m){
+                return Tobacco::where('id', $m->tobacco_id)->first();
+            });
+            $bowls = Bowls::get()->all();
+            return response()->json([
+                'tobacco' => $variants,
+                'bowls' => $bowls,
+            ], 200);
+        }
+        if (!empty($tobacco_id)) {
+            $variants = Mixes::where('tobacco_id', $tobacco_id)->get()->map(function ($m){
+                return Bowls::where('id', $m->bowl_id)->first();
+            });
+            $tobacco = Tobacco::get()->all();
+            return response()->json([
+                'tobacco' => $tobacco,
+                'bowls' => $variants,
+            ], 200);
+        }
+
+    }
+
     public function getMix(Request $request) {
         $tobacco_id = $request->input('tobacco_id');
         $bowl_id = $request->input('bowl_id');
