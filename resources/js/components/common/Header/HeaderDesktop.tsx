@@ -123,6 +123,11 @@ const HeaderDesktop = () => {
                 </NavLink>
               </div>
               <div className={s.nav_item}>
+                <NavLink to="/mixes" activeClassName={s.active}>
+                  Забивки
+                </NavLink>
+              </div>
+              <div className={s.nav_item}>
                 <NavLink to="/partners" activeClassName={s.active}>
                   Партнеры
                 </NavLink>

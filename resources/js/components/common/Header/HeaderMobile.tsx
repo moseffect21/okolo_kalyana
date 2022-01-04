@@ -153,6 +153,9 @@ const HeaderMobile = () => {
             ) : (
               <></>
             )}
+            <NavLink to="/mixes" onClick={() => setMenuOpened(false)}>
+              Забивки
+            </NavLink>
             <NavLink to="/partners" onClick={() => setMenuOpened(false)}>
               Партнеры
             </NavLink>
