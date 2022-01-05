@@ -6,8 +6,8 @@ import { MixesMW } from 'components/common/modalWindows'
 import { MetaDescriptionMixes, MetaKeywordsMixes, MetaTitleMixes } from 'components/app/MetaTags'
 
 import s from './MixesPage.module.scss'
-import Bowls from './components/Tobacco'
-import Tobacco from './components/Bowls'
+import Bowls from './components/Bowls'
+import Tobacco from './components/Tobacco'
 import { useVariants } from './useMixes'
 
 const MixesPage = () => {
@@ -67,8 +67,8 @@ const MixesPage = () => {
         <Loader />
       ) : (
         <div className={s.container}>
-          <Tobacco data={tobacco} onItemClick={onItemClick} />
-          <Bowls data={bowls} onItemClick={onItemClick} />
+          <Tobacco data={tobacco} onItemClick={onItemClick} tobacco_id={tobacco_id} />
+          <Bowls data={bowls} onItemClick={onItemClick} bowl_id={bowl_id} />
         </div>
       )}
       <MixesMW />

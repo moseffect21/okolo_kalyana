@@ -20,7 +20,8 @@
   &.hovered {
     opacity: 0.5;
   }
-  &:hover {
+  &:hover,
+  &.selected {
     opacity: 1;
   }
 }

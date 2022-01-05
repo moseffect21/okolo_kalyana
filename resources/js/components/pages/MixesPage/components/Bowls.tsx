@@ -1,16 +1,25 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import s from './Bowls.module.scss'
 
 type Props = {
   data: Array<unknown>
   onItemClick: Function
+  bowl_id: number
 }
 
-const Bowls = ({ data, onItemClick }: Props) => {
+const Bowls = ({ data, onItemClick, bowl_id }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false)
+  const [hasSelected, setHasSelected] = useState<boolean>(false)
+  useEffect(() => {
+    if (bowl_id) {
+      setHasSelected(true)
+    } else {
+      setHasSelected(false)
+    }
+  }, [bowl_id])
   return (
     <div className={s.container}>
       {data
@@ -18,7 +27,9 @@ const Bowls = ({ data, onItemClick }: Props) => {
             return (
               <div
                 key={`bowl_${item.id}`}
-                className={`${s.item} ${hovered ? s.hovered : ''}`}
+                className={`${s.item} ${hovered || hasSelected ? s.hovered : ''} ${
+                  item.id === bowl_id ? s.selected : ''
+                }`}
                 onMouseEnter={() => {
                   setHovered(true)
                 }}

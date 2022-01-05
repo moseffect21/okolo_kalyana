@@ -69,7 +69,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &.selected {
     transform: scale(1.05);
     .shadow {
       opacity: 0 !important;
