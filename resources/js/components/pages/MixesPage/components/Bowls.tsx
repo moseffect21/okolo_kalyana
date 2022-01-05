@@ -27,7 +27,12 @@ const Bowls = ({ data, onItemClick }: Props) => {
                 }}
                 onClick={() => onItemClick(item.id, 'bowl')}
               >
-                {item.name}
+                <div className={s.img_block}>
+                  <img src={`/storage/${item.photo}`} alt="" />
+                </div>
+                <div className={s.gradient} />
+                <div className={s.item_name}>{item.name}</div>
+                <div className={s.shadow} />
               </div>
             )
           })
