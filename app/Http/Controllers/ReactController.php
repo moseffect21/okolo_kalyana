@@ -36,7 +36,7 @@ class ReactController extends Controller
 
             $page = $browser->newPage();
             // $page->setDefaultNavigationTimeout(0);
-            $page->goto(strval($request->url()) . '?no_category=true&bot=true');
+            $page->goto(strval($request->url()));
             // $page->waitForTimeout(10000);
 
 
