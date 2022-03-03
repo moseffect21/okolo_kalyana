@@ -32,7 +32,7 @@ class ReactController extends Controller
                 '--no-zygote',
                 '--single-process', // <- this one doesn't works in Windows
                 '--disable-gpu',
-            ], 'headless' => true]);
+            ], 'headless' => true, 'ignoreHTTPSErrors' => true]);
 
             $page = $browser->newPage();
             // $page->setDefaultNavigationTimeout(0);
