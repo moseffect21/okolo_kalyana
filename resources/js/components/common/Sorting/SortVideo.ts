@@ -1,20 +1,23 @@
 /* eslint-disable array-callback-return */
+
+import splitByThree from '../pureFunctions/splitByThree'
+
 /* eslint-disable no-plusplus */
 const SortVideo = (videoArr: any) => {
   const newArr: any = []
   let c = 0
 
-  videoArr.map((item: any, i: number) => {
-    if (i === 0 || i % 3 === 0) {
-      newArr[c] = []
-      newArr[c][0] = item
-    } else if (i === 1 || i % 4 === 0) {
-      newArr[c][1] = []
-      newArr[c][1][0] = item
-    } else if (newArr[c][1] && newArr[c][1].length === 1) {
-      newArr[c][1][1] = item
-      c++
+  const data = splitByThree(videoArr)
+
+  data.map((item: any) => {
+    newArr[c] = []
+    newArr[c].push(item[0])
+    if (item[1] && item[2]) {
+      newArr[c].push([item[1], item[2]])
+    } else if (item[1]) {
+      newArr[c].push([item[1]])
     }
+    c++
   })
   return newArr
 }
