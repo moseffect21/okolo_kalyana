@@ -17,6 +17,7 @@ const VideoContainer = ({ data }: Props) => {
   // const videoArr = SortVideo(videoMap)
   // const mobVideoData = videoMap
   const mobVideoData = data.articles ? data.articles : []
+  console.log(videoArr)
   return isMobile ? (
     <div className={s.video_container}>
       {mobVideoData.map((item: any) => {
