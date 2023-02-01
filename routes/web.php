@@ -47,6 +47,7 @@ Route::group(['prefix' => '/api/v1'], function () {
 
     Route::group(['prefix' => '/mixes'], function () {
         Route::get('/all', [Mixes::class, 'getAll']);
+        Route::get('/get_mixes', [Mixes::class, 'getMixes']);
         Route::get('/get', [Mixes::class, 'getMix']);
         Route::get('/get_variants', [Mixes::class, 'getVariants']);
     });

@@ -38,24 +38,26 @@ const MixesPage = () => {
 
   const onItemClick = useCallback(
     (id: number, type: 'bowl' | 'tobacco') => {
-      let urlParams = ''
-      if (type === 'bowl') {
-        if (tobacco_id) {
-          urlParams = `tobacco_id=${tobacco_id}#bowl_id=${id}`
-        } else {
-          urlParams = bowl_id && bowl_id === id ? '' : `bowl_id=${id}`
-        }
-      }
-      if (type === 'tobacco') {
-        if (bowl_id) {
-          urlParams = `bowl_id=${bowl_id}#tobacco_id=${id}`
-        } else {
-          urlParams = tobacco_id && tobacco_id === id ? '' : `tobacco_id=${id}`
-        }
-      }
-      history.push(`/mixes?${urlParams}`)
+      // let urlParams = ''
+      // if (type === 'bowl') {
+      //   if (tobacco_id) {
+      //     urlParams = `tobacco_id=${tobacco_id}#bowl_id=${id}`
+      //   } else {
+      //     urlParams = bowl_id && bowl_id === id ? '' : `bowl_id=${id}`
+      //   }
+      // }
+      // if (type === 'tobacco') {
+      //   if (bowl_id) {
+      //     urlParams = `bowl_id=${bowl_id}#tobacco_id=${id}`
+      //   } else {
+      //     urlParams = tobacco_id && tobacco_id === id ? '' : `tobacco_id=${id}`
+      //   }
+      // }
+      // history.push(`/mixes?${urlParams}`)
+
+      history.push(`/mixes/${type}/${id}`)
     },
-    [bowl_id, tobacco_id, history],
+    [history],
   )
 
   return (

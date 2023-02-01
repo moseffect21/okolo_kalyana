@@ -1,0 +1,10 @@
+.container {
+  width: calc(100% - 12rem);
+  padding: 0 6rem 6rem;
+  margin: 0 auto;
+  max-width: 144rem;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}

@@ -11,6 +11,7 @@ import PartnersPage from 'components/pages/PartnersPage'
 import PartnerItemPage from 'components/pages/PartnerItemPage'
 import moment from 'moment'
 import MixesPage from 'components/pages/MixesPage'
+import MixesListPage from 'components/pages/MixesListPage'
 
 const AppView = () => {
   useEffect(() => {
@@ -32,6 +33,9 @@ const AppView = () => {
             </Route>
             <Route path="/mixes" exact>
               <MixesPage />
+            </Route>
+            <Route path="/mixes/:type(tobacco|bowl)/:id" exact>
+              <MixesListPage />
             </Route>
             <Route path="/blog" exact>
               <Redirect to="/blog/video" />
