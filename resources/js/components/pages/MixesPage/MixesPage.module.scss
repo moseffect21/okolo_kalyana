@@ -8,3 +8,12 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem 2rem;
+    box-sizing: border-box;
+  }
+}

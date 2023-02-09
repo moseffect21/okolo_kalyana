@@ -78,3 +78,24 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .item {
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    &:nth-child(3n) {
+      margin-right: 1rem;
+    }
+    &:nth-child(2n) {
+      margin-right: 0 !important;
+    }
+    .item_name {
+      font-size: 1.8rem;
+      line-height: 130%;
+    }
+  }
+}
