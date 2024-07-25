@@ -106,6 +106,7 @@ class GetRequest extends Controller
         }
         return response()->json($category, 200);
     }
+    
     //  запрос на получение статьи/видео
     public function getArticle(Request $request, $id)
     {

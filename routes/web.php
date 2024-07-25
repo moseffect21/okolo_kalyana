@@ -2,7 +2,13 @@
 
 use App\Http\Controllers\Login;
 use App\Models\Mixes;
+use App\Models\Brand;
+use App\Models\Coal;
+use App\Models\CoalsPlacement;
+use App\Models\Hookah;
+use App\Models\HookahBlock;
 use App\Http\Controllers\GetRequest;
+use App\Http\Controllers\SmokingRoom\SmokingRoom;
 use App\Http\Controllers\WebApi\ReactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -18,7 +24,6 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -66,6 +71,17 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/article/{id}', [GetRequest::class, 'getArticle']);
     Route::post('/article/{id}/comment ', [GetRequest::class, 'pushComment']);
     Route::get('/article/{id}/like  ', [GetRequest::class, 'pushLike']);
+
+    
+    Route::get('/brands', [Brand::class, 'getAll']);
+    Route::get('/coals', [Coals::class, 'getAll']);
+    Route::get('/coals_placement', [CoalsPlacement::class, 'getAll']);
+    Route::get('/hookahs', [Hookah::class, 'getAll']);
+    Route::get('/hookah_blocks', [HookahBlock::class, 'getAll']);
+    Route::get('/tobacco_fillers/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
+    Route::post('/tobacco_fillers/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
+    Route::get('/tobacco_fillers', [SmokingRoom::class, 'getTobaccoFillers']);
+    Route::get('/smoking_room', [SmokingRoom::class, 'getSmokingRoomData']);
 
 
     Route::get('/{nickname}', [GetRequest::class, 'getNickname']);
