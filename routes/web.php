@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\Login;
+use App\Http\Controllers\Taplink\TaplinkController;
 use App\Models\Mixes;
 use App\Models\Brand;
-use App\Models\Coal;
+use App\Models\Coals;
 use App\Models\CoalsPlacement;
 use App\Models\Hookah;
 use App\Models\HookahBlock;
@@ -73,16 +74,25 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/article/{id}/like  ', [GetRequest::class, 'pushLike']);
 
     
-    Route::get('/brands', [Brand::class, 'getAll']);
+    // Чаши и расстановка чаш
     Route::get('/coals', [Coals::class, 'getAll']);
     Route::get('/coals_placement', [CoalsPlacement::class, 'getAll']);
+
+    // Бренды
+    Route::get('/brands', [Brand::class, 'getAll']);
+
+    // Кальяны и коллауды
     Route::get('/hookahs', [Hookah::class, 'getAll']);
     Route::get('/hookah_blocks', [HookahBlock::class, 'getAll']);
+
+    // Забивочный цех
     Route::get('/tobacco_fillers/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
     Route::post('/tobacco_fillers/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
     Route::get('/tobacco_fillers', [SmokingRoom::class, 'getTobaccoFillers']);
     Route::get('/smoking_room', [SmokingRoom::class, 'getSmokingRoomData']);
 
+    // Таплинк
+    Route::get('/taplinks', [TaplinkController::class, 'getTaplinkCategoriesWithLinks']);
 
     Route::get('/{nickname}', [GetRequest::class, 'getNickname']);
 });
