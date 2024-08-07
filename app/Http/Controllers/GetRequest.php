@@ -67,7 +67,9 @@ class GetRequest extends Controller
     //Получение всех категорий
     public function getCategories(Request $request)
     {
-        $parentCateg = CategorMain::where(['parent' => "0", "visible" => 1])->get();
+        $parentCateg = CategorMain::query()
+            ->where(['parent' => "0", "visible" => 1])
+            ->get();
 
         foreach ($parentCateg as $item) {
             $item['child_categories'] = CategorMain::where('parent', $item['id'])->get();
@@ -95,15 +97,15 @@ class GetRequest extends Controller
     }
     public function getCategory(Request $request, $slug)
     {
-        $category = CategorMain::where('slug', $slug)->first();
-        $category['articles'] = articles::where(['id_categories' => $category['id'], 'visible' => 1])->orderBy('created_at', 'desc')->get();
-        foreach ($category['articles'] as $item) {
-
-            foreach (explode(",", $item->authors_id) as $item2) {
-                $item['authors'][] = User::where('id', $item2)->first();
-            }
-            unset($item['authors'][0]);
-        }
+        $category = CategorMain::query()
+            ->where('slug', $slug)
+            ->first();
+        
+        $category['articles'] = articles::query()
+            ->where(['id_categories' => $category['id'], 'visible' => 1])
+            ->orderBy('created_at', 'desc')
+            ->get();
+        
         return response()->json($category, 200);
     }
     
