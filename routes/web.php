@@ -51,24 +51,30 @@ Route::group(['prefix' => '/api/v1'], function () {
 
     Route::get('/search', [GetRequest::class, 'search']);
 
+    Route::get('/user/{id}', [GetRequest::class, 'getUser']);
+    Route::get('/main', [GetRequest::class, 'getMain']);
+    Route::get('/partners', [GetRequest::class, 'getPartners']);
+    Route::get('/partners/{id}', [GetRequest::class, 'getPartner']);
+    Route::get('/team', [GetRequest::class, 'getTeam']);
+    
+    Route::get('/shop/categories', [GetRequest::class, 'getShopCategories']);
+    Route::get('/shop/categories/{id}', [GetRequest::class, 'getCategoriesProducts']);
+    Route::get('/shop/product/{id}/comment', [GetRequest::class, 'pushCommentProduct']);
+    Route::get('/shop/product/{id}', [GetRequest::class, 'getProducts']);
+
+    // Миксы
     Route::group(['prefix' => '/mixes'], function () {
         Route::get('/all', [Mixes::class, 'getAll']);
         Route::get('/get_mixes', [Mixes::class, 'getMixes']);
         Route::get('/get', [Mixes::class, 'getMix']);
         Route::get('/get_variants', [Mixes::class, 'getVariants']);
     });
-
-    Route::get('/user/{id}', [GetRequest::class, 'getUser']);
-    Route::get('/main', [GetRequest::class, 'getMain']);
-    Route::get('/partners', [GetRequest::class, 'getPartners']);
-    Route::get('/partners/{id}', [GetRequest::class, 'getPartner']);
-    Route::get('/team', [GetRequest::class, 'getTeam']);
+    
+    // Категории контента - Видео, Статьи, Таплинк
     Route::get('/categories', [GetRequest::class, 'getCategories']);
-    Route::get('/shop/categories', [GetRequest::class, 'getShopCategories']);
-    Route::get('/shop/categories/{id}', [GetRequest::class, 'getCategoriesProducts']);
-    Route::get('/shop/product/{id}/comment', [GetRequest::class, 'pushCommentProduct']);
-    Route::get('/shop/product/{id}', [GetRequest::class, 'getProducts']);
-    Route::get('/category/{slug}', [GetRequest::class, 'getCategory']);
+    Route::get('/category/{slug}', [GetRequest::class, 'getCategory']); // Список чего-то в категории контента 
+
+    // Статьи 
     Route::get('/article/{id}', [GetRequest::class, 'getArticle']);
     Route::post('/article/{id}/comment ', [GetRequest::class, 'pushComment']);
     Route::get('/article/{id}/like  ', [GetRequest::class, 'pushLike']);
