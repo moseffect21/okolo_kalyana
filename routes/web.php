@@ -36,6 +36,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::group(['prefix' => '/api/v1'], function () {
 
+    // Группа запросов по авторизации
     Route::get('/login-vk', function () {
         return Socialite::driver('vkontakte')->redirect();
     });
@@ -49,6 +50,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/auth-fb', [Login::class, 'authFB']);
     Route::get('/auth-google', [Login::class, 'authGOOGLE']);
 
+    // Поиск по контенту 
     Route::get('/search', [GetRequest::class, 'search']);
 
     Route::get('/user/{id}', [GetRequest::class, 'getUser']);
