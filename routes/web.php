@@ -94,10 +94,12 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/hookah_blocks', [HookahBlock::class, 'getAll']);
 
     // Забивочный цех
-    Route::get('/tobacco_fillers/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
-    Route::post('/tobacco_fillers/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
-    Route::get('/tobacco_fillers', [SmokingRoom::class, 'getTobaccoFillers']);
-    Route::get('/smoking_room', [SmokingRoom::class, 'getSmokingRoomData']);
+    Route::group(['prefix' => '/tobacco_fillers'], function () {
+        Route::get('/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
+        Route::get('/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
+        Route::get('/', [SmokingRoom::class, 'getTobaccoFillers']);
+        Route::get('/get_filters', [SmokingRoom::class, 'getSmokingRoomData']);
+    });
 
     // Таплинк
     Route::get('/taplinks', [TaplinkController::class, 'getTaplinkCategoriesWithLinks']);
