@@ -53,16 +53,23 @@ Route::group(['prefix' => '/api/v1'], function () {
     // Поиск по контенту 
     Route::get('/search', [GetRequest::class, 'search']);
 
+    // Партнеры
+    Route::group(['prefix' => '/partners'], function () {
+        Route::get('/', [GetRequest::class, 'getPartners']); // Список партнеров
+        Route::get('/{id}', [GetRequest::class, 'getPartner']); // Получаем партнера
+    });
+
     Route::get('/user/{id}', [GetRequest::class, 'getUser']);
     Route::get('/main', [GetRequest::class, 'getMain']);
-    Route::get('/partners', [GetRequest::class, 'getPartners']);
-    Route::get('/partners/{id}', [GetRequest::class, 'getPartner']);
     Route::get('/team', [GetRequest::class, 'getTeam']);
-    
-    Route::get('/shop/categories', [GetRequest::class, 'getShopCategories']);
-    Route::get('/shop/categories/{id}', [GetRequest::class, 'getCategoriesProducts']);
-    Route::get('/shop/product/{id}/comment', [GetRequest::class, 'pushCommentProduct']);
-    Route::get('/shop/product/{id}', [GetRequest::class, 'getProducts']);
+
+    // Шоурум
+    Route::group(['prefix' => '/shop'], function () {
+        Route::get('/categories', [GetRequest::class, 'getShopCategories']); // Получить список категорий
+        Route::get('/categories/{id}', [GetRequest::class, 'getCategoriesProducts']); // Получить категорию и продукты в ней
+        Route::get('/product/{id}', [GetRequest::class, 'getProducts']); // Получить продукт
+        Route::get('/product/{id}/comment', [GetRequest::class, 'pushCommentProduct']); // Отправить коммент в продукт
+    });
 
     // Миксы
     Route::group(['prefix' => '/mixes'], function () {
@@ -77,10 +84,11 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/category/{slug}', [GetRequest::class, 'getCategory']); // Список чего-то в категории контента 
 
     // Статьи 
-    Route::get('/article/{id}', [GetRequest::class, 'getArticle']);
-    Route::post('/article/{id}/comment ', [GetRequest::class, 'pushComment']);
-    Route::get('/article/{id}/like  ', [GetRequest::class, 'pushLike']);
-
+    Route::group(['prefix' => '/article'], function () {
+        Route::get('/{id}', [GetRequest::class, 'getArticle']);
+        Route::post('/{id}/comment', [GetRequest::class, 'pushComment']);
+        Route::get('/{id}/like', [GetRequest::class, 'pushLike']);
+    });
     
     // Чаши и расстановка чаш
     Route::get('/coals', [Coals::class, 'getAll']);
@@ -95,7 +103,7 @@ Route::group(['prefix' => '/api/v1'], function () {
 
     // Забивочный цех
     Route::group(['prefix' => '/tobacco_fillers'], function () {
-        Route::get('/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
+        Route::post('/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
         Route::get('/', [SmokingRoom::class, 'getTobaccoFillers']);
         Route::get('/get_filters', [SmokingRoom::class, 'getSmokingRoomData']);
         Route::get('/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
