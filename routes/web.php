@@ -95,10 +95,10 @@ Route::group(['prefix' => '/api/v1'], function () {
 
     // Забивочный цех
     Route::group(['prefix' => '/tobacco_fillers'], function () {
-        Route::get('/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
         Route::get('/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
         Route::get('/', [SmokingRoom::class, 'getTobaccoFillers']);
         Route::get('/get_filters', [SmokingRoom::class, 'getSmokingRoomData']);
+        Route::get('/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
     });
 
     // Таплинк
