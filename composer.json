@@ -10,14 +10,12 @@
     "require": {
         "php": "^8.2",
         "doctrine/dbal": "^3.8",
-        "google/apiclient": "^2.0",
         "guzzlehttp/guzzle": "^7.9",
         "laravel/framework": "^10.0",
-        "laravel/socialite": "^5.1",
-        "laravel/tinker": "^2.5",
+        "laravel/socialite": "^5.15",
+        "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",
-        "microweber/screen": "^1.0",
-        "socialiteproviders/vkontakte": "^4.2",
+        "socialiteproviders/vkontakte": "^5.0",
         "tcg/voyager": "1.8.x-dev"
     },
     "require-dev": {
