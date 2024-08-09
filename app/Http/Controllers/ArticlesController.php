@@ -10,6 +10,9 @@ use App\Models\partners;
 use App\Models\team;
 use App\Models\products;
 use App\Models\TobaccoFiller;
+use App\Models\comments;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Likes;
 
 
 class ArticlesController extends Controller
@@ -102,5 +105,58 @@ class ArticlesController extends Controller
         $random = articles::where('visible', 1)->inRandomOrder()->limit(5)->get()->makeHidden(['content']);
 
         return response()->json(['article' => $article, 'random' => $random], 200);
+    }
+
+    /*
+        Добавление комментария к статье
+
+        Принимаемые параметры в запросе:
+        text - текст комментария
+        nickname - никнейм пользователя
+
+        $id - id статьи
+    */
+    public function addCommentToArticle(Request $request, $id)
+    {
+        if ($request->has('text')) {
+            $comments = new comments;
+            $comments->nickname = $request->has('nickname') ? $request->post('nickname') : '';
+            $comments->user_id = Auth::check() ? Auth::id() : 0;
+            $comments->text = $request->post('text');
+            $comments->article_id = $id;
+            $comments->save();
+
+            return response()->json("success", 200);
+        }
+        return response(0, 420);
+    }
+
+    /*
+        Добавление или удаление лайка статьи
+
+        Принимаемые параметры в запросе:
+        text - текст комментария
+        nickname - никнейм пользователя
+
+        $id - id продукта
+    */
+    public function addOrRemoveLike(Request $request, $id)
+    {
+        if (Auth::check()) {
+            $like = Likes::where(['user_id' => Auth::id(), 'article_id' => $id])->first();
+            if (empty($like)) {
+                $like = new Likes;
+                $like->user_id = Auth::id();
+                $like->article_id = $id;
+                $like->save();
+                articles::where('id', $id)->increment('count_like', 1);
+                return response()->json($like, 200);
+            }
+            $like->delete();
+            articles::where('id', $id)->increment('count_like', -1);
+            return response()->json(["success" => true, "message" => "Лайк удален"], 200);
+        }
+
+        return response()->json(["success" => false, "message" => "Требуется авторизация"], 420);
     }
 }

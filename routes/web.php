@@ -2,19 +2,17 @@
 
 use App\Http\Controllers\Login;
 use App\Http\Controllers\Taplink\TaplinkController;
-use App\Models\Mixes;
-use App\Models\Brand;
-use App\Models\Coals;
-use App\Models\CoalsPlacement;
-use App\Models\Hookah;
-use App\Models\HookahBlock;
-use App\Http\Controllers\GetRequest;
 use App\Http\Controllers\SmokingRoom\SmokingRoom;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\BrandsController;
 use App\Http\Controllers\ProductsController;
-use App\Http\Controllers\WebApi\ReactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HookahController;
+use App\Http\Controllers\MixesController;
+use App\Http\Controllers\PartnersController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\UserController;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -57,13 +55,15 @@ Route::group(['prefix' => '/api/v1'], function () {
 
     // Партнеры
     Route::group(['prefix' => '/partners'], function () {
-        Route::get('/', [GetRequest::class, 'getPartners']); // Список партнеров
-        Route::get('/{id}', [GetRequest::class, 'getPartner']); // Получаем партнера
+        Route::get('/', [PartnersController::class, 'getPartners']); // Список партнеров
+        Route::get('/{id}', [PartnersController::class, 'getPartnerById']); // Получаем партнера
     });
 
-    Route::get('/user/{id}', [GetRequest::class, 'getUser']);
+    // Данные для главной страницы
     Route::get('/main', [ArticlesController::class, 'getMain']);
-    Route::get('/team', [GetRequest::class, 'getTeam']);
+
+    // Команда
+    Route::get('/team', [TeamController::class, 'getTeam']);
 
     // Шоурум
     Route::group(['prefix' => '/shop'], function () {
@@ -71,15 +71,15 @@ Route::group(['prefix' => '/api/v1'], function () {
         Route::get('/categories/{id}', [ProductsController::class, 'getProductsCategory']); // Получить категорию и продукты в ней
         Route::get('/products', [ProductsController::class, 'getProducts']); // Получить список продуктов с пагинацией
         Route::get('/products/{id}', [ProductsController::class, 'getProduct']); // Получить продукт
-        Route::get('/products/{id}/comment', [GetRequest::class, 'pushCommentProduct']); // Отправить коммент в продукт
+        Route::post('/products/{id}/comment', [ProductsController::class, 'addCommentToProduct']); // Отправить коммент в продукт
     });
 
     // Миксы
     Route::group(['prefix' => '/mixes'], function () {
-        Route::get('/all', [Mixes::class, 'getAll']);
-        Route::get('/get_mixes', [Mixes::class, 'getMixes']);
-        Route::get('/get', [Mixes::class, 'getMix']);
-        Route::get('/get_variants', [Mixes::class, 'getVariants']);
+        Route::get('/all', [MixesController::class, 'getAll']);
+        Route::get('/get_mixes', [MixesController::class, 'getMixes']);
+        Route::get('/get', [MixesController::class, 'getMix']);
+        Route::get('/get_variants', [MixesController::class, 'getVariants']);
     });
     
     // Категории контента - Видео, Статьи, Таплинк
@@ -89,20 +89,20 @@ Route::group(['prefix' => '/api/v1'], function () {
     // Статьи 
     Route::group(['prefix' => '/article'], function () {
         Route::get('/{id}', [ArticlesController::class, 'getArticle']);
-        Route::post('/{id}/comment', [GetRequest::class, 'pushComment']);
-        Route::get('/{id}/like', [GetRequest::class, 'pushLike']);
+        Route::post('/{id}/comment', [ArticlesController::class, 'addCommentToArticle']);
+        Route::post('/{id}/like', [ArticlesController::class, 'addOrRemoveLike']);
     });
     
     // Чаши и расстановка чаш
-    Route::get('/coals', [Coals::class, 'getAll']);
-    Route::get('/coals_placement', [CoalsPlacement::class, 'getAll']);
+    Route::get('/coals', [HookahController::class, 'getCoals']);
+    Route::get('/coals_placement', [HookahController::class, 'getCoalsPlacements']);
 
     // Бренды
-    Route::get('/brands', [Brand::class, 'getAll']);
+    Route::get('/brands', [BrandsController::class, 'getBrands']);
 
     // Кальяны и коллауды
-    Route::get('/hookahs', [Hookah::class, 'getAll']);
-    Route::get('/hookah_blocks', [HookahBlock::class, 'getAll']);
+    Route::get('/hookahs', [HookahController::class, 'getHookahs']);
+    Route::get('/hookah_blocks', [HookahController::class, 'getHookahBlocks']);
 
     // Забивочный цех
     Route::group(['prefix' => '/tobacco_fillers'], function () {
@@ -115,7 +115,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     // Таплинк
     Route::get('/taplinks', [TaplinkController::class, 'getTaplinkCategoriesWithLinks']);
 
-    Route::get('/{nickname}', [GetRequest::class, 'getNickname']);
+    Route::get('/{nickname}', [UserController::class, 'getUserByNickname']);
 });
 
 

@@ -9,11 +9,6 @@ class Coals extends Model
 {
     use HasFactory;
 
-    public function getAll() {
-        $coals = Coals::with("brand")->get();
-        return response()->json($coals, 200);
-    }
-
     public function brand()
     {
         return $this->hasOne('App\Models\Brand', 'id', 'brand_id');

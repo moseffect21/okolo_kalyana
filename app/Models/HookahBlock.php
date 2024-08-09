@@ -10,11 +10,6 @@ class HookahBlock extends Model
 {
     use HasFactory;
 
-    public function getAll() {
-        $hookahBlock = HookahBlock::with('brand')->get();
-        return response()->json($hookahBlock, 200);
-    }
-
     public function brand(): HasOne
     {
         return $this->hasOne('App\Models\Brand', 'id', 'brand_id');

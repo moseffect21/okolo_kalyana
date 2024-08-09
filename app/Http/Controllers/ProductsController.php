@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\products;
 use App\Models\product_categories;
+use Illuminate\Support\Facades\Auth;
+use App\Models\comments;
 
 
 class ProductsController extends Controller
@@ -40,7 +42,7 @@ class ProductsController extends Controller
         $productsCategory = product_categories::where('id', $id)->orWhere('slug', $id)->first();
         $products = $productsCategory->products()->paginate($perPage);
         $productsCategory->products = $products;
-        
+
         return response()->json($productsCategory, 200);
     }
     
@@ -57,5 +59,29 @@ class ProductsController extends Controller
 
         $products = products::with('images')->get();
         return response()->json($products, 200)->paginate($perPage);
+    }
+
+    /*
+        Добавление комментария к продукту
+
+        Принимаемые параметры в запросе:
+        text - текст комментария
+        nickname - никнейм пользователя
+
+        $id - id продукта
+    */
+    public function addCommentToProduct(Request $request, $id)
+    {
+        if ($request->has('text')) {
+            $comments = new comments;
+            $comments->nickname = $request->has('nickname') ? $request->post('nickname') : '';
+            $comments->user_id = Auth::check() ? Auth::id() : 0;
+            $comments->text = $request->post('text');
+            $comments->prod_id = $id;
+            $comments->save();
+
+            return response()->json("success", 200);
+        }
+        return response(0, 420);
     }
 }
