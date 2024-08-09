@@ -11,6 +11,7 @@ use App\Models\HookahBlock;
 use App\Http\Controllers\GetRequest;
 use App\Http\Controllers\SmokingRoom\SmokingRoom;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\WebApi\ReactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -66,10 +67,11 @@ Route::group(['prefix' => '/api/v1'], function () {
 
     // Шоурум
     Route::group(['prefix' => '/shop'], function () {
-        Route::get('/categories', [GetRequest::class, 'getShopCategories']); // Получить список категорий
-        Route::get('/categories/{id}', [GetRequest::class, 'getCategoriesProducts']); // Получить категорию и продукты в ней
-        Route::get('/product/{id}', [GetRequest::class, 'getProducts']); // Получить продукт
-        Route::get('/product/{id}/comment', [GetRequest::class, 'pushCommentProduct']); // Отправить коммент в продукт
+        Route::get('/categories', [ProductsController::class, 'getShopCategories']); // Получить список категорий
+        Route::get('/categories/{id}', [ProductsController::class, 'getProductsCategory']); // Получить категорию и продукты в ней
+        Route::get('/products', [ProductsController::class, 'getProducts']); // Получить список продуктов с пагинацией
+        Route::get('/products/{id}', [ProductsController::class, 'getProduct']); // Получить продукт
+        Route::get('/products/{id}/comment', [GetRequest::class, 'pushCommentProduct']); // Отправить коммент в продукт
     });
 
     // Миксы

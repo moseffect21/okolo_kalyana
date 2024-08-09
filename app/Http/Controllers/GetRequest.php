@@ -7,8 +7,6 @@ use App\Models\User;
 use App\Models\articles;
 use App\Models\partners;
 use App\Models\team;
-use App\Models\product_categories;
-use App\Models\products;
 use App\Models\Likes;
 use App\Models\comments as CommentDB;
 use Illuminate\Support\Facades\Auth;
@@ -46,26 +44,6 @@ class GetRequest extends Controller
             return response()->json("nickname not found", 420);
         }
     }
-
-    //Получение всех категорий магазина
-    public function getShopCategories(Request $request)
-    {
-
-        return response()->json(product_categories::get(), 200);
-    }
-
-    // Получение категории и их продуктов
-    public function getCategoriesProducts(Request $request, $id)
-    {
-        return response()->json(product_categories::where('id', $id)->with('products')->get(), 200);
-    }
-
-    // Получение продуктов и комментариев
-    public function getProducts($id)
-    {
-        return response()->json(products::where('id', $id)->with('comments')->get(), 200);
-    }
-
 
     public function getUser($id)
     {
