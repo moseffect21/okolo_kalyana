@@ -10,7 +10,7 @@ class Coals extends Model
     use HasFactory;
 
     public function getAll() {
-        $coals = Coal::with("brand")->get();
+        $coals = Coals::with("brand")->get();
         return response()->json($coals, 200);
     }
 

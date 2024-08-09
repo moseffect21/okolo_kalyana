@@ -10,6 +10,7 @@ use App\Models\Hookah;
 use App\Models\HookahBlock;
 use App\Http\Controllers\GetRequest;
 use App\Http\Controllers\SmokingRoom\SmokingRoom;
+use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\WebApi\ReactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -51,7 +52,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     Route::get('/auth-google', [Login::class, 'authGOOGLE']);
 
     // Поиск по контенту 
-    Route::get('/search', [GetRequest::class, 'search']);
+    Route::get('/search', [ArticlesController::class, 'search']);
 
     // Партнеры
     Route::group(['prefix' => '/partners'], function () {
@@ -60,7 +61,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     });
 
     Route::get('/user/{id}', [GetRequest::class, 'getUser']);
-    Route::get('/main', [GetRequest::class, 'getMain']);
+    Route::get('/main', [ArticlesController::class, 'getMain']);
     Route::get('/team', [GetRequest::class, 'getTeam']);
 
     // Шоурум
@@ -80,12 +81,12 @@ Route::group(['prefix' => '/api/v1'], function () {
     });
     
     // Категории контента - Видео, Статьи, Таплинк
-    Route::get('/categories', [GetRequest::class, 'getCategories']);
-    Route::get('/category/{slug}', [GetRequest::class, 'getCategory']); // Список чего-то в категории контента 
+    Route::get('/categories', [ArticlesController::class, 'getCategories']);
+    Route::get('/category/{slug}', [ArticlesController::class, 'getCategory']); // Список чего-то в категории контента 
 
     // Статьи 
     Route::group(['prefix' => '/article'], function () {
-        Route::get('/{id}', [GetRequest::class, 'getArticle']);
+        Route::get('/{id}', [ArticlesController::class, 'getArticle']);
         Route::post('/{id}/comment', [GetRequest::class, 'pushComment']);
         Route::get('/{id}/like', [GetRequest::class, 'pushLike']);
     });

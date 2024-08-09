@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\CategorMain;
 use App\Models\articles;
 use App\Models\partners;
 use App\Models\team;
@@ -13,7 +12,6 @@ use App\Models\products;
 use App\Models\Likes;
 use App\Models\comments as CommentDB;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\comments;
 
 
 class GetRequest extends Controller
@@ -38,21 +36,6 @@ class GetRequest extends Controller
             return response()->json("not auth", 420);
         }
     }
-    public function search(Request $request)
-    {
-
-        $data = articles::where(
-            "title",
-            'like',
-            '%' . $request['text'] . '%'
-
-        )->where('visible',1)->get();
-        if (count($data) === 0) {
-            return response("don't search", 200);
-        } else {
-            return response()->json($data, 200);
-        }
-    }
     //Получение пользователя по никнейму
     public function getNickname(Request $request, $nickname)
     {
@@ -62,19 +45,6 @@ class GetRequest extends Controller
         } else {
             return response()->json("nickname not found", 420);
         }
-    }
-
-    //Получение всех категорий
-    public function getCategories(Request $request)
-    {
-        $parentCateg = CategorMain::query()
-            ->where(['parent' => "0", "visible" => 1])
-            ->get();
-
-        foreach ($parentCateg as $item) {
-            $item['child_categories'] = CategorMain::where('parent', $item['id'])->get();
-        }
-        return response()->json($parentCateg, 200);
     }
 
     //Получение всех категорий магазина
@@ -94,41 +64,6 @@ class GetRequest extends Controller
     public function getProducts($id)
     {
         return response()->json(products::where('id', $id)->with('comments')->get(), 200);
-    }
-    public function getCategory(Request $request, $slug)
-    {
-        $category = CategorMain::query()
-            ->where('slug', $slug)
-            ->first();
-        
-        $category['articles'] = articles::query()
-            ->where(['id_categories' => $category['id'], 'visible' => 1])
-            ->orderBy('created_at', 'desc')
-            ->get();
-        
-        return response()->json($category, 200);
-    }
-    
-    //  запрос на получение статьи/видео
-    public function getArticle(Request $request, $id)
-    {
-        $article = articles::where('id', $id)->with('comments')->first();
-        if (empty($article)) {
-            $article = articles::where('slug', $id)->with('comments')->first();
-        }
-        foreach (explode(",", $article->authors_id) as $item) {
-
-            $article->authors[] = User::where('id', $item)->first();
-        }
-        unset($article->authors[1]);
-        foreach ($article->comments as $item) {
-
-
-            $item['user'] = User::where('id', $item->user_id)->first();
-        }
-        $random = articles::where('visible', 1)->get()->random(3);
-
-        return response()->json(['article' => $article, 'random' => $random], 200);
     }
 
 
@@ -160,16 +95,7 @@ class GetRequest extends Controller
 
         return response()->json($partner, 200);
     }
-    public function getMain()
-    {
-        return response()->json([
-            'articles' => articles::where(['show_main' => 1, 'type' => 'article'])->orderBy('created_at', 'desc')->get(),
-            'videos' => articles::where(['show_main' => 1, 'type' => 'video'])->orderBy('created_at', 'desc')->get(),
-            'product_categories' => product_categories::where('show_main', 1)->get(),
-            'partners' => partners::where('show_main', 1)->get(),
-            'team' => team::get()
-        ], 200);
-    }
+
     // Добавление комманта продукут П.с. Стырил код Артем снизу 
     public function pushCommentProduct(Request $request, $id)
     {
