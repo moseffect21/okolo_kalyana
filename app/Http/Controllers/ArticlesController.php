@@ -23,7 +23,7 @@ class ArticlesController extends Controller
         $articles = articles::where(['show_main' => 1, 'type' => 'article'])->orderBy('created_at', 'desc')->take(4)->get()->makeHidden(['description', 'content']);
         $updates = articles::where(['show_main' => 1])->orderBy('updated_at', 'desc')->take(5)->get()->makeHidden(['content']);
         $fillers = TobaccoFiller::with(['brand', 'bowl', 'hookah_block', 'coal_placement', 'coal', 'hookah', 'smoker', 'tobacco'])->orderBy('created_at', 'desc')->take(10)->get();
-        $products = products::orderBy('created_at', 'desc')->with('images')->take(10)->get();
+        $products = products::orderBy('created_at', 'desc')->take(10)->get();
         $partners = partners::where('show_main', 1)->get();
         $team = team::get();
 

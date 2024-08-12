@@ -57,8 +57,8 @@ class ProductsController extends Controller
     {
         $perPage = $request->has('per_page') ? intval($request->query('per_page')) : 15;
 
-        $products = products::with('images')->get();
-        return response()->json($products, 200)->paginate($perPage);
+        $products = products::paginate($perPage);
+        return response()->json($products, 200);
     }
 
     /*
