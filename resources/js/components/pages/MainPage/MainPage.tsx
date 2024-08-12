@@ -13,7 +13,7 @@ import PartnersBlock from './components/PartnersBlock'
 // import ProductsBlock from './components/ProductsBlock'
 import SecondBlock from './components/SecondBlock'
 import SocialBlock from './components/SocialBlock'
-import VideoBlock from './components/VideoBlock'
+// import VideoBlock from './components/VideoBlock'
 import VideoSwiper from './components/VideoSwiper'
 import s from './MainPage.scss'
 
@@ -46,7 +46,7 @@ const MainPage = () => {
               <div className={s.background_img}>
                 <div className={s.shadow} />
               </div>
-              <VideoBlock data={data.videos} />
+              {/* <VideoBlock data={data.videos} /> */}
               <AboutBlock data={data.team} />
               {!isMobile && (
                 <>

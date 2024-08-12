@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-plusplus */
-import React, { useContext } from 'react'
+import React, { useContext, useMemo } from 'react'
 import ContentLayout from 'components/common/ContentLayout'
 import CategoriesNavBar from 'components/common/CategoriesNavBar'
 import { useRouteMatch } from 'react-router-dom'
@@ -25,10 +25,23 @@ const BlogCategoryPage = () => {
   const { params } = useRouteMatch<{ slug?: string }>()
   const isMobile = useContext(Context)
   const { data, isLoading } = useCategory(params.slug ? params.slug : '')
-  const categData = data ? data.data : []
   const isVideo = params.slug === 'video'
   const isArticle = params.slug === 'articles'
   const isContests = params.slug === 'giveaway'
+
+  const articles = useMemo(() => {
+    if (data) {
+      return data.data.articles.data
+    }
+  }, [data])
+
+  const categData = useMemo(() => {
+    if (data) {
+      return { ...data.data, articles: articles }
+    }
+    return null
+  }, [articles])
+
   return (
     <ContentLayout
       cols={isMobile ? 1 : 2}
@@ -49,7 +62,7 @@ const BlogCategoryPage = () => {
           <Loader />
         ) : (
           <>
-            {isVideo && <VideoContainer data={categData} />}
+            {isVideo && <VideoContainer data={{ ...categData }} />}
             {isArticle && <ArticleContainer data={categData} />}
             {isContests && <ContestsContainer data={categData} />}
             {!isVideo && !isArticle && !isContests && <ArticleContainer data={categData} />}
