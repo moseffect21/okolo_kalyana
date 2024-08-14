@@ -24,7 +24,7 @@ class ProductsController extends Controller
         $product = products::where('id', $id)
             ->orWhere('slug', $id)
             ->with(['comments'])
-            ->get();
+            ->first();
         return response()->json($product, 200);
     }
 
