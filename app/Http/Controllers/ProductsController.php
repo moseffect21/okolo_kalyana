@@ -21,10 +21,12 @@ class ProductsController extends Controller
     // Получение продукта по id или slug
     public function getProduct(Request $request, $id)
     {
-        $product = products::where('id', $id)
-            ->orWhere('slug', $id)
-            ->with(['comments'])
-            ->first();
+        $product = products::where('slug', $id)->with('comments')->first();
+        if (empty($product)) {
+            $product = products::where('id', $id)
+                ->with('comments')
+                ->first();
+        }
         return response()->json($product, 200);
     }
 
