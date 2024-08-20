@@ -68,6 +68,7 @@ class ArticlesController extends Controller
 
         Принимаемые параметры в запросе:
         sort - поле, по которому выполняется сортировка
+        sort_direction - направление сортировки (asc/desc)
         page - номер страницы
         per_page - кол-во на каждой странице
 
@@ -77,13 +78,13 @@ class ArticlesController extends Controller
     {
         $perPage = $request->has('per_page') ? intval($request->query('per_page')) : 15;
         $category = CategorMain::firstWhere('slug', $slug);
-        $articles = $category->articles()
+
+        $orderBy = $request->has('sort') ? $request->query('sort') : null;
+        $sortDirection = $request->has('sort_direction') && $request->query('sort_direction') === 'asc' ? 'asc' : 'desc';
+
+        $articles = $category->articles($orderBy, $sortDirection)
             ->select(['id', 'title', 'id_categories', 'preview_img', 'preview_text', 'slug', 'type', 'created_at', 'updated_at']);
-        
-        if ($request->has('sort')) {
-            $sortType = $request->query('sort');
-            $articles->orderBy($sortType, 'desc');
-        }
+
         $category->articles = $articles->paginate($perPage);
         
         return response()->json($category, 200);

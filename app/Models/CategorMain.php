@@ -25,10 +25,13 @@ class CategorMain extends Model
         return $this->hasMany(CategorMain::class, 'parent', 'id')->where('visible', 1);
     }
 
-    public function articles()
+    public function articles($orderBy = 'created_at', $direction = 'desc')
     {
+        $orderBy = $orderBy !== null ? $orderBy : 'created_at';
+        $direction = $direction !== null ? $direction : 'desc';
+
         return $this->hasMany(articles::class, 'id_categories', 'id')
             ->where('visible', 1)
-            ->orderBy('created_at', 'desc');
+            ->orderBy($orderBy, $direction);
     }
 }
