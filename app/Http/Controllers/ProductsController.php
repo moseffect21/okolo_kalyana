@@ -36,12 +36,18 @@ class ProductsController extends Controller
         Принимаемые параметры в запросе:
         page - номер страницы
         per_page - кол-во на каждой странице
+        resource(full/short) - полная/урезанная модель данных. По дефолту full
     */
     public function getProductsCategory(Request $request, $id)
     {
         $perPage = $request->has('per_page') ? intval($request->query('per_page')) : 15;
 
         $productsCategory = product_categories::where('id', $id)->orWhere('slug', $id)->first();
+
+        // Выводим категорию без продуктов по необходимости
+        if ($request->has('resource') && $request->query('resource') == 'short') {
+            return response()->json($productsCategory, 200);
+        } 
         $products = $productsCategory->products()->paginate($perPage);
         $productsCategory->products = $products;
 
