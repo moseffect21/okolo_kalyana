@@ -17,6 +17,6 @@ class products extends Model
 
     public function category()
     {
-        return $this->hasOne(product_categories::class, 'category_id', 'id')->select(['id', 'name', 'slug']);
+        return $this->hasOne(product_categories::class, 'id', 'categ_id')->select(['id', 'name', 'slug']);
     }
 }
