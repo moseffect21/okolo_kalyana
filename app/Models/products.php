@@ -14,4 +14,9 @@ class products extends Model
     {
         return $this->hasMany(comments::class, 'prod_id', 'id');
     }
+
+    public function category()
+    {
+        return $this->hasOne(product_categories::class, 'category_id', 'id')->select(['id', 'name', 'slug']);
+    }
 }

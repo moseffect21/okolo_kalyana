@@ -21,10 +21,10 @@ class ProductsController extends Controller
     // Получение продукта по id или slug
     public function getProduct(Request $request, $id)
     {
-        $product = products::where('slug', $id)->with('comments')->first();
+        $product = products::where('slug', $id)->with(['comments', 'category'])->first();
         if (empty($product)) {
             $product = products::where('id', $id)
-                ->with('comments')
+                ->with(['comments', 'category'])
                 ->first();
         }
         return response()->json($product, 200);
@@ -65,7 +65,7 @@ class ProductsController extends Controller
     {
         $perPage = $request->has('per_page') ? intval($request->query('per_page')) : 15;
 
-        $products = products::paginate($perPage);
+        $products = products::with('category')->paginate($perPage);
         return response()->json($products, 200);
     }
 
