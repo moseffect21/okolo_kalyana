@@ -12,20 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('tobacco_fillers', function (Blueprint $table) {
-            if (!Schema::hasColumn('tobacco_fillers', 'alternative_video_url')) {
-                $table->string('alternative_video_url')->nullable();
-            }
+            $table->string('alternative_video_url')->nullable();
         });
         Schema::table('partners', function (Blueprint $table) {
-            if (!Schema::hasColumn('partners', 'slug')) {
-                $table->string('slug')->unique()->nullable();
-            } else {
-                $table->dropUnique('slug');
-                $table->string('slug')->unique()->nullable()->change();
-            }
-            if (!Schema::hasColumn('partners', 'brand_id')) {
-                $table->integer('brand_id')->nullable();
-            }
+            $table->string('slug')->unique()->nullable();
+            $table->integer('brand_id')->nullable();
         });
         Schema::table('bowls', function (Blueprint $table) {
             $table->integer('brand_id')->nullable();
