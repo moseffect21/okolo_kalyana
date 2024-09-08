@@ -20,6 +20,7 @@ return new class extends Migration
             if (!Schema::hasColumn('partners', 'slug')) {
                 $table->string('slug')->unique()->nullable();
             } else {
+                $table->dropUnique('slug');
                 $table->string('slug')->unique()->nullable()->change();
             }
             if (!Schema::hasColumn('partners', 'brand_id')) {
