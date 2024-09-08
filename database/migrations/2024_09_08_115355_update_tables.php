@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('alternative_video_url')->nullable();
         });
         Schema::table('partners', function (Blueprint $table) {
-            $table->string('slug')->unique();
+            $table->string('slug')->unique()->nullable();
             $table->integer('brand_id')->nullable();
         });
         Schema::table('bowls', function (Blueprint $table) {
