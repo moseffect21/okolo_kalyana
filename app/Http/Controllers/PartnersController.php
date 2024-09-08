@@ -15,10 +15,15 @@ class PartnersController extends Controller
     }
 
     //  запрос на получение партнера
-    public function getPartnerById(Request $request, $id)
+    public function getPartnerBySlug(Request $request, $slug)
     {
-        $partner = partners::where('id', $id)->with('videos', 'articles')->first();
-
-        return response()->json($partner, 200);
+        $partner = partners::where('slug', $slug)->with('videos', 'articles', 'fillers')->first();
+        if (empty($partner)) {
+            $partner = partners::where('id', $slug)->with('videos', 'articles', 'fillers')->first();
+        }
+        if (!empty($partner)) {
+            return response()->json($partner, 200);
+        }
+        return response()->json(['message' => 'Партнер не найден'], 404);
     }
 }

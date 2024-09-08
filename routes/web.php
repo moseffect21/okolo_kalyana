@@ -56,7 +56,7 @@ Route::group(['prefix' => '/api/v1'], function () {
     // Партнеры
     Route::group(['prefix' => '/partners'], function () {
         Route::get('/', [PartnersController::class, 'getPartners']); // Список партнеров
-        Route::get('/{id}', [PartnersController::class, 'getPartnerById']); // Получаем партнера
+        Route::get('/{slug}', [PartnersController::class, 'getPartnerBySlug']); // Получаем партнера
     });
 
     // Данные для главной страницы
@@ -109,7 +109,7 @@ Route::group(['prefix' => '/api/v1'], function () {
         Route::post('/rate', [SmokingRoom::class, 'rateTobaccoFiller']);
         Route::get('/', [SmokingRoom::class, 'getTobaccoFillers']);
         Route::get('/get_filters', [SmokingRoom::class, 'getSmokingRoomData']);
-        Route::get('/{id}', [SmokingRoom::class, 'getTobaccoFillerById']);
+        Route::get('/{slug}', [SmokingRoom::class, 'getTobaccoFillerBySlug']);
     });
 
     // Таплинк

@@ -18,4 +18,12 @@ class partners extends Model
     {
         return $this->hasMany('App\Models\articles', 'partner_id', 'id')->where('type', 'article');
     }
+    public function brand()
+    {
+        return $this->hasOne('App\Models\Brand', 'id', 'brand_id');
+    }
+    public function fillers()
+    {
+        return $this->hasMany('App\Models\TobaccoFiller', 'brand_id', 'brand_id')->orderBy('updated_at', 'desc')->limit(5);
+    }
 }

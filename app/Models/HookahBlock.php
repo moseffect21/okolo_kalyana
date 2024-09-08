@@ -14,4 +14,8 @@ class HookahBlock extends Model
     {
         return $this->hasOne('App\Models\Brand', 'id', 'brand_id');
     }
+    public function fillers()
+    {
+        return $this->hasMany('App\Models\TobaccoFiller', 'hookah_block_id', 'id');
+    }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use App\Models\TobaccoFiller;
+use DB;
 
 //модели
 use App\Models\User;
@@ -21,16 +22,17 @@ class SmokingRoom extends Controller
         Запрос на получение забивок
 
         Принимаемые параметры в запросе:
-        bowl - id чаши
-        hookah_block - id колауда
-        tobacco - id тобака
+        bowl - slug чаши
+        hookah - slug кальяна
+        hookah_block - slug колауда
+        tobacco - slug тобака
         smoker - id куряги
         objective_rating - объективный рейтинг
         subjective_rating - субъективный рейтинг
         users_rating - рейтинг пользователей
         aroma_rating - рейтинг аромки
-        coal_placement - id расстановки углей
-        coal - id углей
+        coal_placement - slug расстановки углей
+        coal - slug углей
         page - номер страницы
         per_page - кол-во на каждой странице
     */
@@ -41,13 +43,16 @@ class SmokingRoom extends Controller
         // Составляем фильтры
         $filters = [];
         if ($request->has('bowl')) {
-            array_push($filters, ['bowl_id', '=', $request->query('bowl')]);
+            $fillers->whereRelation('bowl', 'slug', '=', $request->query('bowl'));
+        }
+        if ($request->has('hookah')) {
+            $fillers->whereRelation('hookah', 'slug', '=', $request->query('hookah'));
         }
         if ($request->has('hookah_block')) {
-            array_push($filters, ['hookah_block_id', '=', $request->query('hookah_block')]);
+            $fillers->whereRelation('hookah_block', 'slug', '=', $request->query('hookah_block'));
         }
         if ($request->has('tobacco')) {
-            array_push($filters, ['tobacco_id', '=', $request->query('tobacco')]);
+            $fillers->whereRelation('tobacco', 'slug', '=', $request->query('tobacco'));
         }
         if ($request->has('smoker')) {
             array_push($filters, ['smoker_id', '=', $request->query('smoker')]);
@@ -65,10 +70,10 @@ class SmokingRoom extends Controller
             array_push($filters, ['aroma_rating', '=', $request->query('aroma_rating')]);
         }
         if ($request->has('coal_placement')) {
-            array_push($filters, ['coal_placement_id', '=', $request->query('coal_placement')]);
+            $fillers->whereRelation('coal_placement', 'slug', '=', $request->query('coal_placement'));
         }
         if ($request->has('coal')) {
-            array_push($filters, ['coal_id', '=', $request->query('coal')]);
+            $fillers->whereRelation('coal', 'slug', '=', $request->query('coal'));
         }
         
         // Фильтруем по необходимости
@@ -92,10 +97,13 @@ class SmokingRoom extends Controller
     }
 
     /*
-        Получаем забивку по id
+        Получаем забивку по slug
     */
-    public function getTobaccoFillerById(Request $request, $id) {
-        $filler = TobaccoFiller::with(['brand', 'bowl', 'hookah_block', 'coal_placement', 'coal', 'hookah', 'smoker', 'tobacco'])->where('id', $id)->first();
+    public function getTobaccoFillerBySlug(Request $request, $slug) {
+        $filler = TobaccoFiller::with(['brand', 'bowl', 'hookah_block', 'coal_placement', 'coal', 'hookah', 'smoker', 'tobacco'])->where('slug', $slug)->first();
+        if (empty($filler)) {
+            $filler = TobaccoFiller::with(['brand', 'bowl', 'hookah_block', 'coal_placement', 'coal', 'hookah', 'smoker', 'tobacco'])->where('id', $slug)->first();
+        }
         if ($filler) {
             return response()->json($filler, 200);
         }
@@ -109,21 +117,47 @@ class SmokingRoom extends Controller
         $rating = [0, 1, 2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10];
 
         // Получаем данные
-        $bowls = Bowls::get()->makeHidden(['description', 'created_at', 'updated_at', 'content', 'video_url']);
+        $bowls = Bowls::withCount('fillers')->orderBy('name', 'asc')->get()->makeHidden(['description', 'created_at', 'updated_at', 'content', 'video_url']);
+        
+        // Топовые чаши
+        $top_bowls = $bowls->sortByDesc(function ($item) {
+            return $item->fillers_count + $item->manual_rating;
+        })->values()->take(10);
+        
+        // Прокурщики
         $smokers = User::where('role_id', 1)->get()->makeHidden(['vk_id', 'fb_id', 'google_id', 'birthdate', 'created_at', 'updated_at', 'email_verified_at', 'avatar', 'email']);
-        $hookahBlocks = HookahBlock::get()->makeHidden(['description', 'created_at', 'updated_at', 'content', 'video_url']);
-        $tobaccos = Tobacco::get()->makeHidden(['description', 'created_at', 'updated_at', 'content', 'video_url']);
+
+        // Коллауды
+        $hookahBlocks = HookahBlock::orderBy('name', 'asc')->get()->makeHidden(['description', 'created_at', 'updated_at', 'content', 'video_url']);
+
+        // Топовые коллауды
+        $top_hookahBlocks = $hookahBlocks->sortByDesc(function ($item) {
+            return $item->fillers_count + $item->manual_rating;
+        })->values()->take(10);
+
+        // Табаки
+        $tobaccos = Tobacco::orderBy('name', 'asc')->get()->makeHidden(['description', 'created_at', 'updated_at', 'content', 'video_url']);
+
+        // Топовые табаки
+        $top_tobaccos = $tobaccos->sortByDesc(function ($item) {
+            return $item->fillers_count + $item->manual_rating;
+        })->values()->take(20);
+
+        // Рейтинг
         $subjective_rating = $rating;
         $objective_rating = $rating;
 
         // Формируем ответ
         $response = [
             'bowls' => $bowls,
+            'top_bowls' => $top_bowls,
             'bowls_count' => $bowls->count(),
             'smokers' => $smokers,
             'hookah_blocks' => $hookahBlocks,
+            'top_hookah_blocks' =>  $top_hookahBlocks,
             'hookah_blocks_count' => $hookahBlocks->count(),
             'tobaccos' => $tobaccos,
+            'top_tobaccos' => $top_tobaccos,
             'tobaccos_count' => $tobaccos->count(),
             'subjective_rating' => $subjective_rating,
             'objective_rating' => $objective_rating,
