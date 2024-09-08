@@ -17,8 +17,14 @@ return new class extends Migration
             }
         });
         Schema::table('partners', function (Blueprint $table) {
-            $table->string('slug')->unique()->nullable();
-            $table->integer('brand_id')->nullable();
+            if (!Schema::hasColumn('partners', 'slug')) {
+                $table->string('slug')->unique()->nullable();
+            } else {
+                $table->string('slug')->unique()->nullable()->change();
+            }
+            if (!Schema::hasColumn('partners', 'brand_id')) {
+                $table->integer('brand_id')->nullable();
+            }
         });
         Schema::table('bowls', function (Blueprint $table) {
             $table->integer('brand_id')->nullable();
