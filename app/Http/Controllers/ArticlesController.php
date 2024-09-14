@@ -20,10 +20,10 @@ class ArticlesController extends Controller
     // Получение данных для главной страницы
     public function getMain()
     {
-        $articles = articles::where(['show_main' => 1, 'type' => 'article'])->orderBy('created_at', 'desc')->take(4)->get()->makeHidden(['description', 'content']);
-        $updates = articles::where(['show_main' => 1])->orderBy('updated_at', 'desc')->take(5)->get()->makeHidden(['content']);
+        $articles = articles::with('category')->where(['show_main' => 1, 'type' => 'article'])->orderBy('created_at', 'desc')->take(4)->get()->makeHidden(['description', 'content']);
+        $updates = articles::with('category')->where(['show_main' => 1])->orderBy('updated_at', 'desc')->take(5)->get()->makeHidden(['content']);
         $fillers = TobaccoFiller::with(['brand', 'bowl', 'hookah_block', 'coal_placement', 'coal', 'hookah', 'smoker', 'tobacco'])->orderBy('created_at', 'desc')->take(10)->get();
-        $products = products::orderBy('created_at', 'desc')->take(10)->get();
+        $products = products::with('category')->orderBy('created_at', 'desc')->take(10)->get();
         $partners = partners::where('show_main', 1)->get();
         $team = team::get();
 
