@@ -77,7 +77,7 @@ class SmokingRoom extends Controller
             $fillers->whereRelation('coal', 'slug', '=', $request->query('coal'));
         }
         if ($request->has('with_video')) {
-            $fillers->whereNotNull('video_url')->orWhereNotNull('alternative_video_url')->orWhere('video_url','<>','')->orWhere('alternative_video_url','<>','');
+            array_push($filters, ['video_url', '<>', '']);
         }
         
         // Фильтруем по необходимости
