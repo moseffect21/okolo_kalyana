@@ -33,6 +33,7 @@ class SmokingRoom extends Controller
         aroma_rating - рейтинг аромки
         coal_placement - slug расстановки углей
         coal - slug углей
+        with_video - флаг "прокуры только с видео"
         page - номер страницы
         per_page - кол-во на каждой странице
     */
@@ -74,6 +75,9 @@ class SmokingRoom extends Controller
         }
         if ($request->has('coal')) {
             $fillers->whereRelation('coal', 'slug', '=', $request->query('coal'));
+        }
+        if ($request->has('with_video')) {
+            $fillers->whereNotNull('video_url')->orWhereNotNull('alternative_video_url')->orWhere('video_url','<>','')->orWhere('alternative_video_url','<>','');
         }
         
         // Фильтруем по необходимости
