@@ -91,7 +91,7 @@ class SmokingRoom extends Controller
         // Пагинация при необходимости
         if ($request->has('page')) {
             $perPage = intval($request->query('per_page'));
-            $fillers = $fillers->paginate($perPage ? $perPage : 15);
+            $fillers = $fillers->paginate($perPage ? $perPage : 14);
             return response()->json($fillers, 200);
         }
 
