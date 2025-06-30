@@ -97,11 +97,13 @@ class ArticlesController extends Controller
         if (empty($article)) {
             $article = articles::where('slug', $id)->with('comments')->first();
         }
-        foreach (explode(",", $article->authors_id) as $item) {
+        if (!empty($article->authors_id)) {
+            foreach (explode(",", $article->authors_id) as $item) {
 
-            $article->authors[] = User::where('id', $item)->first();
+                $article->authors[] = User::where('id', $item)->first();
+            }
+            unset($article->authors[1]);
         }
-        unset($article->authors[1]);
 
         $random = articles::where('visible', 1)->inRandomOrder()->limit(5)->get()->makeHidden(['content']);
 
